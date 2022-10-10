@@ -1,0 +1,107 @@
+---
+title: "Replication Report for Experiments 1 and 5 by Wal et al. (2021, Nature Communications)"
+author: "Alice Xue (alicexue@stanford.edu)"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+---
+
+## Introduction
+
+How does the hippocampus - a subcortical brain structure - support episodic memory encoding and retrieval? I am interested in studying how theta oscillations in the hippocampus play a role in these memory processes. Computational models of information processing in the hippocampus make predictions about when encoding and retrieval may take place optimally with respect to different phases of the hippocampal theta rhythm. These rhythmic neural processes may have downstream consequences on behavior, a prediction tested by Wal et al. (2021). They assessed whether the timing of behavioral responses is rhythmic in memory-dependent vs. memory-independent (visual) tasks. In addition, they looked at theta rhythmicity in intracranial EEG recordings, which will be ignored in the current behavioral replication study.
+
+**Clarify key analysis of interest here**  
+
+I will conduct a second-level t-test on the z-scored Oscillation scores for each task, as they report in Fig. 3a. The *key* analysis, however, will be a linear mixed model (also in Fig. 3a) that compares the z-scored Oscillation score in memory-dependent (encoding & retrieval) and memory-independent (visual) tasks. Since the authors had different groups of participants perform each task (two different experiments), I will do the same. 
+
+If I have extra time, I would also like to see if the peak frequencies are in the theta range (Fig. 3c), and analyze the phase distributions of correct and incorrect trials (two-tailed paired t-test of the V-statistic; Fig. 4). 
+
+### Justification for choice of study
+
+I am interested in rhythms in cognition, and curious about the reliability of the interesting behavioral effects reported in this paper. By attempting to replicate this study, I will learn a great deal about the analysis approach the authors developed; this will be useful for understanding different ways of studying behavioral/neural rhythms and may be useful for my own research. 
+
+### Anticipated challenges
+
+I expect that data analysis will be the main challenge for me in conducting this replication project, as the computation of the Oscillation score appears to be rather complex. I aim to recreate the authors' Matlab code (provided on GitHub) in R, a language I am not particularly comfortable with. 
+
+### Links
+
+Project repository (on Github): https://github.com/psych251/wal2021.git
+
+Original paper (as hosted in your repo): https://github.com/psych251/wal2021/blob/main/original_paper/Wal2021_NatComms.pdf
+
+## Methods
+
+### Description of the steps required to reproduce the results
+
+I will need to identify and collect the word and picture stimuli that the authors used for the behavioral tasks in their paper.
+
+In the memory-dependent task (Experiment 5), participants take part in an encoding phase, a distractor phase, and a retrieval phase in multiple blocks. In the encoding phase, participants  associate a word with an object (presented at different times; 128 associations total), and indicate with a button press when they have successfully encoded the association. In the distractor phase, they judge whether numbers displayed on the screen are odd or even (for one minute). In the retrieval (with-catch) phase, they are presented a semantic/perceptual question (“animate or inanimate?” / “photo or drawing?”), followed a word probe. Participants are instructed to recall whether the associated image was animate/inanimate or a photo/drawing (or if they forgot), and make their response with a button press. 
+
+In the memory-independent (visual) task (Experiment 1), participants are first presented with a semantic/perceptual question (“animate or inanimate?” / “photo or drawing?”). This is followed by the presentation of an object, during which time the participants provide their response with a button press.
+
+For each task (encoding, retrieval, visual), I will compute an Oscillation score using the procedures described in the paper and as implemented in the Matlab code the authors provided on GitHub (although I will recreate this code in R to better understand the analysis procedure and become more comfortable with R).
+
+### Differences from original study
+
+The original study had several experiments. My goal is to replicate two of the behavioral ones (as my key analysis depends on a comparison between a memory-based and visual control task that they ran in two separate samples of participants). A major difference is that all of their experiments were conducted in person, whereas mine will be conducted online (on Prolific). I anticipate that online participants may be less attentive and more likely to rush through the study; this could affect reaction times, a key dependent variable in the analyses. 
+
+There are additionally software differences with respect to task presentation; I will be using jsPsych to present each task, while the original authors used PsychToolBox. There could be slight differences in stimulus presentation timing, but I do not think these will influence my results. 
+
+On the analysis side, my code will be in R, whereas their was in Matlab. I do not yet know if this will influence my ability to replicate the original results.
+
+My study will likely be very underpowered in comparison to the study in the original paper, especially since they had multiple experiments with slightly different tasks/stimuli in each experiment. The effect size may have been larger in certain variations of their experiments, but I do not know for sure. I decided to replicate the two behavioral experiments that they conducted in healthy individuals, and in which they used "Standard" stimuli.
+
+## Project Progress Check 1
+
+### Measure of success
+
+Please describe the outcome measure for the success or failure of your reproduction and how this outcome will be computed.
+
+
+### Pipeline progress
+
+Earlier in this report, you described the steps necessary to reproduce the key result(s) of this study. Please describe your progress on each of these steps (e.g., data preprocessing, model fitting, model evaluation).
+
+
+## Results
+
+### Data preparation
+
+Data preparation following the analysis plan.
+	
+```{r include=F}
+### Data Preparation
+
+#### Load Relevant Libraries and Functions
+
+#### Import data
+
+#### Data exclusion / filtering
+
+#### Prepare data for analysis - create columns etc.
+```
+
+### Key analysis
+
+The analyses as specified in the analysis plan.  
+
+*Side-by-side graph with original graph is ideal here*
+
+### Exploratory analyses
+
+Any follow-up analyses desired (not required).  
+
+## Discussion
+
+### Summary of Reproduction Attempt
+
+Open the discussion section with a paragraph summarizing the primary result from the key analysis and assess whether you successfully reproduced it, partially reproduced it, or failed to reproduce it.  
+
+### Commentary
+
+Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis of the dataset, (b) assessment of the meaning of the successful or unsuccessful reproducibility attempt - e.g., for a failure to reproduce the original findings, are the differences between original and present analyses ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the reproducibility attempt (if you contacted them).  None of these need to be long.
