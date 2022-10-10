@@ -10,19 +10,15 @@ output:
       collapsed: false
 ---
 
+<!-- Replication reports should all use this template to standardize reporting across projects.  These reports will be public supplementary materials that accompany the summary report(s) of the aggregate results. -->
+
 ## Introduction
 
 How does the hippocampus - a subcortical brain structure - support episodic memory encoding and retrieval? I am interested in studying how theta oscillations in the hippocampus play a role in these memory processes. Computational models of information processing in the hippocampus make predictions about when encoding and retrieval may take place optimally with respect to different phases of the hippocampal theta rhythm. These rhythmic neural processes may have downstream consequences on behavior, a prediction tested by Wal et al. (2021). They assessed whether the timing of behavioral responses is rhythmic in memory-dependent vs. memory-independent (visual) tasks. In addition, they looked at theta rhythmicity in intracranial EEG recordings, which will be ignored in the current behavioral replication study.
 
-**Clarify key analysis of interest here**  
-
-I will conduct a second-level t-test on the z-scored Oscillation scores for each task, as they report in Fig. 3a. The *key* analysis, however, will be a linear mixed model (also in Fig. 3a) that compares the z-scored Oscillation score in memory-dependent (encoding & retrieval) and memory-independent (visual) tasks. Since the authors had different groups of participants perform each task (two different experiments), I will do the same. 
-
-If I have extra time, I would also like to see if the peak frequencies are in the theta range (Fig. 3c), and analyze the phase distributions of correct and incorrect trials (two-tailed paired t-test of the V-statistic; Fig. 4). 
-
 ### Justification for choice of study
 
-I am interested in rhythms in cognition, and curious about the reliability of the interesting behavioral effects reported in this paper. By attempting to replicate this study, I will learn a great deal about the analysis approach the authors developed; this will be useful for understanding different ways of studying behavioral/neural rhythms and may be useful for my own research. 
+I am interested in rhythms in cognition, and am curious about the reliability of the interesting behavioral effects reported in this paper. By attempting to replicate this study, I will learn a great deal about the analysis approach the authors developed; this will be useful for understanding different ways of studying behavioral/neural rhythms and may be useful for my own research. 
 
 ### Anticipated challenges
 
@@ -34,9 +30,10 @@ Project repository (on Github): https://github.com/psych251/wal2021.git
 
 Original paper (as hosted in your repo): https://github.com/psych251/wal2021/blob/main/original_paper/Wal2021_NatComms.pdf
 
+
 ## Methods
 
-### Description of the steps required to reproduce the results
+### Description of the steps required to replicate the results
 
 I will need to identify and collect the word and picture stimuli that the authors used for the behavioral tasks in their paper.
 
@@ -56,37 +53,63 @@ On the analysis side, my code will be in R, whereas their was in Matlab. I do no
 
 My study will likely be very underpowered in comparison to the study in the original paper, especially since they had multiple experiments with slightly different tasks/stimuli in each experiment. The effect size may have been larger in certain variations of their experiments, but I do not know for sure. I decided to replicate the two behavioral experiments that they conducted in healthy individuals, and in which they used "Standard" stimuli.
 
-## Project Progress Check 1
+### Power Analysis
 
-### Measure of success
+Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size.  Considerations of feasibility for selecting planned sample size.
 
-Please describe the outcome measure for the success or failure of your reproduction and how this outcome will be computed.
+### Planned Sample
 
+Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any.
 
-### Pipeline progress
+### Materials
 
-Earlier in this report, you described the steps necessary to reproduce the key result(s) of this study. Please describe your progress on each of these steps (e.g., data preprocessing, model fitting, model evaluation).
+All materials - can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+
+### Procedure	
+
+Can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+
+### Analysis Plan
+
+Can also quote directly, though it is less often spelled out effectively for an analysis strategy section.  The key is to report an analysis strategy that is as close to the original - data cleaning rules, data exclusion rules, covariates, etc. - as possible.  
+
+**Clarify key analysis of interest here**  You can also pre-specify additional analyses you plan to do.
+
+### Differences from Original Study
+
+Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study.  The goal, of course, is to minimize those differences, but differences will inevitably occur.  Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.
+
+### Methods Addendum (Post Data Collection)
+
+You can comment this section out prior to final report with data collection.
+
+#### Actual Sample
+  Sample size, demographics, data exclusions based on rules spelled out in analysis plan
+
+#### Differences from pre-data collection methods plan
+  Any differences from what was described as the original plan, or “none”.
 
 
 ## Results
+
 
 ### Data preparation
 
 Data preparation following the analysis plan.
 	
 ```{r include=F}
-### Data Preparation
+###Data Preparation
 
-#### Load Relevant Libraries and Functions
+####Load Relevant Libraries and Functions
 
-#### Import data
+####Import data
 
 #### Data exclusion / filtering
 
 #### Prepare data for analysis - create columns etc.
 ```
 
-### Key analysis
+### Confirmatory analysis
 
 The analyses as specified in the analysis plan.  
 
@@ -98,10 +121,10 @@ Any follow-up analyses desired (not required).
 
 ## Discussion
 
-### Summary of Reproduction Attempt
+### Summary of Replication Attempt
 
-Open the discussion section with a paragraph summarizing the primary result from the key analysis and assess whether you successfully reproduced it, partially reproduced it, or failed to reproduce it.  
+Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.  
 
 ### Commentary
 
-Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis of the dataset, (b) assessment of the meaning of the successful or unsuccessful reproducibility attempt - e.g., for a failure to reproduce the original findings, are the differences between original and present analyses ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the reproducibility attempt (if you contacted them).  None of these need to be long.
+Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt.  None of these need to be long.
