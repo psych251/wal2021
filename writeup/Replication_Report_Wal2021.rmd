@@ -1,5 +1,5 @@
 ---
-title: "Replication Report for Experiments 1 and 5 by Wal et al. (2021, Nature Communications)"
+title: "Replication Report for Experiments 1 and 5 by ter Wal et al. (2021, Nature Communications)"
 author: "Alice Xue (alicexue@stanford.edu)"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
@@ -14,22 +14,25 @@ output:
 
 ## Introduction
 
-How does the hippocampus - a subcortical brain structure - support episodic memory encoding and retrieval? I am interested in studying how theta oscillations in the hippocampus play a role in these memory processes. Computational models of information processing in the hippocampus make predictions about when encoding and retrieval may take place optimally with respect to different phases of the hippocampal theta rhythm. These rhythmic neural processes may have downstream consequences on behavior, a prediction tested by Wal et al. (2021). They assessed whether the timing of behavioral responses is rhythmic in memory-dependent vs. memory-independent (visual) tasks. In addition, they looked at theta rhythmicity in intracranial EEG recordings, which will be ignored in the current behavioral replication study.
+How does the hippocampus - a subcortical brain structure - support episodic memory encoding and retrieval? I am interested in studying how theta oscillations in the hippocampus play a role in these memory processes. Computational models of information processing in the hippocampus make predictions about when encoding and retrieval may take place optimally with respect to different phases of the hippocampal theta rhythm. These rhythmic neural processes may have downstream consequences on behavior, a prediction tested by ter Wal et al. (2021). In this paper, the authors assessed whether the timing of behavioral responses is rhythmic in memory-dependent vs. memory-independent (visual) tasks. In addition, they looked at theta rhythmicity in intracranial EEG recordings, which will be ignored in the current behavioral replication study.
 
 ### Justification for choice of study
 
-I am interested in rhythms in cognition, and am curious about the reliability of the interesting behavioral effects reported in this paper. By attempting to replicate this study, I will learn a great deal about the analysis approach the authors developed; this will be useful for understanding different ways of studying behavioral/neural rhythms and may be useful for my own research. 
+I am interested in rhythms in cognition, and am curious about the reliability of the interesting behavioral effects reported in this paper. By attempting to replicate this study, I will learn more about the analysis approach the authors developed; this will be useful for understanding different ways of studying behavioral/neural rhythms and may be useful for my own research. 
 
 ### Anticipated challenges
 
-I expect that data analysis will be the main challenge for me in conducting this replication project, as the computation of the Oscillation score appears to be rather complex. I aim to recreate the authors' Matlab code (provided on GitHub) in R, a language I am not particularly comfortable with. 
+I expect the data analysis portion to be the main challenge for me in conducting this replication project, as the computation of the Oscillation score appears to be rather complex. I am planning to recreate the authors' Matlab code (provided on GitHub) in R, a language I am not yet particularly comfortable programming in. 
 
 ### Links
 
-Project repository (on Github): https://github.com/psych251/wal2021.git
+Project repository: https://github.com/psych251/wal2021.git
 
-Original paper (as hosted in your repo): https://github.com/psych251/wal2021/blob/main/original_paper/Wal2021_NatComms.pdf
+Original paper: https://github.com/psych251/wal2021/blob/main/original_paper/Wal2021_NatComms.pdf
 
+Study paradigm for the memory-dependent task: https://walrep.pythonanywhere.com/MEM
+
+Study paradigm for the memory-independent task: https://walrep.pythonanywhere.com/MEM/vis
 
 ## Methods
 
@@ -37,47 +40,60 @@ Original paper (as hosted in your repo): https://github.com/psych251/wal2021/blo
 
 I will need to identify and collect the word and picture stimuli that the authors used for the behavioral tasks in their paper.
 
-In the memory-dependent task (Experiment 5), participants take part in an encoding phase, a distractor phase, and a retrieval phase in multiple blocks. In the encoding phase, participants  associate a word with an object (presented at different times; 128 associations total), and indicate with a button press when they have successfully encoded the association. In the distractor phase, they judge whether numbers displayed on the screen are odd or even (for one minute). In the retrieval (with-catch) phase, they are presented a semantic/perceptual question (“animate or inanimate?” / “photo or drawing?”), followed a word probe. Participants are instructed to recall whether the associated image was animate/inanimate or a photo/drawing (or if they forgot), and make their response with a button press. 
+In the memory-dependent study (Experiment 5), participants take part in an encoding phase, a distractor phase, and a retrieval phase in multiple blocks. In the encoding phase, participants are instructed to create a vivid mental image that involves a word cue and an object (each stimulus is presented at different times; 128 associations total), and indicate with a button press when they have successfully encoded the association. In the distractor phase, participants judge whether numbers displayed sequentially on the screen are odd or even. In the retrieval (with-catch) phase, they are presented a semantic/perceptual question (“animate or inanimate?” / “photo or drawing?”), followed a word probe. Participants are instructed to recall the object they previously imagined with the word probe, and report using button presses whether the object was animate/inanimate or presented as a photo/drawing. They can also report if they forgot the associated object. 
 
-In the memory-independent (visual) task (Experiment 1), participants are first presented with a semantic/perceptual question (“animate or inanimate?” / “photo or drawing?”). This is followed by the presentation of an object, during which time the participants provide their response with a button press.
+In the memory-independent (visual) study (Experiment 1), participants are first presented with a semantic/perceptual question (“animate or inanimate?” / “photo or drawing?”). This is followed by the presentation of an object, during which time the participants provide their response with a button press.
 
-For each task (encoding, retrieval, visual), I will compute an Oscillation score using the procedures described in the paper and as implemented in the Matlab code the authors provided on GitHub (although I will recreate this code in R to better understand the analysis procedure and become more comfortable with R).
+For each task (encoding, retrieval, & visual), I will compute an Oscillation score (O-score) using the procedures described in the paper and as implemented in the Matlab code the authors provided on GitHub. I will rewrite their Matlab code in R to better understand the analysis procedure and become more comfortable programming in this language.
 
-### Differences from original study
-
-The original study had several experiments. My goal is to replicate two of the behavioral ones (as my key analysis depends on a comparison between a memory-based and visual control task that they ran in two separate samples of participants). A major difference is that all of their experiments were conducted in person, whereas mine will be conducted online (on Prolific). I anticipate that online participants may be less attentive and more likely to rush through the study; this could affect reaction times, a key dependent variable in the analyses. 
-
-There are additionally software differences with respect to task presentation; I will be using jsPsych to present each task, while the original authors used PsychToolBox. There could be slight differences in stimulus presentation timing, but I do not think these will influence my results. 
-
-On the analysis side, my code will be in R, whereas their was in Matlab. I do not yet know if this will influence my ability to replicate the original results.
-
-My study will likely be very underpowered in comparison to the study in the original paper, especially since they had multiple experiments with slightly different tasks/stimuli in each experiment. The effect size may have been larger in certain variations of their experiments, but I do not know for sure. I decided to replicate the two behavioral experiments that they conducted in healthy individuals, and in which they used "Standard" stimuli.
+*O-score computation:* This procedure is described in great detail in the paper. Briefly, the reaction time distributions for correct responses are first subject to an auto-correlation and then smoothed with a Gaussian kernel. The central peak of the resulting auto-correlation histogram is removed, and the positive lags on the histogram are Fourier transformed. The O-score is defined as the magnitude of the frequency with the highest peak (within an experimenter-specified range) divided by the average magnitude of the frequency spectrum. The O-scores are then z-scored against 500 O-scores computed on shuffled data generated using participant-specific response trends.
 
 ### Power Analysis
 
-Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size.  Considerations of feasibility for selecting planned sample size.
+The effect sizes for various O-score comparisons between tasks were provided in the supplement of the paper. The Cohen's d of interest (between memory-dependent and memory-independent tasks; i.e., encoding/retrieval/catch with retrieval vs. visual) ranged from 0.86 to 0.92. According to the software G\*Power, a more conservative estimate of the total number of subjects needed to achieve 80% power, using the lower bound of this effect size range, is 46 (23 subjects per group). Since I decided to reproduce some of the original findings to familiarize myself with the analysis procedure and R programming more generally, I calculated the effect size myself using data from just two of the original experiments. My key analysis of interest, as described below, is a linear mixed effects model. This model didn't converge with data from these two experiments. I therefore calculated the effect size using t-tests as well as a simple linear model. The effect size for the two-sided t-test comparing memory-dependent (encoding + retrieval) and memory independent tasks (visual) was 0.74 (results and calculations shown below). For this effect size, G\*Power suggested that 60 participants are needed to achieve 80% power. For the linear model, the partial Cohen's f2 was 0.15 and the power analysis indicated that 55 participants are needed to achieve 80% power. 
+
+The original paper had five versions of the memory-dependent study and four versions of the memory-independent study. It is possible that the effect size is sensitive to the experimental design, but I don't believe there is reason to think that the effects should differ drastically between experiments. I ultimately decided to collect data from 50 participants (25 per experiment). Assuming that the effects hold in the experiments I selected (both of which use "Standard" stimuli), a sample of this size should be sufficient to detect an effect of memory dependence on the extent to which behavior is oscillatory.
 
 ### Planned Sample
 
-Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any.
+My goal is to collect 25 participants for the memory-dependent experiment and 25 participants for the memory-independent experiment. 
 
 ### Materials
 
-All materials - can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+Materials include 128 action verbs and 128 object images. 
 
 ### Procedure	
 
-Can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+#### Memory-dependent experiment
+- Encoding phase: A fixation cross will first be shown for 0.5-1.5s. This will be followed by the display of a cue (action verb) for 2s. After another fixation display (0.5-1.5s), an object will be presented for at most 7s, during which time participants should respond when they have successfully made an association between the cue and the stimulus. These trials will be administered in blocks of 8 trials. Participants will learn 128 associations.
+- Distractor phase: For one minute, participants will indicate whether numbers presented serially on the display are odd or even.
+- Retrieval with catch phase: On each trial, participants will be presented a perceptual or semantic question (drawing or photo; animate or inanimate; forgotten) for 3s. A cue is then presented for a maximum of 7s, and participants will respond to the initial question with a button press. Each object will be probed with a perceptual question and a semantic question, in a pseudorandom order such that the same cue is shown at least two trials apart. Trials will be separated by a presentation of a fixation cross for 0.5-1.5s. Each block contains 16 trials. Feedback is provided after the distractor and retrieval phases.
+
+#### Visual experiment
+
+A fixation cross will be displayed for 0.5-1.5s. This will be followed by the presentation of a perceptual or semantic question (drawing or photo; animate or inanimate) for 3s. An object will then be displayed for up to 3s, during which time participants are to provide a response to the question. The 128 stimuli will be displayed twice, such that participants provide an answer to both the perceptual and semantic questions. Trial order will be randomized and trials will be administered in blocks of 32 trials. Feedback is provided after each block.
 
 ### Analysis Plan
 
-Can also quote directly, though it is less often spelled out effectively for an analysis strategy section.  The key is to report an analysis strategy that is as close to the original - data cleaning rules, data exclusion rules, covariates, etc. - as possible.  
+Participants will be included if the accuracy of responses to catch questions is above chance level (using a one-sided binomial test with a guessing rate of 50%), and at least 10 correct button presses were made. To compute the O-score of interest, I will follow the procedure outlined in the Methods section.   
 
-**Clarify key analysis of interest here**  You can also pre-specify additional analyses you plan to do.
+**Clarify key analysis of interest here**  
 
-### Differences from Original Study
+In the key analysis, I will use the following linear mixed-effects model: `o_score_z ~ memory_dependence + length(time_series) + (1|subject)`, where `o_score_z` is the z-scored O-score and `length(time_series)` is the difference between the last and first reaction time. If this model does not converge, I will run a regular linear model or a t-test to compare O-scores in the memory-dependent and memory-independent tasks.
 
-Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study.  The goal, of course, is to minimize those differences, but differences will inevitably occur.  Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.
+### Differences from original study
+
+The original study had several experiments. My goal is to replicate two of the behavioral experiments (as my key analysis depends on a comparison between a memory-based task and a visual control task that they ran in two separate samples of participants). A major difference is that all of the original experiments were conducted in person, whereas mine will be conducted online (on Prolific). I anticipate that online participants may be less attentive and more likely to rush through the study; this could affect reaction times, a key dependent variable in the analyses. 
+
+There are additionally differences in the software being used to run the experiments. Whereas the original authors used PsychToolBox, I will be using jsPsych to present each task. Since participants will be using their own devices and different browsers to take part in the study, it is possible that there will be slight differences in stimulus presentation timing and response time precision, but I don't expect these differences to affect the main results. Although response timing is a critical dependent variable in these studies, reaction times can be as long as 7 seconds, and discrepancies in reaction times due to software should be on the order of tens of milliseconds at most. The online tasks will also have a progress bar at the top of the screen indicating how far along participants are in the study.
+
+On the analysis side, my code will be in R, whereas the original authors used Matlab. The original authors used fitlme in Matlab to run their linear mixed effects model, and I will be using the lme4 package in R. It is possible that this difference in software will impact the results.
+
+Since the original set of experiments had a couple hundred participants in total, I was concerned that my study would be quite underpowered in comparison given my limited resources. However, I conducted a power analysis using the lower bound of the effect size of interest that the authors reported, and it appears that I should have sufficient power to detect a difference in O-scores between memory-dependent and memory-independent tasks (assuming that all 50 participants perform well enough to be included in the final sample). In the original paper, it is unclear if the effect size differs depending on which variants of the experiments are selected (the ones I selected use "Standard" stimuli). The effect size I calculated using my reproduced results suggest I may need a slightly larger sample to detect an effect. 
+
+Since I will be replicating this study in an online sample, I plan to reduce the overall length of each experiment. In memory-dependent study, participants will encode 96 associations as opposed to 128 associations. In the retrieval task, participants see each object twice, resulting in 192 retrieval trials as opposed to 256. In addition, the distractor task will be 20s instead of 60s. I am also reducing the duration the memory-independent study such that participants see each of the 128 stimuli once (just one perceptual or one semantic question) as opposed to twice (both questions). In the visual task, there will be 4 blocks of 32 trials.
+
+Finally, as in the original studies, there will be practice trials in both experiments. Since my replication study will be run in an online sample, I will include an instructions quiz for the encoding and retrieval phases of the memory-dependent task before the practice trials, as well as an instructions quiz before the visual task's practice trials. Participants will have to answer each quiz question correctly before they can continue with the study. These quizzes will be included to ensure that participants understand the task; their inclusion should not impact the main results.
 
 ### Methods Addendum (Post Data Collection)
 
@@ -92,32 +108,1074 @@ You can comment this section out prior to final report with data collection.
 
 ## Results
 
-
 ### Data preparation
 
 Data preparation following the analysis plan.
 	
-```{r include=F}
-###Data Preparation
+```{r setup, include=FALSE}
+library(pracma)
+library(testit)
+library(gsignal)
+library(matlab)
+library(stats)
+library(dplR)
+library(fitdistrplus)
+library(ggplot2)
+library(tidyverse)
+library(sensemakr)
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message = FALSE)
+```
 
-####Load Relevant Libraries and Functions
+#### Functions for O-score computation
 
-####Import data
+I rewrote the original Matlab code provided by the authors on GitHub: https://github.com/marijeterwal/behavioral-oscillations
 
-#### Data exclusion / filtering
+```{r internal_functions, echo=T}
+# Code rewritten from Matlab: https://github.com/marijeterwal/behavioral-oscillations
 
-#### Prepare data for analysis - create columns etc.
+# DESCRIPTION:
+# Take the discrete events at the time points in data and converts them to a 
+# (smoothed) continuous time series.
+# 
+# INPUTS:
+# - cfg: struct with settings (see below)
+# - data: vector with time points
+# 
+# OUTPUTS:
+# - signal: time series
+# - tspan: time axis corresponding to signal
+# 
+# CONFIG:
+# - dt: time step for continuous trace (required)
+# - sd_smooth: standard deviation for gaussian smoothing kernel (optional)
+# - width_block: width of block smoothing kernel (optional)
+# - removeVal: values to be removed from the data (optional)
+# - quantlim: extremes to be removed from the data (fractions, optional) 
+# ([qmin, qmax])
+# - warnings: switch for warnings (true or false)
+make_continuous_trace <- function(data, dt, sd_smooth, width_block, remove_val, quantlim, warnings) {
+  warnings = FALSE
+  if (missing(dt)) {
+    stop("Time step is required") 
+  }
+  if (!missing(sd_smooth)) {
+    if (is_empty(sd_smooth)) {
+      wind = rep(0, 3)
+      wind[2] = 1
+    } else {
+      sdwind <- round(sd_smooth / dt)
+      gt <- 1:8*sdwind
+      # in matlab, 
+      # y = normpdf(x,mu,sigma) 
+      # returns the pdf of the normal distribution with mean mu and standard deviation sigma, 
+      # evaluated at the values in x.
+      wind <- dnorm(gt, 4*sdwind, sdwind)
+    }
+  } else if (!missing(width_block)) {
+    wind <- rep(1, round(width_block / dt)) 
+  } else {
+    wind <- rep(0, 3)
+    wind[2] <- 1 
+  }
+   
+  tspan = seq(from = 0, to = max(data)+dt, by = dt)
+  
+  # make time series of responses
+  dum <- rep(0, length(tspan))
+  id_saved <- rep(0, length(tspan))
+  data_r <- rep(0, length(tspan))
+  r_vals <- rep(0, length(tspan))
+  for (r in 1:length(data)) {
+    continue = TRUE
+    if (is.nan(data[r]) || (!missing(remove_val) && abs(data[r]-remove_val) <= dt)) {
+      continue = FALSE
+    }
+    
+    if (continue) {
+      id <- which(as.integer(round(tspan*(1/dt))) == as.integer(round(data[r]*(1/dt)))) ## note that in matlab, int32 rounds the input before converting to an integer, whereas as.integer in r just truncates the input
+       
+      data_r[id] <- data[r]
+      r_vals[id] <- r
+     
+      # if not found
+      if (length(id)==0) {
+        print(r)
+      } else {
+        id_saved[id] <- id
+      }
+      dum[id] <- dum[id] + 1
+    }
+  }
+  
+  if (!missing(quantlim) && !is_empty(quantlim)) {
+    q <- as.integer(round(quantile(which(dum>0), quantlim, type = 5))) # type = 5 matches the algorithm used in matlab
+    dum <- dum[q[1]:q[2]]
+    tspan <- tspan[q[1]:q[2]]
+  }
+
+  if (sum(dum) != length(data) && warnings==TRUE) {
+    print('Datapoints missing')
+  }
+  
+  signal <- gsignal::wconv('1d', dum, wind, shape='same')
+  
+  return(list("signal" = signal, "tspan" = tspan))
+}
+
+
+# ----- spectralPeak -----
+# 
+# DESCRIPTION:
+# Computes the spectrum using the Fast Fourier Transform and finds its peak
+# 
+# INPUTS:
+# - cfg: struct with settings
+# - data: time series
+# 
+# OUTPUTS:
+# - freq: frequency belonging to the spectral peak
+# - fxx: frequency axis
+# - corfft: spectrum matching fxx
+# 
+# CONFIG:
+# - fs: sampling rate (required)
+# - flim: frequency bounds within which the peak should be found ([fmin,
+# fmax])
+# - fcor: switch to use log fit to remove 1/f trend (boolean)
+# - taper: taper that is applied to the data before fft.
+spectral_peak <- function(fs, flim, fcor, taper, data) {
+  if (missing(fs)) {
+    stop("Sampling rate not specified")
+  }
+  
+  if (missing(flim)) flim <- list()
+  if (missing(fcor)) fcor <- FALSE
+  if (missing(taper)) taper <- 'none'
+  
+  ## compute the fft on data
+  L <- length(data)
+  if (taper == 'none') {
+    tmp <- fft(data)
+  } else { 
+        tmp <- fft(eval(parse(text=paste('signal::',taper,'(n=L)', sep='')))*data)
+  }
+  
+  ps <- abs(tmp[1:round(L/2)]/L)
+  ps[2:(length(ps)-1)] <- 2*ps[2:(length(ps)-1)]
+  
+  fx <- linspace(0, fs/2, round(L/2))
+  if (missing(flim)) {
+    fxx <- fx
+    datfft <- ps
+  } else {
+    f1 <- which(fx>=flim[1])[1]
+    if (f1<1) f1=1
+    f2 <- which(fx>=flim[2])[1]-1
+    if (length(f2)==0) f2 = length(fx)
+    fxx <- fx[f1:f2]
+    datfft <- ps[f1:f2]
+  }
+  
+  ## 1/f correction
+  if (fcor) {
+    # fit 1/f
+    print("This 1/f fitting is very basic, proceed with caution...")
+    p <- polyfit(log10(fxx), reshape(log10(datfft), size(fxx)), 1)
+    
+    # correct for 1/f
+    corfft <- datfft - reshape(10^(log10(fxx)*p[1]+p[2]), size(datfft))
+  } else {
+    corfft <- datfft
+  }
+  
+  ## find peak
+  if (length(corfft) < 3) { # can't determine a peak if data is too short
+    freq <- NaN
+  } else {
+    # find the highest peak
+    highest_peak <- pracma::findpeaks(x=as.double(corfft), npeaks=1, sortstr=TRUE)
+    highest_peak_x <- highest_peak[2]
+    freq <- fxx[highest_peak_x]
+  }
+  
+  return(list("freq" = freq, "fxx" = fxx, "corfft" = corfft))
+}
+
+
+# ----- oscillationScore -----
+# computes the correlation score as published in:
+# Muresan et al., J Neurophysiol, 2008
+# for binary data (spike trains, reaction times)
+# and continuous data (LFPs, ...)
+# 
+# INPUTS: 
+# - fs in s^-1
+# - flim: [fmin, fmax] in Hz
+# - signal: time series with sampling rate fs
+# can also specify the following
+# - mincycles
+# - quantile of data to use (only for spikes/RTs!)
+#     quantlim: [quantile_min quantile_max] values between 0 and 1 (default: [])
+# - boolean to determine whether ACH has to be smoothed (might not be necessary for continuous signals)
+#     smoothach: true or false (default: true)
+# - width of fast smoothing kernel
+#     smoothwind: s (default: determined based on flim)
+# - width of fast smoothing kernel
+#      peakwind: s (default: determined based on flim)
+# - angular threshold for peak detection
+#      thresangle in degrees: double (default: 10)
+# - minimum width of frequency band:
+#      minfreqbandwidth: double (default: no minimum)
+# - frequency of interest:
+#      fpeak: Hz (default: [])
+# - plot: true or false (default: false)
+# - warnings: 'on' or 'off' (default: on)
+# 
+# OUTPUTS
+# - oscore: Oscillation score
+# - fosc: Frequency corresponding to Oscillation score
+# - flim: Frequency band used for the analysis
+# - flimfft: Spectrum within the frequency bounds
+# - freqs: frequency axis corresponding to flimfft
+oscillation_score <- function(fs, cfg_flim, signal, quantlim=list(), smoothach=TRUE, mincycles, smoothwind, peakwind, thresangle=10, minfreqbandwidth, fpeak=list(), plot=FALSE, warnings=TRUE, taper, fcor) {
+  
+  assert("Invalid sampling rate", fs > 0)
+  assert("Invalid frequency range of interest", is.vector(cfg_flim) && length(cfg_flim) == 2)
+  
+  if (missing(mincycles)) mincycles <- 3
+  if (missing(thresangle)) thresangle <- 10
+  
+  if (missing(smoothach)) smoothach = TRUE
+  if (missing(smoothwind)) smoothwind = list()
+  if (missing(peakwind)) peakwind = list()
+  
+  if (missing(quantlim)) quantlim = list()
+  if (missing(minfreqbandwidth)) minfreqbandwidth = list()
+  if (missing(fpeak)) fpeak = list()
+  
+  if (missing(plot)) plot = FALSE
+  if (missing(warnings)) warnings = TRUE
+  
+  ## check signal
+  
+  # checking signal quality
+  if (sum(signal) < 3) {
+    if (warnings) {
+      print("Dataset is (nearly) empty: Oscillation score could not be computed")
+    }
+    
+    oscore <- NA
+    fosc <- NA
+    flim <- list()
+    flimfft <- list()
+    freqs <- list()
+    return(list("oscore"=oscore, "fosc"=fosc, "flim"=flim, "flimfft"=flimfft, "freqs"=freqs))
+  }
+
+  # exclude 'outliers' in discrete data
+  if (length(quantlim)>0) {
+    q <- as.integer(round(quantile(which(signal>0), quantlim, type = 5)))
+    signq <- signal[max(1,q[1]-1):min(q[2]+1,length(signal))]
+  } else {
+    # make sure the data do not contain long empty stretches at beginning and end
+    tstart <- max(1, which(signal>0)[1]-1) 
+    tend <- min(length(signal), tail(which(signal>0),1)+1)
+    signq <- signal[tstart:tend] 
+  }
+  
+  # check fmin and fmax
+  fmin <- max(cfg_flim[1], mincycles*fs/length(signq))
+  fmax <- min(cfg_flim[2], sum(signq)/(length(signq)/fs))
+  flim <- c(fmin, fmax)
+  
+  # find the desired width of the ACH: w
+  w = 2^(1+floor(max(log2(2*mincycles*fs/cfg_flim[1]), log2(fs/2))))
+  
+  # find s_fast and s_slow
+  if (is_empty(smoothwind)) {
+    smoothwind <- min(0.002, 134/(1.5 * cfg_flim[2]) / 1000) # s - following Muresan et al., 2008
+  }
+  
+  if (is_empty(peakwind)) {
+    peakwind <- 2*134/(1.5*cfg_flim[1]) / 1000 # s
+  }
+  
+  if (length(minfreqbandwidth) != 0 && (fmax-fmin) < minfreqbandwidth) {
+    if (warnings) {
+      print("Data not sufficient to meet the minimal frequency bandwidth.")
+    }
+    
+    oscore <- NA
+    fosc <- NA
+    flim <- list()
+    flimfft <- list()
+    freqs <- list()
+    return(list("oscore"=oscore, "fosc"=fosc, "flim"=flim, "flimfft"=flimfft, "freqs"=freqs))
+  }
+  
+  ## compute oscillation score
+  
+  # STEP 1: Autocorrelation
+  ach <- gsignal::xcorr(signq)$R
+  
+  # STEP 2: smooth AC
+  if (smoothach) {
+    sdwind <- round(smoothwind * fs)
+    # gaussian
+    gt <- (-4*sdwind):(4*sdwind)
+    wind <- 1/(sdwind*sqrt(2*pi)) * exp(-1*(gt^2 / (2*sdwind^2)))
+    ach_smooth <- gsignal::wconv('1d', ach, wind, 'same') # missing same parameter
+  } else {
+    ach_smooth <- ach
+  }
+  
+  # STEP 3: remove peak
+  sdwind <- round(peakwind * fs)
+  gt <- (-4*sdwind):(4*sdwind)
+  wind = 1/(sdwind*sqrt(2*pi)) * exp(-1*(gt^2 / (2*sdwind^2)))
+  ach_slow = gsignal::wconv('1d', ach, wind, 'same')
+  thres = tan(pi*(thresangle)/180);
+  scalfact = (length(ach)-1) / ach_slow[ceil(length(ach)/2)]
+  
+  if (which(size(ach_slow)>2) == 1) { # column array
+    diff_ach <- flipud(diff(ach_slow[1:ceil(length(ach)/2)]))
+  } else if (which(size(ach_slow)>2) == 2) { # row array
+    diff_ach <- fliplr(diff(ach_slow[1:ceil(length(ach)/2)]))
+  } else {
+    stop("Signal has the wrong size, consider squeezing!")
+  }
+  
+  if (is_empty(diff_ach)) {
+    if (warnings) {
+      print("Dataset is (nearly) empty: Oscillation score could not be computed.")
+    }
+    oscore <- NA
+    fosc <- NA
+    flim <- list()
+    flimfft <- list()
+    freqs <- list()
+    return(list("oscore"=oscore, "fosc"=fosc, "flim"=flim, "flimfft"=flimfft, "freqs"=freqs))
+  }
+  
+  # find the edge of the ACH peak
+  peakstart <- which(scalfact*diff_ach <= thres & c(which(size(diff_ach)>1), diff(diff_ach)) < 0)[1]
+  
+  if (is_empty(peakstart) || is.na(peakstart)) {
+    if (warnings) {
+      print("Central peak could not be determined")
+    }
+    phw <- 1
+  } else {
+    phw <- peakstart
+  }
+  
+  # STEP 4: fft and spectral peak
+  # take the positive lags up to w
+  tmp <- ach_smooth[(ceil(length(ach)/2)+phw):length(ach_smooth)]
+  if (length(tmp) < w) {
+    ach_nopeak = rep(0, w)
+    ach_nopeak[1:length(tmp)] = tmp
+  } else {
+    ach_nopeak <- tmp[1:w]
+  }
+  
+  # get fft and peak within freq limit
+  cfg_flim = flim
+  output <- spectral_peak(fs=fs, flim=cfg_flim, taper=taper, fcor=fcor, data=ach_nopeak) # need to modify parameters
+  peakfreqx <- output$freq
+  freqs <- output$fxx
+  flimfft <- output$corfft
+  
+  # use a specific frequency of interest
+  if (!is_empty(fpeak)) {
+    id <- which(abs(freqs-fpeak) == min(abs(freqs-fpeak)))
+    peakfreqx <- freqs[id]
+  }
+  
+  # get fft of whole freq range
+  cfg_flim <- c(0, fs/2)
+  output <- spectral_peak(fs=fs, flim=cfg_flim, taper=taper, fcor=fcor, data=ach_nopeak)
+  freq <- output$freq
+  freqstot <- output$fxx
+  totfft <- output$corfft 
+  
+  # STEP 5: compute the score
+  if (is_empty(peakfreqx) || is.nan(peakfreqx)) {
+    oscore <- NA
+    fosc <- NA
+    flim <- list()
+    flimfft <- list()
+    freqs <- list()
+  } else {
+    oscore <- flimfft[freqs==peakfreqx] / mean(totfft, na.rm=TRUE)
+    fosc <- peakfreqx
+  }
+   
+  # skip plotting for now
+  return(list("oscore" = oscore, "fosc" = fosc, "flim" = flim, "flimfft" = flimfft, "freqs" = freqs))
+}
+
+# ----- oscillationScoreStats -----
+# 
+# DESCRIPTION:
+# Generates reference signals, either by shuffling or based on trend-fit of
+# the original data,and computes O-scores for these reference signals.
+# 
+# INPUTS:
+# - cfg: struct of settings
+# - signal: continuous data trace
+# 
+# OUTPUTS:
+# - Oscore_rp: Oscores of reference signals
+# - fosc_rp: frequencies of references signals
+# - signrep: reference signals
+# - trendfit: trend that was fitted to original data
+# 
+# CONFIG:
+# - nrep: number of repetitions (required)
+# - fs: sampling rate of signal (required)
+# - flim: frequency range of interest (required)
+# - fpeak: peak frequency of original signal (required)
+# - keep_trend: switch that determines whether trend is fitted to original
+# - data, if false, data is shuffled (boolean, default = false)
+# - trend_dist: type of distribution to fit to original data (required for
+# - keep_trend)
+# - trend_ddt: time step for generation of trend (default = double of fs)
+# - trend_alpha: significance level of goodness-of-fit test of trend fit
+#   (default = 0.05)
+# - warnings: verbose switch ('on' or 'off', default = 'on')
+# - plot: switch for plotting 1st reference trace (boolean; default = false)
+
+oscillation_score_stats <- function(quantlim, fs, mincycles, smoothach, smoothwind, peakwind, taper, warnings, fcor, nrep, flim, keep_trend, trend_dist, trend_ddt, trend_alpha, plot, fpeak, signal) {
+  if (nrep <= 0) stop("Invalid number of repetitions")
+  if (fs <= 0) stop("Invalid sampling rate")
+  if (!(is.vector(flim) && length(flim) == 2)) stop("Invalid frequency range of interest")
+  if (missing(fpeak)) stop("No peak frequency specified")
+  
+  if (is.na(fpeak)) {
+    warning("Peak frequency is NaN, shuffling skipped")
+    oscore_rp <- NaN
+    fosc_rp <- NaN
+    signrep <- list()
+    trendfit <- list()
+    return(list("oscore_rp" = oscore_rp, "fosc_rp" = fosc_rp, "signrep" = signrep, "trendfit" = trendfit)) 
+  } else {
+    if (!(fpeak >= flim[1] && fpeak <= flim[2])) stop("Invalid peak frequency of interest: ",fpeak)
+  }
+  
+  if (missing(keep_trend)) keep_trend <- FALSE 
+  if (keep_trend) {
+    if (missing(trend_dist)) stop("No trend distribution was specified")
+    if (missing(trend_ddt)) trend_ddt <- 0.5/fs
+    if (missing(trend_alpha)) trend_alpha <- 0.05
+  }
+  
+  if (missing(warnings)) warnings = TRUE
+  if (missing(plot)) plot = FALSE
+  
+  ## check signal
+  if (sum(signal) < 3) {
+    if (warnings) {
+      warning("Oscillation score stats could not be computed")
+      oscore_rp <- NaN
+      fosc_rp <- NaN
+      signrep <- list()
+      trendfit <- list()
+      return(list("oscore_rp" = oscore_rp, "fosc_rp" = fosc_rp, "signrep" = signrep, "trendfit" = trendfit)) 
+    }
+  }
+  
+  ## fit distribution
+  
+  # truncate trace
+  tstart <- max(1, which(signal!=0)[1] - 1)
+  trace <- which(signal!=0)
+  tend <- min(length(signal), trace[length(trace)] + 1)
+  signq <- signal[tstart:tend]
+  
+  # check for memory
+  if (length(signal) > 30000) {
+    signrep <- list()
+  } else {
+    signrep <- matrix(0, nrep, length(signal)) 
+  }
+  
+  if (!missing(keep_trend) && keep_trend) {
+    dists <- trend_dist
+    
+    pst <- rep(1, length(dists))
+    
+    for (d in 1:length(dists)) {
+      # fit distribution
+      scale <- 10
+      pd <- fitdistrplus::fitdist(which(signq!=0)/scale, dists[d]) # need to scale down for convergence
+      
+      #pd <- try(fitdistrplus::fitdist(which(signq!=0), dists[d]), silent=TRUE)
+      if (typeof(pd)!="list") { # i.e. it didn't converge
+        chi_test_results <- NaN
+        pst[d] <- NaN
+      } else {
+        # test fit
+        chi_test_results <- fitdistrplus::gofstat(pd)
+        
+        pst[d] <- chi_test_results$chisqpvalue
+      }
+    }
+    
+    # quality checks
+    if (is.na(pst) == length(dists)) { # all p-vals are nan
+       if (warnings) {
+         warning("Cannot fit distribution, shuffling data instead.")
+       }
+      keep_trend <- FALSE
+      
+      trendfit <- list("distribution" = "Shuffle", "pd" = list(), "pval" = NaN, "stats" = list(), "trace"=list())
+      
+    } else {
+      
+      # test the fits
+      ids <- which(pst>=trend_alpha)
+      # the null hypothesis for the GOF test is that the data come from 
+      # the fitted distribution, so we would prefer this not to be
+      # rejected
+      if (length(ids)==0 && warnings) {
+        warning("No suitable distribution found, using the best option.")
+      }
+      
+      # determine the winning distribution
+      if (length(dists) > 1) {
+        id <- max(pst)
+      } else {
+        id <- 1
+      }
+      
+      # make a trace of the winning trace
+      scale <- 10
+      pd <- fitdistrplus::fitdist(which(signq!=0)/scale, dists[d]) # need to scale down for convergence
+      # don't scale down
+      #pd <- fitdistrplus::fitdist(which(signq!=0), dists[d])
+      # test fit
+      chi_test_results <- fitdistrplus::gofstat(pd)
+      env <- stats::dgamma(1:length(signq), shape=pd$estimate["shape"], rate = pd$estimate["rate"]/scale)
+      
+      # store fit info
+      trace <- rep(0, length(signal))
+      trace[tstart:tend] <- env/sum(env)
+      
+      trendfit <- list("distribution" = dists[id], "pd" = pd, "pval" = chi_test_results$chisqpvalue, "stats" = chi_test_results, "trace"=trace)
+    }
+  } else {
+    trendfit <- list("distribution" = "Shuffle", "pd" = list(), "pval" = NaN, "stats" = list(), "trace"=list())
+  }
+  
+  ## generate reference data and compute Oscore
+  oscore_rp <- rep(NaN, nrep)
+  fosc_rp <- rep(NaN, nrep)
+  signrep <- matrix(0, nrep, length(signal))
+  
+  for (rp in 1:nrep) {
+    if (trendfit$distribution == "Shuffle"){
+      # create reference traces by shuffling time stamps
+      signrp <- rep(0, length(signq))
+      for (i in which(signq!=0)) {
+        if (is.na(fpeak)) {
+          wind <- fs/flim[1]
+        } else {
+          wind <- fs/fpeak
+        }
+        j <- max(1, min(length(signrp), round(runif(1)*wind - wind/2) + i))
+        signrp[j] <- signrp[j] + 1
+      }
+    } else {
+      timeline <- seq(from = tstart/fs, to = tend/fs, by = trend_ddt)
+      fact <- fs*trend_ddt
+      #envfull <- stats::pnorm(pd, seq(from = 1, to = length(signq), by = fact))
+      # the following line scales the distribution based on the rate
+      envfull <- stats::dgamma(seq(from = 1, to = length(signq), by = fact), shape=pd$estimate["shape"], rate = pd$estimate["rate"]/scale) 
+      # TO DO: throw error if shape specified is not gamma
+      
+      # generate button press time stamps based on trend
+      signrpfull <- rep(0, length(timeline))
+      matsize <- size(envfull,1) * size(envfull, 2)
+      signrpfull[runif(matsize) < (sum(signal) * envfull / sum(envfull))] = 1
+      
+      # reduce the time step
+      mct_sd_smooth <- list()
+      mct_dt <- 1/fs
+      mct_remove_val <- 0
+      mct_warnings <- FALSE
+      output <- make_continuous_trace(data = timeline[which(signrpfull!=0)], sd_smooth = mct_sd_smooth, dt = mct_dt, remove_val = mct_remove_val, warnings = mct_warnings)
+      signd <- output$signal
+      timed <- output$tspan
+      
+      signrp <- rep(0, length(signq))
+      if (length(signd) > length(signrp)) {
+        signrp <- signd[length(signd)-length(signrp)+1:length(signd)]
+      } else {
+        signrp[1:length(signd)] = signd
+      }
+    }
+    
+    signdum <- rep(0, length(signal))
+    signdum[tstart:tend] <- signrp
+    if (!isempty(signrep)) {
+      signrep[rp,] <- signdum # store the reference traces
+    }
+    
+    # compute oscore for reference trace
+    output <- oscillation_score(signal = signdum, quantlim = quantlim, fs = fs, mincycles = mincycles, smoothach = smoothach, smoothwind = smoothwind, peakwind = peakwind, taper = taper, fcor = fcor, cfg_flim = flim, plot = plot, fpeak = fpeak)
+    oscore_rp[rp] <- output$oscore
+    fosc_rp[rp] <- output$fosc
+    
+    # skip plot for now
+  }
+    
+  return(list("oscore_rp" = oscore_rp, "fosc_rp" = fosc_rp, "signrep" = signrep, "trendfit" = trendfit)) 
+}
+
+```
+
+#### Compute O-scores for some of the original data
+
+```{r compute_o_scores, echo=T}
+
+# ----- compute_oscores_all_subs -----
+#
+# Compute an O-score for every participant and trial type in the data input
+# INPUTS:
+# - data: dataframe containing the columns trial_type, subjectId, acc (accuracy: 1/0) , rt (reaction time in seconds)
+#
+# OUTPUTS:
+# - oscorez_correct_dataframe: dataframe containing the columns oscore_correct (raw O-score), oscorez_correct (z-scored O-score), fosc (frequency of the oscillation), and trial_type
+
+compute_oscores_all_subs <- function(data) {
+  dt = 0.001
+  
+  all_oscore_correct <- list()
+  all_oscorez_correct <- list()
+  all_fosc <- list()
+  subids <- list()
+  trials <- list()
+  
+  for (ttype in unique(data$trial_type)) {
+    trial_type_data <- data %>%
+        filter(trial_type == ttype)
+    
+    uq_subids <- unique(trial_type_data$subjectId)
+    
+    for (i in 1:length(uq_subids)) {
+      subid <- uq_subids[i]
+      
+      sub_data <- data %>% 
+                filter(subjectId == subid, trial_type == ttype) 
+      
+      summarized_data <- sub_data %>%
+                group_by(acc) %>%
+                summarise(n_trials = sum(acc, na.rm=TRUE))
+      
+      N_cor <- summarized_data %>%
+                filter(acc == 1) %>%
+                select(n_trials)
+      if (nrow(N_cor) == 0) N_cor = 0 else N_cor = as.integer(N_cor)
+      N_incor <- summarized_data %>%
+                filter(acc == 0) %>%
+                select(n_trials)
+      if (nrow(N_incor) == 0) N_incor = 0 else N_incor = as.integer(N_incor)
+      
+      correct_RTs <- sub_data %>%
+                        filter(!is.na(rt), acc==1)
+      correct_RTs <- correct_RTs$rt
+      
+      sprintf('%s %s', N_cor, N_incor)
+      
+      if (N_cor < stats::qbinom(0.95, N_cor + N_incor, 1/2)) {
+        sprintf('Subject %s excluded for bad performance', subid)
+        next 
+      } else if (length(correct_RTs) < 10){
+        sprintf('Subject %s excluded due to too few data points', subid)
+        next
+      }
+      
+      output <- make_continuous_trace(data=correct_RTs, dt=dt, sd_smooth=list(), remove_val=0)
+      sign_correct <- output$signal
+      tspan_correct <- output$tspan
+      
+      output <- oscillation_score(
+        fs=1000, 
+        cfg_flim=c(0.5, 40), 
+        signal = sign_correct, 
+        mincycles = 3,
+        quantlim = c(0.05, 0.95), 
+        smoothach = TRUE, 
+        smoothwind = 0.002, 
+        peakwind = 0.008, 
+        thresangle = 10, 
+        taper='hanning', 
+        fcor=FALSE,
+        fpeak=list())
+      
+      oscore_correct <- output$oscore
+      fosc_correct <- output$fosc
+      
+      # store raw oscore
+      all_oscore_correct <- append(all_oscore_correct, oscore_correct)
+      all_fosc <- append(all_fosc, fosc_correct)
+      
+      # o-score stats
+      output <- oscillation_score_stats(
+        fs=1000, 
+        flim=c(0.5, 40), 
+        signal = sign_correct, 
+        mincycles = 3,
+        quantlim = c(0.05, 0.95), 
+        smoothach = TRUE, 
+        smoothwind = 0.002, 
+        peakwind = 0.008, 
+        taper='hanning', 
+        fcor=FALSE,
+        keep_trend = 1,
+        trend_dist = c('gamma'),
+        trend_ddt = 0.0005,
+        trend_alpha = 0.05,
+        nrep = 500,
+        warnings = FALSE,
+        fpeak=fosc_correct) 
+      
+      oscore_correct_rep <- output$oscore_rp
+      fosc_correct_rep <- output$fosc_rp
+      trendfit <- output$trendfit
+      
+      # compute z-score
+      all_oscorez_correct <- append(all_oscorez_correct, (log(oscore_correct) - mean(log(oscore_correct_rep), na.rm=TRUE)) / std(log(oscore_correct_rep)))
+      trials <- append(trials, ttype)
+      subids <- append(subids, subid)
+    }
+  }
+  
+  oscorez_correct_dataframe <- data.frame(
+    subid = as.character(c(subids)),
+    oscore_correct = as.double(c(all_oscore_correct)),
+    oscorez_correct = as.double(c(all_oscorez_correct)),
+    fosc = as.double(c(all_fosc)),
+    trial_type = as.character(c(trials))
+  )
+  
+  return(oscorez_correct_dataframe)
+}
+
+```
+
+```{r process_orig_data, echo=T, results='hide'}
+
+# I retrieved the behavioral data for Experiment 5 and Experiment 1 from the following link and converted the .mat files to .csv: https://figshare.com/collections/Data_for_Theta_rhythmicity_governs_the_timing_of_behavioural_and_hippocampal_responses_in_humans_specifically_during_memory-dependent_tasks/5192567
+# NOTE: I am not providing these exact csv's in my GitHub respository
+data_mem <- read.csv("BehavioralData_Experiment5.csv")
+data_vis <- read.csv("BehavioralData_Experiment1.csv")
+data <- rbind(data_mem, data_vis)
+
+data <- data %>% 
+          filter(!is.na(RTs)) %>%
+          rename(acc = Acc, rt = RTs, subjectId = SubjID, trial_type = TrialType) 
+
+time_series_data <- data %>%
+    group_by(trial_type, subjectId) %>%
+    mutate(firstRT = first(rt), lastRT = last(rt)) %>%
+    mutate(time_series_length = abs(lastRT - firstRT)) %>%
+    ungroup() %>%
+    select(subjectId, trial_type, time_series_length) %>%
+    rename(subid = subjectId) %>%
+    mutate(subid = as.character(subid)) %>%
+    group_by(trial_type, subid) %>%
+    summarise(time_series_length = mean(time_series_length))
+
+oscorez_correct_dataframe <- compute_oscores_all_subs(data)
+
+save(oscorez_correct_dataframe, file = "oscillation_score.RData")
+
+oscorez_correct_dataframe <- oscorez_correct_dataframe %>%
+  filter(!is.na(oscorez_correct))
+
+```
+
+
+```{r process_replication_data, echo=T, results='hide'}
+
+data_mem <- read.csv("MEM_0008_MemoryResults.csv") # just some pilot data for now
+data_mem <- data_mem %>%
+  filter(trial_type == "encoding-trial" | trial_type == "retrieval-trial") %>%
+  filter(!grepl("/for_instructions/", associate)) %>% # remove practice trials
+  filter(response == "arrowdown") %>% # remove "forgot" trials
+  select(trial_type, rt, cue, associate, accurate, instruction, subjectId) %>%
+  mutate(accurate = as.integer(as.logical(accurate))) %>%
+  # I realized that it was unclear to me how accuracy in the encoding task is determined.
+  # Since memory for each association was tested twice (semantic and perceptual questions),
+  # I labeled encoding trials as accurate if participants were correct in at least one of 
+  # the subsequent memory retrieval trials.
+  group_by(subjectId, associate) %>%
+  mutate(accurate = max(accurate, na.rm=T)) %>% # assign retrieval accuracy to encoding trials
+  ungroup() %>%
+  select(trial_type, rt, accurate, subjectId) %>%
+  rename(acc = accurate)
+  
+data_vis <- read.csv("MEM_0017_VisualResults.csv") # just some pilot data
+data_vis <- data_vis %>%
+  filter(trial_type == "visual-trial") %>% 
+  mutate(accurate = as.integer(as.logical(accurate))) %>%
+  select(trial_type, rt, accurate, subjectId) %>%
+  rename(acc = accurate)
+
+data_repl <- rbind(data_mem, data_vis)
+
+data_repl <- data_repl %>% 
+          filter(!is.na(rt)) %>%
+          mutate(rt = rt/1000) %>% # convert ms to seconds 
+          mutate(trial_type = recode(trial_type, "encoding-trial" = "encoding", "retrieval-trial" = "retrieval", "visual-trial" = "visual")) %>%
+          filter(rt > mean(rt)-2.5*sd(rt) & rt < mean(rt)+2.5*sd(rt)) # remove trials where RT is ±2.5 SD away from mean
+          # NOTE: In the original matlab analysis scripts, I did not find code that excluded trials in which RT was ±2.5 SD away from the mean. I therefore assumed that the data provided was already somewhat pre-processed and thus did not include this filtering procedure in the data reproduction cells above.
+
+time_series_data_repl <- data_repl %>%
+    group_by(trial_type, subjectId) %>%
+    mutate(firstRT = first(rt), lastRT = last(rt)) %>%
+    mutate(time_series_length = abs(lastRT - firstRT)) %>%
+    ungroup() %>%
+    select(subjectId, trial_type, time_series_length) %>%
+    rename(subid = subjectId) %>%
+    mutate(subid = as.character(subid)) %>%
+    group_by(trial_type, subid) %>%
+    summarise(time_series_length = mean(time_series_length))
+
+oscorez_correct_dataframe_repl <- compute_oscores_all_subs(data_repl)
+
+save(oscorez_correct_dataframe_repl, file = "oscillation_score_repl.RData")
+
+oscorez_correct_dataframe_repl <- oscorez_correct_dataframe_repl %>%
+  filter(!is.na(oscorez_correct))
+
 ```
 
 ### Confirmatory analysis
 
-The analyses as specified in the analysis plan.  
+As I specified in the analysis plan, I will assess whether the oscillation scores (z-scored O-scores) differ significantly between the memory-dependent and memory-independent tasks. The linear mixed effects model, as specified above, will be the main analysis of interest (I may just run a simple linear model if the mixed effects model does not converge). I will also performed paired t-tests to determine whether the O-scores are significantly above chance.
 
 *Side-by-side graph with original graph is ideal here*
+
+#### Recreation of Fig. 3A with data from two of the original experiments
+
+```{r plot_oscore_orig}
+p <- ggplot(oscorez_correct_dataframe, aes(trial_type, oscorez_correct)) +
+  geom_boxplot(width=0.1, fill="dodgerblue2", color="gray27", outlier.shape = NA) +
+  geom_jitter(width=0.1, fill="dodgerblue2", color="gray27", shape=21) +
+  xlab("") +
+  ylab("Oscillation score (Z-score)") + 
+  ggtitle("Data from original experiments") + 
+  theme_classic()
+p
+```
+
+```{r plot_oscore_repl}
+# p <- ggplot(oscorez_correct_dataframe_repl, aes(trial_type, oscorez_correct)) +
+#   geom_boxplot(width=0.1, fill="darkorchid", color="gray27", outlier.shape = NA) +
+#   geom_jitter(width=0.1, fill="darkorchid", color="gray27", shape=21) +
+#   xlab("") +
+#   ylab("Oscillation score (Z-score)") + 
+#   ggtitle("Data from replication experiments") + 
+#   theme_classic()
+# p
+```
+
+#### Statistical tests for the reproduced data
+
+```{r lm_orig}
+oscore_data <- merge(oscorez_correct_dataframe, time_series_data, all.x=T)
+
+oscore_data <- oscore_data %>%
+  dplyr::mutate(memory_dependence = recode(trial_type, "encoding"=1, "ret&catch"=1, "visual"=0)) %>%
+  dplyr::filter(!is.na(oscorez_correct))
+
+mod_lm <- lm(oscorez_correct ~ memory_dependence + time_series_length, data=oscore_data)
+print(summary(mod_lm))
+print(partial_f2(mod_lm))
+# g*2 suggests a sample size of ~50 for an f2 of 0.15
+
+```
+
+```{r vis_nonvis_ttest_orig}
+print("T-test comparing O-scores in visual and non-visual tasks")
+vis_v_nonvis_ttest <- stats::t.test(
+  oscorez_correct_dataframe %>% 
+    filter(trial_type != "visual") %>% 
+    select(oscorez_correct), 
+  oscorez_correct_dataframe %>% 
+    filter(trial_type == "visual") %>% 
+    select(oscorez_correct))
+print(vis_v_nonvis_ttest)
+print("effect size = difference between means / standard deviation")
+delta <- vis_v_nonvis_ttest$estimate["mean of x"] - vis_v_nonvis_ttest$estimate["mean of y"]
+delta <- delta / sd(oscorez_correct_dataframe$oscorez_correct)
+print(delta)
+print("g*power suggests a sample of 50 (difference btwn two independent means)")
+```
+
+```{r enc_vis_ttest_orig}
+enc_v_vis_ttest <- stats::t.test(
+  oscorez_correct_dataframe %>% 
+    filter(trial_type == "encoding") %>% 
+    select(oscorez_correct), 
+  oscorez_correct_dataframe %>% 
+    filter(trial_type == "visual") %>% 
+    select(oscorez_correct))
+print(enc_v_vis_ttest)
+print("effect size = difference between means / standard deviation")
+delta <- enc_v_vis_ttest$estimate["mean of x"] - enc_v_vis_ttest$estimate["mean of y"]
+delta <- delta / sd(oscorez_correct_dataframe$oscorez_correct)
+print(delta)
+
+```
+
+```{r ret_vis_ttest_orig}
+ret_v_vis_ttest <- stats::t.test(
+  oscorez_correct_dataframe %>% 
+    filter(trial_type == "ret&catch") %>% 
+    select(oscorez_correct), 
+  oscorez_correct_dataframe %>% 
+    filter(trial_type == "visual") %>% 
+    select(oscorez_correct))
+print(ret_v_vis_ttest)
+print("effect size = difference between means / standard deviation")
+delta <- ret_v_vis_ttest$estimate["mean of x"] - ret_v_vis_ttest$estimate["mean of y"]
+delta <- delta / sd(oscorez_correct_dataframe$oscorez_correct)
+print(delta)
+
+```
+
+```{r enc_ret_ttest_orig}
+env_v_ret_ttest <- stats::t.test(
+  oscorez_correct_dataframe %>% 
+    filter(trial_type == "encoding") %>% 
+    select(oscorez_correct), 
+  oscorez_correct_dataframe %>% 
+    filter(trial_type == "ret&catch") %>% 
+    select(oscorez_correct))
+print(env_v_ret_ttest)
+print("effect size = difference between means / standard deviation")
+delta <- env_v_ret_ttest$estimate["mean of x"] - env_v_ret_ttest$estimate["mean of y"]
+delta <- delta / sd(oscorez_correct_dataframe$oscorez_correct)
+print(delta)
+```
+
+#### Statistical tests for the replication data
+
+```{r lm_repl}
+# oscore_data <- merge(oscorez_correct_dataframe_repl, time_series_data, all.x=T)
+# 
+# oscore_data <- oscore_data %>%
+#   dplyr::mutate(memory_dependence = recode(trial_type, "encoding"=1, "ret&catch"=1, "visual"=0)) %>%
+#   dplyr::filter(!is.na(oscorez_correct))
+# 
+# mod_lm <- lm(oscorez_correct ~ memory_dependence + time_series_length, data=oscore_data)
+# print(summary(mod_lm))
+# print(partial_f2(mod_lm))
+```
+
+```{r vis_nonvis_ttest_repl}
+# print("T-test comparing O-scores in visual and non-visual tasks")
+# vis_v_nonvis_ttest <- stats::t.test(
+#   oscorez_correct_dataframe_repl %>% 
+#     filter(trial_type != "visual") %>% 
+#     select(oscorez_correct), 
+#   oscorez_correct_dataframe %>% 
+#     filter(trial_type == "visual") %>% 
+#     select(oscorez_correct))
+# print(vis_v_nonvis_ttest)
+# print("effect size = difference between means / standard deviation")
+# delta <- vis_v_nonvis_ttest$estimate["mean of x"] - vis_v_nonvis_ttest$estimate["mean of y"]
+# delta <- delta / sd(oscorez_correct_dataframe$oscorez_correct)
+# print(delta)
+# print("g*power suggests a sample of 50 (difference btwn two independent means)")
+```
+
+```{r enc_vis_ttest_repl}
+# enc_v_vis_ttest <- stats::t.test(
+#   oscorez_correct_dataframe_repl %>% 
+#     filter(trial_type == "encoding") %>% 
+#     select(oscorez_correct), 
+#   oscorez_correct_dataframe %>% 
+#     filter(trial_type == "visual") %>% 
+#     select(oscorez_correct))
+# print(enc_v_vis_ttest)
+# print("effect size = difference between means / standard deviation")
+# delta <- enc_v_vis_ttest$estimate["mean of x"] - enc_v_vis_ttest$estimate["mean of y"]
+# delta <- delta / sd(oscorez_correct_dataframe$oscorez_correct)
+# print(delta)
+
+```
+
+```{r ret_vis_ttest_repl}
+# ret_v_vis_ttest <- stats::t.test(
+#   oscorez_correct_dataframe_repl %>% 
+#     filter(trial_type == "ret&catch") %>% 
+#     select(oscorez_correct), 
+#   oscorez_correct_dataframe %>% 
+#     filter(trial_type == "visual") %>% 
+#     select(oscorez_correct))
+# print(ret_v_vis_ttest)
+# print("effect size = difference between means / standard deviation")
+# delta <- ret_v_vis_ttest$estimate["mean of x"] - ret_v_vis_ttest$estimate["mean of y"]
+# delta <- delta / sd(oscorez_correct_dataframe$oscorez_correct)
+# print(delta)
+
+```
+
+```{r enc_ret_ttest_repl}
+# env_v_ret_ttest <- stats::t.test(
+#   oscorez_correct_dataframe_repl %>% 
+#     filter(trial_type == "encoding") %>% 
+#     select(oscorez_correct), 
+#   oscorez_correct_dataframe %>% 
+#     filter(trial_type == "ret&catch") %>% 
+#     select(oscorez_correct))
+# print(env_v_ret_ttest)
+# print("effect size = difference between means / standard deviation")
+# delta <- env_v_ret_ttest$estimate["mean of x"] - env_v_ret_ttest$estimate["mean of y"]
+# delta <- delta / sd(oscorez_correct_dataframe$oscorez_correct)
+# print(delta)
+```
 
 ### Exploratory analyses
 
 Any follow-up analyses desired (not required).  
+
+#### Recreation of Fig. 3C with data from two of the original experiments, looking at the frequency of behavioral oscillations
+
+```{r plot_freq_hist_orig}
+freq_hist <- ggplot(oscorez_correct_dataframe, aes(y=fosc, after_stat(density))) + 
+              geom_histogram(color="black", fill="dodgerblue2") + 
+              geom_hline(yintercept=1, color="darkorange1",
+                linetype="dashed") + 
+              geom_hline(yintercept=5, color="darkorange1",
+                linetype="dashed") + 
+              ylab("Frequency (Hz)") + 
+              xlab("Fraction of participants") +
+              ggtitle("Data from original experiments") + 
+              facet_wrap(~trial_type) + 
+              theme_minimal()
+freq_hist
+```
+
+```{r plot_freq_hist_repl}
+# freq_hist <- ggplot(oscorez_correct_dataframe_repl, aes(y=fosc, after_stat(density))) + 
+#               geom_histogram(color="black", fill="dodgerblue2") + 
+#               geom_hline(yintercept=1, color="darkorange1",
+#                 linetype="dashed") + 
+#               geom_hline(yintercept=5, color="darkorange1",
+#                 linetype="dashed") + 
+#               ylab("Frequency (Hz)") + 
+#               xlab("Fraction of participants") +
+#               ggtitle("Data from replication experiments") + 
+#               facet_wrap(~trial_type) + 
+#               theme_minimal()
+# freq_hist
+```
 
 ## Discussion
 
