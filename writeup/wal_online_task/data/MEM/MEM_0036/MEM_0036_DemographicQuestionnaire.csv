@@ -1,0 +1,8 @@
+QuestionNum,Question,Answer,exp,subjectId,date
+1,What is your age?,42,MEM,MEM_0036,2022-12-08 17:16:16
+2,What is your sex?,Female,MEM,MEM_0036,2022-12-08 17:16:16
+3,What is your race/ethnicity?,White,MEM,MEM_0036,2022-12-08 17:16:16
+4,"What is the highest degree or level of school that you have completed? (If you are currently enrolled in school, please indicate the highest degree you have received) ",Some college,MEM,MEM_0036,2022-12-08 17:16:16
+5,What is your household income?,"$50,000 to $74,999",MEM,MEM_0036,2022-12-08 17:16:16
+6,Which hand did you use to make your response?,Right,MEM,MEM_0036,2022-12-08 17:16:16
+7,Feedback,,MEM,MEM_0036,2022-12-08 17:16:16

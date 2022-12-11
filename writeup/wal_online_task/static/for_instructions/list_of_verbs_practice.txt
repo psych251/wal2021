@@ -1,0 +1,8 @@
+modify
+sculpt
+construct
+integrate
+slice
+find
+substract
+camouflage

@@ -1,0 +1,193 @@
+,img,instruction,block_n,animacy,style,img_name,verb
+0,/static/object_pics/drawing_veggie/carrots.jpg,perceptual,0,inanimate,drawing,carrots.jpg,stick
+1,/static/object_pics/picture_insect/cockroach.jpg,perceptual,0,animate,photo,cockroach.jpg,pump
+2,/static/object_pics/picture_sea/eel.jpg,perceptual,0,animate,photo,eel.jpg,shake
+3,/static/object_pics/drawing_clothe/football sneaker.jpg,semantic,0,inanimate,drawing,football sneaker.jpg,break
+4,/static/object_pics/drawing_veggie/beetroot.jpg,semantic,0,inanimate,drawing,beetroot.jpg,volley
+5,/static/object_pics/drawing_fruit/watermelon.jpg,semantic,0,inanimate,drawing,watermelon.jpg,lay
+6,/static/object_pics/drawing_insect/mosquito.jpg,perceptual,0,animate,drawing,mosquito.jpg,chain
+7,/static/object_pics/picture_bird/turkey.jpg,semantic,0,animate,photo,turkey.jpg,hit
+8,/static/object_pics/picture_sea/eel.jpg,semantic,0,animate,photo,eel.jpg,shake
+9,/static/object_pics/drawing_clothe/football sneaker.jpg,perceptual,0,inanimate,drawing,football sneaker.jpg,break
+10,/static/object_pics/picture_insect/cockroach.jpg,semantic,0,animate,photo,cockroach.jpg,pump
+11,/static/object_pics/drawing_insect/mosquito.jpg,semantic,0,animate,drawing,mosquito.jpg,chain
+12,/static/object_pics/drawing_veggie/carrots.jpg,semantic,0,inanimate,drawing,carrots.jpg,stick
+13,/static/object_pics/drawing_fruit/watermelon.jpg,perceptual,0,inanimate,drawing,watermelon.jpg,lay
+14,/static/object_pics/picture_bird/turkey.jpg,perceptual,0,animate,photo,turkey.jpg,hit
+15,/static/object_pics/drawing_veggie/beetroot.jpg,perceptual,0,inanimate,drawing,beetroot.jpg,volley
+16,/static/object_pics/drawing_veggie/potato.jpg,semantic,1,inanimate,drawing,potato.jpg,squeeze
+17,/static/object_pics/drawing_sea/seahorse.jpg,semantic,1,animate,drawing,seahorse.jpg,knock
+18,/static/object_pics/drawing_insect/grasshopper.jpg,perceptual,1,animate,drawing,grasshopper.jpg,pat
+19,/static/object_pics/drawing_fruit/apple.jpg,perceptual,1,inanimate,drawing,apple.jpg,reduce
+20,/static/object_pics/picture_fruit/banana.jpg,perceptual,1,inanimate,photo,banana.jpg,guide
+21,/static/object_pics/picture_bird/penguin.jpg,semantic,1,animate,photo,penguin.jpg,peek
+22,/static/object_pics/picture_sea/piranha.jpg,perceptual,1,animate,photo,piranha.jpg,hop
+23,/static/object_pics/drawing_bird/toucan.jpg,semantic,1,animate,drawing,toucan.jpg,detect
+24,/static/object_pics/picture_fruit/banana.jpg,semantic,1,inanimate,photo,banana.jpg,guide
+25,/static/object_pics/drawing_insect/grasshopper.jpg,semantic,1,animate,drawing,grasshopper.jpg,pat
+26,/static/object_pics/drawing_veggie/potato.jpg,perceptual,1,inanimate,drawing,potato.jpg,squeeze
+27,/static/object_pics/picture_sea/piranha.jpg,semantic,1,animate,photo,piranha.jpg,hop
+28,/static/object_pics/drawing_sea/seahorse.jpg,perceptual,1,animate,drawing,seahorse.jpg,knock
+29,/static/object_pics/picture_bird/penguin.jpg,perceptual,1,animate,photo,penguin.jpg,peek
+30,/static/object_pics/drawing_bird/toucan.jpg,perceptual,1,animate,drawing,toucan.jpg,detect
+31,/static/object_pics/drawing_fruit/apple.jpg,semantic,1,inanimate,drawing,apple.jpg,reduce
+32,/static/object_pics/picture_electronic/satellite dish.jpg,semantic,2,inanimate,photo,satellite dish.jpg,destroy
+33,/static/object_pics/picture_electronic/handmixer.jpg,semantic,2,inanimate,photo,handmixer.jpg,kick
+34,/static/object_pics/picture_clothe/hoodie.jpg,semantic,2,inanimate,photo,hoodie.jpg,grind
+35,/static/object_pics/drawing_clothe/bowtie.jpg,perceptual,2,inanimate,drawing,bowtie.jpg,swim
+36,/static/object_pics/drawing_electronic/camera.jpg,perceptual,2,inanimate,drawing,camera.jpg,mount
+37,/static/object_pics/drawing_clothe/sport t-shirt.jpg,perceptual,2,inanimate,drawing,sport t-shirt.jpg,utilize
+38,/static/object_pics/drawing_mammal/bear.jpg,semantic,2,animate,drawing,bear.jpg,clean
+39,/static/object_pics/picture_veggie/pepper.jpg,perceptual,2,inanimate,photo,pepper.jpg,tie
+40,/static/object_pics/picture_electronic/handmixer.jpg,perceptual,2,inanimate,photo,handmixer.jpg,kick
+41,/static/object_pics/drawing_clothe/sport t-shirt.jpg,semantic,2,inanimate,drawing,sport t-shirt.jpg,utilize
+42,/static/object_pics/drawing_mammal/bear.jpg,perceptual,2,animate,drawing,bear.jpg,clean
+43,/static/object_pics/drawing_electronic/camera.jpg,semantic,2,inanimate,drawing,camera.jpg,mount
+44,/static/object_pics/picture_clothe/hoodie.jpg,perceptual,2,inanimate,photo,hoodie.jpg,grind
+45,/static/object_pics/picture_veggie/pepper.jpg,semantic,2,inanimate,photo,pepper.jpg,tie
+46,/static/object_pics/picture_electronic/satellite dish.jpg,perceptual,2,inanimate,photo,satellite dish.jpg,destroy
+47,/static/object_pics/drawing_clothe/bowtie.jpg,semantic,2,inanimate,drawing,bowtie.jpg,swim
+48,/static/object_pics/drawing_mammal/camel.jpg,perceptual,3,animate,drawing,camel.jpg,allocate
+49,/static/object_pics/drawing_sea/seal.jpg,semantic,3,animate,drawing,seal.jpg,merge
+50,/static/object_pics/drawing_mammal/rabbit.jpg,semantic,3,animate,drawing,rabbit.jpg,agitate
+51,/static/object_pics/picture_bird/hen.jpg,perceptual,3,animate,photo,hen.jpg,move
+52,/static/object_pics/drawing_electronic/toaster.jpg,semantic,3,inanimate,drawing,toaster.jpg,cut
+53,/static/object_pics/drawing_clothe/sock.jpg,semantic,3,inanimate,drawing,sock.jpg,blur
+54,/static/object_pics/drawing_fruit/strawberry.jpg,perceptual,3,inanimate,drawing,strawberry.jpg,arrange
+55,/static/object_pics/drawing_electronic/gamepad.jpg,perceptual,3,inanimate,drawing,gamepad.jpg,throw
+56,/static/object_pics/drawing_clothe/sock.jpg,perceptual,3,inanimate,drawing,sock.jpg,blur
+57,/static/object_pics/drawing_mammal/rabbit.jpg,perceptual,3,animate,drawing,rabbit.jpg,agitate
+58,/static/object_pics/drawing_sea/seal.jpg,perceptual,3,animate,drawing,seal.jpg,merge
+59,/static/object_pics/drawing_fruit/strawberry.jpg,semantic,3,inanimate,drawing,strawberry.jpg,arrange
+60,/static/object_pics/picture_bird/hen.jpg,semantic,3,animate,photo,hen.jpg,move
+61,/static/object_pics/drawing_mammal/camel.jpg,semantic,3,animate,drawing,camel.jpg,allocate
+62,/static/object_pics/drawing_electronic/gamepad.jpg,semantic,3,inanimate,drawing,gamepad.jpg,throw
+63,/static/object_pics/drawing_electronic/toaster.jpg,perceptual,3,inanimate,drawing,toaster.jpg,cut
+64,/static/object_pics/picture_insect/mantis.jpg,perceptual,4,animate,photo,mantis.jpg,divide
+65,/static/object_pics/picture_insect/bumble bee.jpg,semantic,4,animate,photo,bumble bee.jpg,cross
+66,/static/object_pics/drawing_mammal/giraffe.jpg,semantic,4,animate,drawing,giraffe.jpg,pick
+67,/static/object_pics/picture_electronic/calculator.jpg,perceptual,4,inanimate,photo,calculator.jpg,identify
+68,/static/object_pics/picture_mammal/gorilla.jpg,perceptual,4,animate,photo,gorilla.jpg,drop
+69,/static/object_pics/picture_insect/ant.jpg,semantic,4,animate,photo,ant.jpg,hide
+70,/static/object_pics/picture_electronic/keyboard.jpg,perceptual,4,inanimate,photo,keyboard.jpg,tear
+71,/static/object_pics/picture_bird/ostrich.jpg,semantic,4,animate,photo,ostrich.jpg,include
+72,/static/object_pics/drawing_mammal/giraffe.jpg,perceptual,4,animate,drawing,giraffe.jpg,pick
+73,/static/object_pics/picture_insect/bumble bee.jpg,perceptual,4,animate,photo,bumble bee.jpg,cross
+74,/static/object_pics/picture_electronic/calculator.jpg,semantic,4,inanimate,photo,calculator.jpg,identify
+75,/static/object_pics/picture_insect/ant.jpg,perceptual,4,animate,photo,ant.jpg,hide
+76,/static/object_pics/picture_insect/mantis.jpg,semantic,4,animate,photo,mantis.jpg,divide
+77,/static/object_pics/picture_electronic/keyboard.jpg,semantic,4,inanimate,photo,keyboard.jpg,tear
+78,/static/object_pics/picture_mammal/gorilla.jpg,semantic,4,animate,photo,gorilla.jpg,drop
+79,/static/object_pics/picture_bird/ostrich.jpg,perceptual,4,animate,photo,ostrich.jpg,include
+80,/static/object_pics/drawing_mammal/antelope.jpg,perceptual,5,animate,drawing,antelope.jpg,paint
+81,/static/object_pics/drawing_veggie/lettuce.jpg,perceptual,5,inanimate,drawing,lettuce.jpg,dig
+82,/static/object_pics/drawing_fruit/grapes.jpg,perceptual,5,inanimate,drawing,grapes.jpg,brush
+83,/static/object_pics/drawing_mammal/elephant.jpg,semantic,5,animate,drawing,elephant.jpg,connect
+84,/static/object_pics/picture_electronic/computer mouse.jpg,semantic,5,inanimate,photo,computer mouse.jpg,center
+85,/static/object_pics/picture_fruit/kiwi.jpg,perceptual,5,inanimate,photo,kiwi.jpg,deposit
+86,/static/object_pics/drawing_clothe/belt.jpg,semantic,5,inanimate,drawing,belt.jpg,assemble
+87,/static/object_pics/picture_sea/killer whale.jpg,semantic,5,animate,photo,killer whale.jpg,balance
+88,/static/object_pics/drawing_mammal/antelope.jpg,semantic,5,animate,drawing,antelope.jpg,paint
+89,/static/object_pics/drawing_mammal/elephant.jpg,perceptual,5,animate,drawing,elephant.jpg,connect
+90,/static/object_pics/picture_electronic/computer mouse.jpg,perceptual,5,inanimate,photo,computer mouse.jpg,center
+91,/static/object_pics/drawing_fruit/grapes.jpg,semantic,5,inanimate,drawing,grapes.jpg,brush
+92,/static/object_pics/picture_sea/killer whale.jpg,perceptual,5,animate,photo,killer whale.jpg,balance
+93,/static/object_pics/drawing_veggie/lettuce.jpg,semantic,5,inanimate,drawing,lettuce.jpg,dig
+94,/static/object_pics/drawing_clothe/belt.jpg,perceptual,5,inanimate,drawing,belt.jpg,assemble
+95,/static/object_pics/picture_fruit/kiwi.jpg,semantic,5,inanimate,photo,kiwi.jpg,deposit
+96,/static/object_pics/picture_bird/peacock.jpg,perceptual,6,animate,photo,peacock.jpg,drill
+97,/static/object_pics/drawing_bird/eagle.jpg,semantic,6,animate,drawing,eagle.jpg,smooth
+98,/static/object_pics/drawing_sea/jellyfish.jpg,perceptual,6,animate,drawing,jellyfish.jpg,melt
+99,/static/object_pics/picture_electronic/coffee maker.jpg,semantic,6,inanimate,photo,coffee maker.jpg,strike
+100,/static/object_pics/picture_mammal/bull.jpg,perceptual,6,animate,photo,bull.jpg,adjusted
+101,/static/object_pics/drawing_mammal/lion.jpg,semantic,6,animate,drawing,lion.jpg,crush
+102,/static/object_pics/drawing_electronic/remote control.jpg,semantic,6,inanimate,drawing,remote control.jpg,compare
+103,/static/object_pics/drawing_mammal/horse.jpg,perceptual,6,animate,drawing,horse.jpg,cover
+104,/static/object_pics/picture_bird/peacock.jpg,semantic,6,animate,photo,peacock.jpg,drill
+105,/static/object_pics/picture_electronic/coffee maker.jpg,perceptual,6,inanimate,photo,coffee maker.jpg,strike
+106,/static/object_pics/drawing_electronic/remote control.jpg,perceptual,6,inanimate,drawing,remote control.jpg,compare
+107,/static/object_pics/drawing_mammal/horse.jpg,semantic,6,animate,drawing,horse.jpg,cover
+108,/static/object_pics/drawing_bird/eagle.jpg,perceptual,6,animate,drawing,eagle.jpg,smooth
+109,/static/object_pics/picture_mammal/bull.jpg,semantic,6,animate,photo,bull.jpg,adjusted
+110,/static/object_pics/drawing_mammal/lion.jpg,perceptual,6,animate,drawing,lion.jpg,crush
+111,/static/object_pics/drawing_sea/jellyfish.jpg,semantic,6,animate,drawing,jellyfish.jpg,melt
+112,/static/object_pics/picture_sea/swordfish.jpg,perceptual,7,animate,photo,swordfish.jpg,boot
+113,/static/object_pics/drawing_insect/spider.jpg,semantic,7,animate,drawing,spider.jpg,split
+114,/static/object_pics/drawing_electronic/phone.jpg,perceptual,7,inanimate,drawing,phone.jpg,swing
+115,/static/object_pics/drawing_bird/pelican.jpg,semantic,7,animate,drawing,pelican.jpg,build
+116,/static/object_pics/drawing_veggie/cauliflower.jpg,perceptual,7,inanimate,drawing,cauliflower.jpg,touch
+117,/static/object_pics/drawing_clothe/jeans.jpg,semantic,7,inanimate,drawing,jeans.jpg,bounce
+118,/static/object_pics/picture_clothe/high heels.jpg,semantic,7,inanimate,photo,high heels.jpg,forge
+119,/static/object_pics/picture_veggie/cucumber.jpg,perceptual,7,inanimate,photo,cucumber.jpg,give
+120,/static/object_pics/drawing_electronic/phone.jpg,semantic,7,inanimate,drawing,phone.jpg,swing
+121,/static/object_pics/drawing_clothe/jeans.jpg,perceptual,7,inanimate,drawing,jeans.jpg,bounce
+122,/static/object_pics/drawing_veggie/cauliflower.jpg,semantic,7,inanimate,drawing,cauliflower.jpg,touch
+123,/static/object_pics/picture_sea/swordfish.jpg,semantic,7,animate,photo,swordfish.jpg,boot
+124,/static/object_pics/picture_clothe/high heels.jpg,perceptual,7,inanimate,photo,high heels.jpg,forge
+125,/static/object_pics/drawing_insect/spider.jpg,perceptual,7,animate,drawing,spider.jpg,split
+126,/static/object_pics/picture_veggie/cucumber.jpg,semantic,7,inanimate,photo,cucumber.jpg,give
+127,/static/object_pics/drawing_bird/pelican.jpg,perceptual,7,animate,drawing,pelican.jpg,build
+128,/static/object_pics/picture_veggie/garlic.jpg,semantic,8,inanimate,photo,garlic.jpg,whirl
+129,/static/object_pics/drawing_veggie/artichoke.jpg,semantic,8,inanimate,drawing,artichoke.jpg,hold
+130,/static/object_pics/picture_sea/octopus.jpg,semantic,8,animate,photo,octopus.jpg,polish
+131,/static/object_pics/drawing_sea/shrimp.jpg,perceptual,8,animate,drawing,shrimp.jpg,add
+132,/static/object_pics/picture_mammal/wolf.jpg,perceptual,8,animate,photo,wolf.jpg,hammer
+133,/static/object_pics/picture_clothe/gloves.jpg,perceptual,8,inanimate,photo,gloves.jpg,press
+134,/static/object_pics/picture_fruit/lemon.jpg,perceptual,8,inanimate,photo,lemon.jpg,explode
+135,/static/object_pics/drawing_electronic/microphone.jpg,semantic,8,inanimate,drawing,microphone.jpg,discover
+136,/static/object_pics/picture_mammal/wolf.jpg,semantic,8,animate,photo,wolf.jpg,hammer
+137,/static/object_pics/picture_veggie/garlic.jpg,perceptual,8,inanimate,photo,garlic.jpg,whirl
+138,/static/object_pics/drawing_sea/shrimp.jpg,semantic,8,animate,drawing,shrimp.jpg,add
+139,/static/object_pics/picture_fruit/lemon.jpg,semantic,8,inanimate,photo,lemon.jpg,explode
+140,/static/object_pics/picture_sea/octopus.jpg,perceptual,8,animate,photo,octopus.jpg,polish
+141,/static/object_pics/drawing_veggie/artichoke.jpg,perceptual,8,inanimate,drawing,artichoke.jpg,hold
+142,/static/object_pics/drawing_electronic/microphone.jpg,perceptual,8,inanimate,drawing,microphone.jpg,discover
+143,/static/object_pics/picture_clothe/gloves.jpg,semantic,8,inanimate,photo,gloves.jpg,press
+144,/static/object_pics/drawing_fruit/orange.jpg,perceptual,9,inanimate,drawing,orange.jpg,flash
+145,/static/object_pics/picture_electronic/printer.jpg,perceptual,9,inanimate,photo,printer.jpg,revolve
+146,/static/object_pics/picture_insect/butterfly.jpg,perceptual,9,animate,photo,butterfly.jpg,dance
+147,/static/object_pics/drawing_insect/scorpion.jpg,perceptual,9,animate,drawing,scorpion.jpg,combine
+148,/static/object_pics/picture_mammal/rhinoceros.jpg,semantic,9,animate,photo,rhinoceros.jpg,glide
+149,/static/object_pics/picture_clothe/tie.jpg,semantic,9,inanimate,photo,tie.jpg,fold
+150,/static/object_pics/drawing_sea/shark.jpg,semantic,9,animate,drawing,shark.jpg,match
+151,/static/object_pics/picture_fruit/pineapple.jpg,semantic,9,inanimate,photo,pineapple.jpg,pull
+152,/static/object_pics/picture_electronic/printer.jpg,semantic,9,inanimate,photo,printer.jpg,revolve
+153,/static/object_pics/drawing_sea/shark.jpg,perceptual,9,animate,drawing,shark.jpg,match
+154,/static/object_pics/picture_mammal/rhinoceros.jpg,perceptual,9,animate,photo,rhinoceros.jpg,glide
+155,/static/object_pics/picture_insect/butterfly.jpg,semantic,9,animate,photo,butterfly.jpg,dance
+156,/static/object_pics/picture_fruit/pineapple.jpg,perceptual,9,inanimate,photo,pineapple.jpg,pull
+157,/static/object_pics/picture_clothe/tie.jpg,perceptual,9,inanimate,photo,tie.jpg,fold
+158,/static/object_pics/drawing_fruit/orange.jpg,semantic,9,inanimate,drawing,orange.jpg,flash
+159,/static/object_pics/drawing_insect/scorpion.jpg,semantic,9,animate,drawing,scorpion.jpg,combine
+160,/static/object_pics/picture_fruit/melon.jpg,semantic,10,inanimate,photo,melon.jpg,expand
+161,/static/object_pics/drawing_bird/owl.jpg,semantic,10,animate,drawing,owl.jpg,warm
+162,/static/object_pics/drawing_clothe/dress.jpg,perceptual,10,inanimate,drawing,dress.jpg,wash
+163,/static/object_pics/picture_veggie/mushrooms.jpg,perceptual,10,inanimate,photo,mushrooms.jpg,browse
+164,/static/object_pics/drawing_sea/mantaray.jpg,perceptual,10,animate,drawing,mantaray.jpg,jam
+165,/static/object_pics/drawing_sea/crab.jpg,semantic,10,animate,drawing,crab.jpg,draw
+166,/static/object_pics/picture_sea/seaturtle.jpg,perceptual,10,animate,photo,seaturtle.jpg,trap
+167,/static/object_pics/picture_clothe/glasses.jpg,semantic,10,inanimate,photo,glasses.jpg,fade
+168,/static/object_pics/drawing_bird/owl.jpg,perceptual,10,animate,drawing,owl.jpg,warm
+169,/static/object_pics/picture_sea/seaturtle.jpg,semantic,10,animate,photo,seaturtle.jpg,trap
+170,/static/object_pics/picture_fruit/melon.jpg,perceptual,10,inanimate,photo,melon.jpg,expand
+171,/static/object_pics/drawing_sea/crab.jpg,perceptual,10,animate,drawing,crab.jpg,draw
+172,/static/object_pics/picture_veggie/mushrooms.jpg,semantic,10,inanimate,photo,mushrooms.jpg,browse
+173,/static/object_pics/drawing_clothe/dress.jpg,semantic,10,inanimate,drawing,dress.jpg,wash
+174,/static/object_pics/picture_clothe/glasses.jpg,perceptual,10,inanimate,photo,glasses.jpg,fade
+175,/static/object_pics/drawing_sea/mantaray.jpg,semantic,10,animate,drawing,mantaray.jpg,jam
+176,/static/object_pics/drawing_veggie/tomato.jpg,semantic,11,inanimate,drawing,tomato.jpg,lift
+177,/static/object_pics/drawing_bird/duck.jpg,perceptual,11,animate,drawing,duck.jpg,chop
+178,/static/object_pics/drawing_fruit/pomegranate.jpg,perceptual,11,inanimate,drawing,pomegranate.jpg,launch
+179,/static/object_pics/drawing_bird/hummingbird.jpg,perceptual,11,animate,drawing,hummingbird.jpg,remove
+180,/static/object_pics/picture_electronic/hairdryer.jpg,perceptual,11,inanimate,photo,hairdryer.jpg,clap
+181,/static/object_pics/picture_clothe/shirt.jpg,semantic,11,inanimate,photo,shirt.jpg,wrap
+182,/static/object_pics/picture_bird/flamingo.jpg,semantic,11,animate,photo,flamingo.jpg,twitch
+183,/static/object_pics/drawing_electronic/laptop.jpg,semantic,11,inanimate,drawing,laptop.jpg,smash
+184,/static/object_pics/drawing_bird/duck.jpg,semantic,11,animate,drawing,duck.jpg,chop
+185,/static/object_pics/picture_electronic/hairdryer.jpg,semantic,11,inanimate,photo,hairdryer.jpg,clap
+186,/static/object_pics/drawing_electronic/laptop.jpg,perceptual,11,inanimate,drawing,laptop.jpg,smash
+187,/static/object_pics/drawing_bird/hummingbird.jpg,semantic,11,animate,drawing,hummingbird.jpg,remove
+188,/static/object_pics/drawing_fruit/pomegranate.jpg,semantic,11,inanimate,drawing,pomegranate.jpg,launch
+189,/static/object_pics/drawing_veggie/tomato.jpg,perceptual,11,inanimate,drawing,tomato.jpg,lift
+190,/static/object_pics/picture_clothe/shirt.jpg,perceptual,11,inanimate,photo,shirt.jpg,wrap
+191,/static/object_pics/picture_bird/flamingo.jpg,perceptual,11,animate,photo,flamingo.jpg,twitch

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ instructions_title }}</title>
+	<center><h2>{{ instructions_title }}</h2></center>
+	<link href="/static/style.css" rel="stylesheet">
+</head>
+<body>
+	
+	<form method="POST">
+	<center>
+	<p>
+	If you would like to repeat the demo, click here: <input type="submit" name="submit" value="Repeat Demo" style="font-size: 30px;"> 
+	<br> 
+	<br>
+	To continue with the experiment, click here: <input type="submit" name="submit" value="Continue" style="font-size: 30px;">
+	</p>
+	</center>
+	<p>
+	{{ instructions_text }}
+	</p>
+	
+	</form> 
+	
+	<center>
+	<img id="instructions" src="{{ url_for('static', filename = instructions_pic) }}">
+	</center>
+</body>
+</html>

@@ -1,0 +1,4 @@
+event,trial,time,exp,subjectId,date
+fullscreenenter,0,1442,MEM,MEM_0066,2022-12-08 22:06:55
+blur,2,146220,MEM,MEM_0066,2022-12-08 22:06:55
+focus,2,186462,MEM,MEM_0066,2022-12-08 22:06:55

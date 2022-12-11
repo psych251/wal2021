@@ -1,0 +1,54 @@
+html, body {
+  width:  100%;
+  height: 100%;
+  margin: 0px;
+  /*overflow: hidden;*/
+}
+
+title {
+	font-family: "Arial"
+}
+
+h1 {
+	font-family: "Arial"
+}
+
+h2 {
+	font-family: "Arial"
+}
+
+h3 {
+	font-family: "Arial"
+}
+
+h4 {
+	font-family: "Arial";
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+p {
+	font-family: "Arial";
+	padding-left: 30px;
+	padding-right: 30px;
+	line-height: 22px;
+}
+
+form {
+	font-family: "Arial";
+}
+
+ul {
+	font-family: "Arial";
+	padding-left: 60px;
+}
+
+body {
+	background-color: #ffffff;
+}
+
+#instructions {
+    max-width: 1200px;
+    height: auto;
+    width: 100%; 
+}

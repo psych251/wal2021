@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object Task</title>
+    <script src="https://unpkg.com/jspsych@7.3.1"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-image-keyboard-response@1.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-fullscreen@1.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-survey-multi-choice@1.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-preload@1.0.0"></script>
+    <link href="https://unpkg.com/jspsych@7.3.1/css/jspsych.css" rel="stylesheet" type="text/css" />
+
+    <script src="/static/visual-plugin.js"></script>
+  </head>
+  <script>
+  var trials = {{ trials | tojson }};
+  var imgs = {{ imgs | tojson }};
+
+  var n_blocks = 4;
+  var n_trials_per_block = trials.length / n_blocks;
+
+  var practice_imgs = ["/static/for_instructions/object_pics/drawing_bird/heron.jpg",
+                        "/static/for_instructions/object_pics/picture_electronic/flashlight.jpg",
+                        "/static/for_instructions/object_pics/drawing_clothe/hockey helmet.jpg",
+                        "/static/for_instructions/object_pics/picture_veggie/avocado.jpg"];
+  var practice_animacy = ["animate","inanimate","inanimate","inanimate"];
+  var practice_style = ["drawing","photo","drawing","photo"];
+  var practice_instructions = ["semantic","perceptual","semantic","perceptual"];
+
+  var jsPsych = initJsPsych({
+    show_progress_bar: true,
+    on_finish: function() {
+
+        var form = document.createElement("form");
+        form.setAttribute('method',"POST");
+        form.setAttribute('id',"exp");
+
+        var input = document.createElement("input");
+        input.setAttribute("type", "hidden");
+        input.setAttribute("id", "experimentResults");
+        input.setAttribute("name", "experimentResults");
+        input.setAttribute("value", "[]");
+        form.appendChild(input);
+
+        var interact = document.createElement("input");
+        interact.setAttribute("type", "hidden");
+        interact.setAttribute("id", "interactionData");
+        interact.setAttribute("name", "interactionData");
+        interact.setAttribute("value", "[]");
+        form.appendChild(interact);
+
+        document.body.appendChild(form);
+
+        var strExpResults = jsPsych.data.get().json();
+        document.getElementById('experimentResults').value = strExpResults;
+
+        var strInteractData = jsPsych.data.getInteractionData().json();
+        document.getElementById('interactionData').value = strInteractData;
+
+        document.getElementById('exp').submit();
+    }
+  });
+
+  // Define timeline.
+  var timeline = [];
+
+  timeline.push({
+      type: jsPsychFullscreen,
+      fullscreen_mode: true
+  });
+
+  var preload = {
+    type: jsPsychPreload,
+    images: imgs.concat(practice_imgs).concat(["/static/instructions_pics/visual_pic.png"]),
+  };
+  timeline.push(preload);
+
+
+  var instructions = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: `
+      <p>In this task, you will see a series of objects. On some trials, your job is to determine
+      whether the object shown is a color photograph or a line drawing. On other trials, your job
+      is to determine whether the object represented is animate or inanimate.
+
+      <br><br>
+      You will know which response to make depending on the initial display, which will say
+      "animate / inanimate" or "photo / drawing".
+      <br>
+      <br>
+      You will be able to use the left arrow key to report animate/photo and the right arrow key to report inanimate/drawing.
+      <br>
+      Please respond as quickly as possible, and use your dominant hand to make your responses.
+      <br><br>
+      <img src="/static/instructions_pics/visual_pic.png" height="300px">
+      <br>
+      In the example in the top row, the correct response is animate (left arrow key). In the example in the bottom row, the correct response is photo (left arrow key).
+      <br>
+      <br>You will first do some practice trials. When you are ready to begin, press the space bar.</p>`,
+    choices: [' ']
+  };
+  timeline.push(instructions);
+
+  // iterate through practice trials
+  for (var i=0; i<practice_imgs.length; i++) {
+      const visual_trial = {
+          type: visualTrialPlugin,
+          instruction_class: practice_instructions[i],
+          animacy: practice_animacy[i],
+          style: practice_style[i],
+          instruction: practice_instructions[i] == 'semantic' ? 'animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow)' : 'photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow)',
+          prompt: '',
+          object: practice_imgs[i]
+      }
+      timeline = timeline.concat(visual_trial);
+  }
+
+  var quiz = {
+    type: jsPsychSurveyMultiChoice,
+    preamble: 'Here are some questions about the task. You must answer all questions correctly to continue.',
+    questions: [
+    {
+        prompt: "On some trials, I have to report whether the object is shown as a photograph or a drawing.",
+        name: 'Style',
+        options: ['True', 'False'],
+        required: true
+    },
+    {
+        prompt: "On some trials, I have to report whether the object represented is animate or inanimate.",
+        name: 'Animacy',
+        options: ['True', 'False'],
+        required: true
+    }
+    ],
+  }
+
+  var loop_node = {
+      timeline: [quiz],
+      loop_function: function(data){
+          responses = data.values()[0].response;
+          if (responses['Style'] == 'True' && responses['Animacy'] == 'True'){
+              return false;
+          } else {
+              alert("At least one if your responses is incorrect. Please try again.");
+              return true;
+          }
+      }
+  }
+
+  timeline.push(loop_node);
+
+  var msg = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: `
+      <p>Great job! Now you\'ll continue onto doing the main task.
+      You will have the opportunity to take brief breaks at various points.
+      Good luck!<br>Press the space bar to continue.</p>`,
+    choices: [' ']
+  };
+
+  timeline.push(msg);
+
+  timeline.push({
+      type: jsPsychFullscreen,
+      fullscreen_mode: true
+  });
+
+  var feedback_display = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: function(){
+      var percent_last_block_trials_correct = jsPsych.data.get().last(n_trials_per_block).select("accurate").mean() * 100;
+      return `
+        <p>In that last set of trials, you were correct ` + percent_last_block_trials_correct.toFixed(0) + `% of the time.</p>
+        <p>Feel free to take a brief break. In the next set of trials, you will continue with the same task.
+        The instructions are displayed below, in case you need a refresher.
+        Press the space bar when you are ready to continue.</p>
+        <p>In this task, you will see a series of objects. On some trials, your job is to determine
+        whether the object shown is a color photograph or a line drawing. On other trials, your job
+        is to determine whether the object represented is animate or inanimate.
+
+        <br><br>
+        You will know which response to make depending on the initial display, which will say
+        "animate / inanimate" or "photo / drawing".
+        <br>
+        You will be able to use the left arrow key to report animate/photo and the right arrow key to report inanimate/drawing.
+        <br>
+        Please respond as quickly as possible, and use your dominant hand to make your responses.
+        <br><br>
+        You will be able to use the left arrow key to report animate/photo and the right arrow key to report inanimate/drawing.
+        <br><br>
+        <img src="/static/instructions_pics/visual_pic.png" height="300px">
+        <br>
+        In the example in the top row, the correct response is animate (left arrow key). In the example in the bottom row, the correct response is photo (left arrow key).
+        <br>
+        <br>When you are ready to begin, press the space bar.</p>`
+    },
+    choices: [' ']
+  }
+
+  // iterate through trials
+  for (var i=0; i<trials.length; i++) {
+      var trial = trials[i];
+      const visual_trial = {
+          type: visualTrialPlugin,
+          instruction_class: trial['instruction'],
+          animacy: trial['animacy'],
+          style: trial['style'],
+          instruction: trial['instruction'] == 'semantic' ? 'animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow)' : 'photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow)',
+          prompt: '',
+          object: trial['img']
+      }
+      timeline = timeline.concat(visual_trial);
+
+      // add break in between blocks
+      if ((i+1) % n_trials_per_block == 0 & (i+1 != trials.length)) {
+        timeline = timeline.concat(feedback_display);
+      }
+  }
+
+  var debrief = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: `
+      <p>Thank you for your participation!</p>
+      The goal of this study is to replicate previous findings that the timing of responses in memory-dependent tasks
+      is rhythmic in nature (compared to the timing of responses in memory-independent tasks).
+      You performed the memory-independent tasks in this study.
+      <br>
+      Your participation will allow us to better understand how memory works.
+      Please do not share this information with other potential participants.
+      <br>
+      Press the space bar to continue.</p>`,
+    choices: [' ']
+  };
+  timeline.push(debrief);
+
+  /* start the trial */
+  jsPsych.run(timeline);
+
+  </script>
+</html>

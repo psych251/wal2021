@@ -22,7 +22,7 @@ I am interested in rhythms in cognition, and am curious about the reliability of
 
 ### Anticipated challenges
 
-I expect the data analysis portion to be the main challenge for me in conducting this replication project, as the computation of the Oscillation score appears to be rather complex. I am planning to recreate the authors' Matlab code (provided on GitHub) in R, a language I am not yet particularly comfortable programming in. 
+I expect the data analysis portion to be the main challenge for me in conducting this replication project, as the computation of the Oscillation score appears to be rather complex. I am planning to rewrite the authors' Matlab code (provided on GitHub) in R, a language I am not yet particularly comfortable programming in. 
 
 ### Links
 
@@ -52,7 +52,7 @@ For each task (encoding, retrieval, & visual), I will compute an Oscillation sco
 
 The effect sizes for various O-score comparisons between tasks were provided in the supplement of the paper. The Cohen's d of interest (between memory-dependent and memory-independent tasks; i.e., encoding/retrieval/catch with retrieval vs. visual) ranged from 0.86 to 0.92. According to the software G\*Power, a more conservative estimate of the total number of subjects needed to achieve 80% power, using the lower bound of this effect size range, is 46 (23 subjects per group). Since I decided to reproduce some of the original findings to familiarize myself with the analysis procedure and R programming more generally, I calculated the effect size myself using data from just two of the original experiments. My key analysis of interest, as described below, is a linear mixed effects model. This model didn't converge with data from these two experiments. I therefore calculated the effect size using t-tests as well as a simple linear model. The effect size for the two-sided t-test comparing memory-dependent (encoding + retrieval) and memory independent tasks (visual) was 0.74 (results and calculations shown below). For this effect size, G\*Power suggested that 60 participants are needed to achieve 80% power. For the linear model, the partial Cohen's f2 was 0.15 and the power analysis indicated that 55 participants are needed to achieve 80% power. 
 
-The original paper had five versions of the memory-dependent study and four versions of the memory-independent study. It is possible that the effect size is sensitive to the experimental design, but I don't believe there is reason to think that the effects should differ drastically between experiments. I ultimately decided to collect data from 50 participants (25 per experiment). Assuming that the effects hold in the experiments I selected (both of which use "Standard" stimuli), a sample of this size should be sufficient to detect an effect of memory dependence on the extent to which behavior is oscillatory.
+The original paper had five versions of the memory-dependent study and four versions of the memory-independent study. It is possible that the effect size is sensitive to subtle differences in the experimental design, but it seems unlikely that the effects should differ drastically between experiments. I ultimately decided to collect data from 50 participants (25 per experiment). Assuming that the effects hold in the experiments I selected (both of which use "Standard" stimuli), a sample of this size should be sufficient to detect an effect of memory dependence on the extent to which behavior in a given task is oscillatory.
 
 ### Planned Sample
 
@@ -60,14 +60,14 @@ My goal is to collect 25 participants for the memory-dependent experiment and 25
 
 ### Materials
 
-Materials include 128 action verbs and 128 object images. 
+Materials include 128 action verbs and 128 object images. Thank you to the authors for providing the word and image stimuli used in the original experiments.
 
 ### Procedure	
 
 #### Memory-dependent experiment
 - Encoding phase: A fixation cross will first be shown for 0.5-1.5s. This will be followed by the display of a cue (action verb) for 2s. After another fixation display (0.5-1.5s), an object will be presented for at most 7s, during which time participants should respond when they have successfully made an association between the cue and the stimulus. These trials will be administered in blocks of 8 trials. Participants will learn 128 associations.
 - Distractor phase: For one minute, participants will indicate whether numbers presented serially on the display are odd or even.
-- Retrieval with catch phase: On each trial, participants will be presented a perceptual or semantic question (drawing or photo; animate or inanimate; forgotten) for 3s. A cue is then presented for a maximum of 7s, and participants will respond to the initial question with a button press. Each object will be probed with a perceptual question and a semantic question, in a pseudorandom order such that the same cue is shown at least two trials apart. Trials will be separated by a presentation of a fixation cross for 0.5-1.5s. Each block contains 16 trials. Feedback is provided after the distractor and retrieval phases.
+- Retrieval with catch phase: On each trial, participants will be presented a perceptual or semantic question (drawing or photo; animate or inanimate; forgotten) for 3s. A cue is then presented for a maximum of 7s, and participants will respond to the initial question with a button press. Each object will be probed with a perceptual question and a semantic question, in a pseudorandom order such that the same cue is shown at least two trials apart. Trials will be separated by a presentation of a fixation cross for 0.5-1.5s. Each block contains 16 trials. Feedback is provided after the distractor and retrieval phases (% accuracy).
 
 #### Visual experiment
 
@@ -75,7 +75,7 @@ A fixation cross will be displayed for 0.5-1.5s. This will be followed by the pr
 
 ### Analysis Plan
 
-Participants will be included if the accuracy of responses to catch questions is above chance level (using a one-sided binomial test with a guessing rate of 50%), and at least 10 correct button presses were made. To compute the O-score of interest, I will follow the procedure outlined in the Methods section.   
+Participants will be included if the accuracy of responses to catch questions is above chance level (using a one-sided binomial test with a guessing rate of 50%), and at least 10 correct button presses were made. Trials where reaction times are longer or shorter than 2.5 standard deviations away from the task and participant-specific mean will be excluded. To compute the O-score of interest, I will follow the procedure outlined in the Methods section.   
 
 **Clarify key analysis of interest here**  
 
@@ -91,27 +91,12 @@ On the analysis side, my code will be in R, whereas the original authors used Ma
 
 Since the original set of experiments had a couple hundred participants in total, I was concerned that my study would be quite underpowered in comparison given my limited resources. However, I conducted a power analysis using the lower bound of the effect size of interest that the authors reported, and it appears that I should have sufficient power to detect a difference in O-scores between memory-dependent and memory-independent tasks (assuming that all 50 participants perform well enough to be included in the final sample). In the original paper, it is unclear if the effect size differs depending on which variants of the experiments are selected (the ones I selected use "Standard" stimuli). The effect size I calculated using my reproduced results suggest I may need a slightly larger sample to detect an effect. 
 
-Since I will be replicating this study in an online sample, I plan to reduce the overall length of each experiment. In memory-dependent study, participants will encode 96 associations as opposed to 128 associations. In the retrieval task, participants see each object twice, resulting in 192 retrieval trials as opposed to 256. In addition, the distractor task will be 20s instead of 60s. I am also reducing the duration the memory-independent study such that participants see each of the 128 stimuli once (just one perceptual or one semantic question) as opposed to twice (both questions). In the visual task, there will be 4 blocks of 32 trials.
+Since I will be replicating this study in an online sample, I plan to reduce the overall length of each experiment. In memory-dependent study, participants will encode 96 associations as opposed to 128 associations. In the retrieval task, participants see each object twice, resulting in 192 retrieval trials as opposed to 256. In addition, the distractor task will be 20s long instead of 60s long. I am also reducing the duration of the memory-independent study such that participants see each of the 128 stimuli once (just one perceptual or one semantic question) as opposed to twice (both questions). In the visual task, there will be 4 blocks of 32 trials.
 
-Finally, as in the original studies, there will be practice trials in both experiments. Since my replication study will be run in an online sample, I will include an instructions quiz for the encoding and retrieval phases of the memory-dependent task before the practice trials, as well as an instructions quiz before the visual task's practice trials. Participants will have to answer each quiz question correctly before they can continue with the study. These quizzes will be included to ensure that participants understand the task; their inclusion should not impact the main results.
+Finally, as in the original studies, there will be practice trials in both experiments. Since my replication study will be run in an online sample, I will include an instructions quiz for the encoding and retrieval phases of the memory-dependent task before the practice trials, as well as an instructions quiz before the visual task's practice trials. Participants will have to answer every quiz question correctly before they can continue with the study. These quizzes will be included to ensure that participants understand the task; their inclusion should not impact the main results.
 
 ### Methods Addendum (Post Data Collection)
 
-You can comment this section out prior to final report with data collection.
-
-#### Actual Sample
-  Sample size, demographics, data exclusions based on rules spelled out in analysis plan
-
-#### Differences from pre-data collection methods plan
-  Any differences from what was described as the original plan, or “none”.
-
-
-## Results
-
-### Data preparation
-
-Data preparation following the analysis plan.
-	
 ```{r setup, include=FALSE}
 library(pracma)
 library(testit)
@@ -123,9 +108,62 @@ library(fitdistrplus)
 library(ggplot2)
 library(tidyverse)
 library(sensemakr)
+library(data.table)
+library(report)
+library(knitr)
 knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message = FALSE)
 ```
 
+
+#### Actual Sample
+Fifty participants were recruited to take part in this study: 25 participants performed the memory-dependent tasks and 25 participants performed the memory-independent task. 
+As shown below, all participants' data were analyzed. Three participants' encoding data were excluded for having too few data points, as specified in the analysis plan.
+
+##### Demographics:
+```{r demographics, echo=F}
+demo <- 
+    list.files(path = "./wal_online_task", pattern = "*_DemographicQuestionnaire.csv", recursive=T, full.names=T) %>% 
+    map_df(~fread(.))
+
+kable(demo %>%
+  filter(QuestionNum == 1) %>%
+  group_by(Question) %>%
+  mutate(Answer = as.integer(Answer)) %>%
+  summarize(mean_age = mean(Answer, na.rm=T), sd_age = sd(Answer, na.rm=T)) %>%
+  select(mean_age, sd_age),
+  col.names = c("Mean age","SD age"),
+  align='l')
+
+kable(demo %>%
+  filter(QuestionNum == 2) %>%
+  mutate_if(is.character, ~na_if(., '')) %>%
+  mutate(Answer = replace_na(Answer, "Did not respond")) %>%
+  group_by(Question) %>%
+  count(Answer) %>%
+  ungroup() %>%
+  select(Answer, n),
+  col.names = c("Sex","N participants"),
+  align='l')
+
+kable(demo %>%
+  filter(QuestionNum == 3) %>%
+  group_by(Question) %>%
+  count(Answer) %>%
+  ungroup() %>%
+  select(Answer, n),
+  col.names = c("Race/ethnicity","N participants"),
+  align='l')
+```
+
+#### Differences from pre-data collection methods plan
+None
+
+## Results
+
+### Data preparation
+
+Data preparation following the analysis plan.
+	
 #### Functions for O-score computation
 
 I rewrote the original Matlab code provided by the authors on GitHub: https://github.com/marijeterwal/behavioral-oscillations
@@ -462,7 +500,7 @@ oscillation_score <- function(fs, cfg_flim, signal, quantlim=list(), smoothach=T
   
   if (is_empty(peakstart) || is.na(peakstart)) {
     if (warnings) {
-      print("Central peak could not be determined")
+      sprintf("Central peak could not be determined")
     }
     phw <- 1
   } else {
@@ -735,7 +773,7 @@ oscillation_score_stats <- function(quantlim, fs, mincycles, smoothach, smoothwi
 
 ```
 
-#### Compute O-scores for some of the original data
+#### Compute O-scores
 
 ```{r compute_o_scores, echo=T}
 
@@ -789,10 +827,10 @@ compute_oscores_all_subs <- function(data) {
       sprintf('%s %s', N_cor, N_incor)
       
       if (N_cor < stats::qbinom(0.95, N_cor + N_incor, 1/2)) {
-        sprintf('Subject %s excluded for bad performance', subid)
+        print(paste('Subject', subid, 'excluded for bad performance'))
         next 
       } else if (length(correct_RTs) < 10){
-        sprintf('Subject %s excluded due to too few data points', subid)
+        print(paste('Subject', subid, 'excluded due to too few data points'))
         next
       }
       
@@ -865,19 +903,27 @@ compute_oscores_all_subs <- function(data) {
 
 ```
 
+#### Compute O-scores
+
+Compute O-scores for data from Experiment 1 and Experiment 5 in ter Wal et al., 2021
+
 ```{r process_orig_data, echo=T, results='hide'}
 
-# I retrieved the behavioral data for Experiment 5 and Experiment 1 from the following link and converted the .mat files to .csv: https://figshare.com/collections/Data_for_Theta_rhythmicity_governs_the_timing_of_behavioural_and_hippocampal_responses_in_humans_specifically_during_memory-dependent_tasks/5192567
-# NOTE: I am not providing these exact csv's in my GitHub respository
+# I retrieved the behavioral data for Experiment 5 and Experiment 1 from the 
+# following link and converted the .mat files to .csv: 
+# https://figshare.com/collections/Data_for_Theta_rhythmicity_governs_the_timing_of_behavioural_and_hippocampal_responses_in_humans_specifically_during_memory-dependent_tasks/5192567
+# NOTE: Since the original .mat files are publicly available on figshare, I am 
+# not providing these csv's in my GitHub respository
 data_mem <- read.csv("BehavioralData_Experiment5.csv")
 data_vis <- read.csv("BehavioralData_Experiment1.csv")
-data <- rbind(data_mem, data_vis)
+data_orig <- rbind(data_mem, data_vis)
 
-data <- data %>% 
+data_orig <- data_orig %>% 
           filter(!is.na(RTs)) %>%
-          rename(acc = Acc, rt = RTs, subjectId = SubjID, trial_type = TrialType) 
+          rename(acc = Acc, rt = RTs, subjectId = SubjID, trial_type = TrialType) %>%
+          mutate(trial_type = recode(trial_type, "ret&catch" = "retrieval"))
 
-time_series_data <- data %>%
+time_series_data <- data_orig %>%
     group_by(trial_type, subjectId) %>%
     mutate(firstRT = first(rt), lastRT = last(rt)) %>%
     mutate(time_series_length = abs(lastRT - firstRT)) %>%
@@ -888,36 +934,44 @@ time_series_data <- data %>%
     group_by(trial_type, subid) %>%
     summarise(time_series_length = mean(time_series_length))
 
-oscorez_correct_dataframe <- compute_oscores_all_subs(data)
+oscorez_correct_dataframe_orig <- compute_oscores_all_subs(data_orig)
 
-save(oscorez_correct_dataframe, file = "oscillation_score.RData")
+save(oscorez_correct_dataframe_orig, file = "oscillation_score.RData")
+#load("oscillation_score.RData")
 
-oscorez_correct_dataframe <- oscorez_correct_dataframe %>%
+oscorez_correct_dataframe_orig <- oscorez_correct_dataframe_orig %>%
   filter(!is.na(oscorez_correct))
 
 ```
 
+Compute O-scores for replication data in the current study
 
 ```{r process_replication_data, echo=T, results='hide'}
 
-data_mem <- read.csv("MEM_0008_MemoryResults.csv") # just some pilot data for now
+data_mem <- 
+    list.files(path = "./wal_online_task", pattern = "*_MemoryResults.csv", recursive=T, full.names=T) %>% 
+    map_df(~fread(.))
 data_mem <- data_mem %>%
   filter(trial_type == "encoding-trial" | trial_type == "retrieval-trial") %>%
   filter(!grepl("/for_instructions/", associate)) %>% # remove practice trials
-  filter(response == "arrowdown") %>% # remove "forgot" trials
+  filter(response != "arrowdown") %>% # remove "forgot" trials
   select(trial_type, rt, cue, associate, accurate, instruction, subjectId) %>%
   mutate(accurate = as.integer(as.logical(accurate))) %>%
   # I realized that it was unclear to me how accuracy in the encoding task is determined.
-  # Since memory for each association was tested twice (semantic and perceptual questions),
-  # I labeled encoding trials as accurate if participants were correct in at least one of 
-  # the subsequent memory retrieval trials.
+  # Participants' memory for each association was tested twice (semantic and perceptual questions).
+  # I labeled encoding trials as accurate if participants were correct in at least one of
+  # the subsequent memory retrieval trials, as this would indicate that participants successfully
+  # retained some information about the association. However, it is possible that the original 
+  # authors used a different coding scheme. 
   group_by(subjectId, associate) %>%
   mutate(accurate = max(accurate, na.rm=T)) %>% # assign retrieval accuracy to encoding trials
   ungroup() %>%
   select(trial_type, rt, accurate, subjectId) %>%
   rename(acc = accurate)
   
-data_vis <- read.csv("MEM_0017_VisualResults.csv") # just some pilot data
+data_vis <- 
+    list.files(path = "./wal_online_task", pattern = "*_VisualResults.csv", recursive=T, full.names=T) %>% 
+    map_df(~fread(.))
 data_vis <- data_vis %>%
   filter(trial_type == "visual-trial") %>% 
   mutate(accurate = as.integer(as.logical(accurate))) %>%
@@ -947,6 +1001,7 @@ time_series_data_repl <- data_repl %>%
 oscorez_correct_dataframe_repl <- compute_oscores_all_subs(data_repl)
 
 save(oscorez_correct_dataframe_repl, file = "oscillation_score_repl.RData")
+#load("oscillation_score_repl.RData")
 
 oscorez_correct_dataframe_repl <- oscorez_correct_dataframe_repl %>%
   filter(!is.na(oscorez_correct))
@@ -957,232 +1012,367 @@ oscorez_correct_dataframe_repl <- oscorez_correct_dataframe_repl %>%
 
 As I specified in the analysis plan, I will assess whether the oscillation scores (z-scored O-scores) differ significantly between the memory-dependent and memory-independent tasks. The linear mixed effects model, as specified above, will be the main analysis of interest (I may just run a simple linear model if the mixed effects model does not converge). I will also performed paired t-tests to determine whether the O-scores are significantly above chance.
 
-*Side-by-side graph with original graph is ideal here*
-
 #### Recreation of Fig. 3A with data from two of the original experiments
 
 ```{r plot_oscore_orig}
-p <- ggplot(oscorez_correct_dataframe, aes(trial_type, oscorez_correct)) +
+ggplot(oscorez_correct_dataframe_orig, aes(trial_type, oscorez_correct)) +
   geom_boxplot(width=0.1, fill="dodgerblue2", color="gray27", outlier.shape = NA) +
   geom_jitter(width=0.1, fill="dodgerblue2", color="gray27", shape=21) +
   xlab("") +
   ylab("Oscillation score (Z-score)") + 
+  ylim(0.5, 2.5) +
   ggtitle("Data from original experiments") + 
   theme_classic()
-p
 ```
 
 ```{r plot_oscore_repl}
-# p <- ggplot(oscorez_correct_dataframe_repl, aes(trial_type, oscorez_correct)) +
-#   geom_boxplot(width=0.1, fill="darkorchid", color="gray27", outlier.shape = NA) +
-#   geom_jitter(width=0.1, fill="darkorchid", color="gray27", shape=21) +
-#   xlab("") +
-#   ylab("Oscillation score (Z-score)") + 
-#   ggtitle("Data from replication experiments") + 
-#   theme_classic()
-# p
+ggplot(oscorez_correct_dataframe_repl, aes(trial_type, oscorez_correct)) +
+  geom_boxplot(width=0.1, fill="mediumpurple", color="gray27", outlier.shape = NA) +
+  geom_jitter(width=0.1, fill="mediumpurple", color="gray27", shape=21) +
+  xlab("") +
+  ylab("Oscillation score (Z-score)") +
+  ylim(0.5, 2.5) +
+  ggtitle("Data from replication experiments") +
+  theme_classic()
 ```
 
-#### Statistical tests for the reproduced data
+#### Linear model testing the effect of memory dependence on O-scores for the reproduced data
 
 ```{r lm_orig}
-oscore_data <- merge(oscorez_correct_dataframe, time_series_data, all.x=T)
+oscore_data <- merge(oscorez_correct_dataframe_orig, time_series_data, all.x=T)
 
 oscore_data <- oscore_data %>%
-  dplyr::mutate(memory_dependence = recode(trial_type, "encoding"=1, "ret&catch"=1, "visual"=0)) %>%
+  dplyr::mutate(memory_dependence = recode(trial_type, "encoding"=1, "retrieval"=1, "visual"=0)) %>%
   dplyr::filter(!is.na(oscorez_correct))
 
-mod_lm <- lm(oscorez_correct ~ memory_dependence + time_series_length, data=oscore_data)
-print(summary(mod_lm))
-print(partial_f2(mod_lm))
+mod_lm_orig <- lm(oscorez_correct ~ memory_dependence + time_series_length, data=oscore_data)
+print(summary(mod_lm_orig))
+print(partial_f2(mod_lm_orig))
 # g*2 suggests a sample size of ~50 for an f2 of 0.15
-
+# it should be noted that because of the shuffling procedure used to standardize
+# the O-scores, the f2 printed above may be slightly different
 ```
 
+T-test comparing O-scores in the memory-dependent and memory-independent (visual) tasks
+
 ```{r vis_nonvis_ttest_orig}
-print("T-test comparing O-scores in visual and non-visual tasks")
 vis_v_nonvis_ttest <- stats::t.test(
-  oscorez_correct_dataframe %>% 
+  oscorez_correct_dataframe_orig %>% 
     filter(trial_type != "visual") %>% 
     select(oscorez_correct), 
-  oscorez_correct_dataframe %>% 
+  oscorez_correct_dataframe_orig %>% 
     filter(trial_type == "visual") %>% 
     select(oscorez_correct))
-print(vis_v_nonvis_ttest)
-print("effect size = difference between means / standard deviation")
+report_statistics(vis_v_nonvis_ttest)
 delta <- vis_v_nonvis_ttest$estimate["mean of x"] - vis_v_nonvis_ttest$estimate["mean of y"]
-delta <- delta / sd(oscorez_correct_dataframe$oscorez_correct)
-print(delta)
+delta <- delta / sd(oscorez_correct_dataframe_orig$oscorez_correct)
+print(paste("effect size:", round(delta, digits=2)))
 print("g*power suggests a sample of 50 (difference btwn two independent means)")
 ```
 
+T-test comparing O-scores in the encoding and visual tasks
+
 ```{r enc_vis_ttest_orig}
 enc_v_vis_ttest <- stats::t.test(
-  oscorez_correct_dataframe %>% 
+  oscorez_correct_dataframe_orig %>% 
     filter(trial_type == "encoding") %>% 
     select(oscorez_correct), 
-  oscorez_correct_dataframe %>% 
+  oscorez_correct_dataframe_orig %>% 
     filter(trial_type == "visual") %>% 
     select(oscorez_correct))
-print(enc_v_vis_ttest)
-print("effect size = difference between means / standard deviation")
+report_statistics(enc_v_vis_ttest)
 delta <- enc_v_vis_ttest$estimate["mean of x"] - enc_v_vis_ttest$estimate["mean of y"]
-delta <- delta / sd(oscorez_correct_dataframe$oscorez_correct)
-print(delta)
-
+delta <- delta / sd(oscorez_correct_dataframe_orig$oscorez_correct)
+print(paste("effect size:", round(delta, digits=2)))
 ```
+
+T-test comparing O-scores in the retrieval and visual tasks
 
 ```{r ret_vis_ttest_orig}
 ret_v_vis_ttest <- stats::t.test(
-  oscorez_correct_dataframe %>% 
-    filter(trial_type == "ret&catch") %>% 
+  oscorez_correct_dataframe_orig %>% 
+    filter(trial_type == "retrieval") %>% 
     select(oscorez_correct), 
-  oscorez_correct_dataframe %>% 
+  oscorez_correct_dataframe_orig %>% 
     filter(trial_type == "visual") %>% 
     select(oscorez_correct))
-print(ret_v_vis_ttest)
-print("effect size = difference between means / standard deviation")
+report_statistics(ret_v_vis_ttest)
 delta <- ret_v_vis_ttest$estimate["mean of x"] - ret_v_vis_ttest$estimate["mean of y"]
-delta <- delta / sd(oscorez_correct_dataframe$oscorez_correct)
-print(delta)
-
+delta <- delta / sd(oscorez_correct_dataframe_orig$oscorez_correct)
+print(paste("effect size:", round(delta, digits=2)))
 ```
+
+T-test comparing O-scores in the encoding and retrieval tasks
 
 ```{r enc_ret_ttest_orig}
 env_v_ret_ttest <- stats::t.test(
-  oscorez_correct_dataframe %>% 
+  oscorez_correct_dataframe_orig %>% 
     filter(trial_type == "encoding") %>% 
     select(oscorez_correct), 
-  oscorez_correct_dataframe %>% 
-    filter(trial_type == "ret&catch") %>% 
+  oscorez_correct_dataframe_orig %>% 
+    filter(trial_type == "retrieval") %>% 
     select(oscorez_correct))
-print(env_v_ret_ttest)
-print("effect size = difference between means / standard deviation")
+report_statistics(env_v_ret_ttest)
 delta <- env_v_ret_ttest$estimate["mean of x"] - env_v_ret_ttest$estimate["mean of y"]
-delta <- delta / sd(oscorez_correct_dataframe$oscorez_correct)
-print(delta)
+delta <- delta / sd(oscorez_correct_dataframe_orig$oscorez_correct)
+print(paste("effect size:", round(delta, digits=2)))
 ```
 
-#### Statistical tests for the replication data
+#### Linear model testing the effect of memory dependence on O-scores for the replicated data
 
 ```{r lm_repl}
-# oscore_data <- merge(oscorez_correct_dataframe_repl, time_series_data, all.x=T)
-# 
-# oscore_data <- oscore_data %>%
-#   dplyr::mutate(memory_dependence = recode(trial_type, "encoding"=1, "ret&catch"=1, "visual"=0)) %>%
-#   dplyr::filter(!is.na(oscorez_correct))
-# 
-# mod_lm <- lm(oscorez_correct ~ memory_dependence + time_series_length, data=oscore_data)
-# print(summary(mod_lm))
-# print(partial_f2(mod_lm))
+oscore_data <- merge(oscorez_correct_dataframe_repl, time_series_data_repl, all.x=T)
+
+oscore_data <- oscore_data %>%
+  dplyr::mutate(memory_dependence = recode(trial_type, "encoding"=1, "retrieval"=1, "visual"=0)) %>%
+  dplyr::filter(!is.na(oscorez_correct))
+
+mod_lm_repl <- lm(oscorez_correct ~ memory_dependence + time_series_length, data=oscore_data)
+print(summary(mod_lm_repl))
+print(partial_f2(mod_lm_repl))
 ```
+
+T-test comparing O-scores in the memory-dependent and memory-independent (visual) tasks
 
 ```{r vis_nonvis_ttest_repl}
-# print("T-test comparing O-scores in visual and non-visual tasks")
-# vis_v_nonvis_ttest <- stats::t.test(
-#   oscorez_correct_dataframe_repl %>% 
-#     filter(trial_type != "visual") %>% 
-#     select(oscorez_correct), 
-#   oscorez_correct_dataframe %>% 
-#     filter(trial_type == "visual") %>% 
-#     select(oscorez_correct))
-# print(vis_v_nonvis_ttest)
-# print("effect size = difference between means / standard deviation")
-# delta <- vis_v_nonvis_ttest$estimate["mean of x"] - vis_v_nonvis_ttest$estimate["mean of y"]
-# delta <- delta / sd(oscorez_correct_dataframe$oscorez_correct)
-# print(delta)
-# print("g*power suggests a sample of 50 (difference btwn two independent means)")
+vis_v_nonvis_ttest <- stats::t.test(
+  oscorez_correct_dataframe_repl %>%
+    filter(trial_type != "visual") %>%
+    select(oscorez_correct),
+  oscorez_correct_dataframe_repl %>%
+    filter(trial_type == "visual") %>%
+    select(oscorez_correct))
+report_statistics(vis_v_nonvis_ttest)
+delta <- vis_v_nonvis_ttest$estimate["mean of x"] - vis_v_nonvis_ttest$estimate["mean of y"]
+delta <- delta / sd(oscorez_correct_dataframe_repl$oscorez_correct)
+print(paste("effect size:", round(delta, digits=2)))
 ```
+
+T-test comparing O-scores in the encoding and visual tasks
 
 ```{r enc_vis_ttest_repl}
-# enc_v_vis_ttest <- stats::t.test(
-#   oscorez_correct_dataframe_repl %>% 
-#     filter(trial_type == "encoding") %>% 
-#     select(oscorez_correct), 
-#   oscorez_correct_dataframe %>% 
-#     filter(trial_type == "visual") %>% 
-#     select(oscorez_correct))
-# print(enc_v_vis_ttest)
-# print("effect size = difference between means / standard deviation")
-# delta <- enc_v_vis_ttest$estimate["mean of x"] - enc_v_vis_ttest$estimate["mean of y"]
-# delta <- delta / sd(oscorez_correct_dataframe$oscorez_correct)
-# print(delta)
-
+enc_v_vis_ttest <- stats::t.test(
+  oscorez_correct_dataframe_repl %>%
+    filter(trial_type == "encoding") %>%
+    select(oscorez_correct),
+  oscorez_correct_dataframe_repl %>%
+    filter(trial_type == "visual") %>%
+    select(oscorez_correct))
+report_statistics(enc_v_vis_ttest)
+delta <- enc_v_vis_ttest$estimate["mean of x"] - enc_v_vis_ttest$estimate["mean of y"]
+delta <- delta / sd(oscorez_correct_dataframe_repl$oscorez_correct)
+print(paste("effect size:", round(delta, digits=2)))
 ```
+
+T-test comparing O-scores in the retrieval and visual tasks
 
 ```{r ret_vis_ttest_repl}
-# ret_v_vis_ttest <- stats::t.test(
-#   oscorez_correct_dataframe_repl %>% 
-#     filter(trial_type == "ret&catch") %>% 
-#     select(oscorez_correct), 
-#   oscorez_correct_dataframe %>% 
-#     filter(trial_type == "visual") %>% 
-#     select(oscorez_correct))
-# print(ret_v_vis_ttest)
-# print("effect size = difference between means / standard deviation")
-# delta <- ret_v_vis_ttest$estimate["mean of x"] - ret_v_vis_ttest$estimate["mean of y"]
-# delta <- delta / sd(oscorez_correct_dataframe$oscorez_correct)
-# print(delta)
-
+ret_v_vis_ttest <- stats::t.test(
+  oscorez_correct_dataframe_repl %>%
+    filter(trial_type == "retrieval") %>%
+    select(oscorez_correct),
+  oscorez_correct_dataframe_repl %>%
+    filter(trial_type == "visual") %>%
+    select(oscorez_correct))
+report_statistics(ret_v_vis_ttest)
+delta <- ret_v_vis_ttest$estimate["mean of x"] - ret_v_vis_ttest$estimate["mean of y"]
+delta <- delta / sd(oscorez_correct_dataframe_repl$oscorez_correct)
+print(paste("effect size:", round(delta, digits=2)))
 ```
 
+T-test comparing O-scores in the encoding and retrieval tasks
+
 ```{r enc_ret_ttest_repl}
-# env_v_ret_ttest <- stats::t.test(
-#   oscorez_correct_dataframe_repl %>% 
-#     filter(trial_type == "encoding") %>% 
-#     select(oscorez_correct), 
-#   oscorez_correct_dataframe %>% 
-#     filter(trial_type == "ret&catch") %>% 
-#     select(oscorez_correct))
-# print(env_v_ret_ttest)
-# print("effect size = difference between means / standard deviation")
-# delta <- env_v_ret_ttest$estimate["mean of x"] - env_v_ret_ttest$estimate["mean of y"]
-# delta <- delta / sd(oscorez_correct_dataframe$oscorez_correct)
-# print(delta)
+env_v_ret_ttest <- stats::t.test(
+  oscorez_correct_dataframe_repl %>%
+    filter(trial_type == "encoding") %>%
+    select(oscorez_correct),
+  oscorez_correct_dataframe_repl %>%
+    filter(trial_type == "retrieval") %>%
+    select(oscorez_correct))
+report_statistics(env_v_ret_ttest)
+delta <- env_v_ret_ttest$estimate["mean of x"] - env_v_ret_ttest$estimate["mean of y"]
+delta <- delta / sd(oscorez_correct_dataframe_repl$oscorez_correct)
+print(paste("effect size:", round(delta, digits=2)))
 ```
 
 ### Exploratory analyses
 
-Any follow-up analyses desired (not required).  
+#### Behavioral performance
 
-#### Recreation of Fig. 3C with data from two of the original experiments, looking at the frequency of behavioral oscillations
+Experiments 1 and 5 in ter Wal et al., 2021
+
+```{r behavioral_accuracy_orig}
+kable(data_orig %>%
+  group_by(subjectId, trial_type) %>%
+  summarize(mean_accuracy = mean(acc)) %>%
+  group_by(trial_type) %>%
+  summarize(mean_accuracy = mean(mean_accuracy)),
+  align='l')
+```
+
+Replication study
+
+```{r behavioral_accuracy_repl}
+kable(data_repl %>%
+  group_by(subjectId, trial_type) %>%
+  summarize(mean_accuracy = mean(acc)) %>%
+  group_by(trial_type) %>%
+  summarize(mean_accuracy = mean(mean_accuracy)),
+  align='l')
+```
+
+#### Density plots of reaction times in the replication study
+
+```{r response_density_encoding}
+data_repl %>%
+  filter(trial_type == "encoding") %>%
+  mutate(acc = recode(acc, "1"="correct responses", "0"="incorrect responses")) %>%
+  mutate(accuracy = acc) %>%
+  ggplot(aes(rt, color=accuracy)) +
+    geom_density() + 
+    facet_wrap(~subjectId, ncol=5) +
+    labs(x = "Time after object onset (s)") + 
+    ggtitle("Encoding task") + 
+    theme_minimal()
+```
+
+```{r response_density_retrieval}
+data_repl %>%
+  filter(trial_type == "retrieval") %>%
+  mutate(acc = recode(acc, "1"="correct responses", "0"="incorrect responses")) %>%
+  mutate(accuracy = acc) %>%
+  ggplot(aes(rt, color=accuracy)) +
+    geom_density() + 
+    facet_wrap(~subjectId, ncol=5) +
+    labs(x = "Time after retrieval cue onset (s)") + 
+    ggtitle("Retrieval task") + 
+    theme_minimal()
+```
+
+```{r response_density_visual}
+data_repl %>%
+  filter(trial_type == "visual") %>%
+  mutate(acc = recode(acc, "1"="correct responses", "0"="incorrect responses")) %>%
+  mutate(accuracy = acc) %>%
+  ggplot(aes(rt, color=accuracy)) +
+    geom_density() + 
+    facet_wrap(~subjectId, ncol=5) +
+    labs(x = "Time after stimulus onset (s)") + 
+    ggtitle("Visual task") + 
+    theme_minimal()
+```
+
+#### Recreation of Fig. 3C with data from two of the original experiments, looking at the peak frequency in the behavioral oscillations
 
 ```{r plot_freq_hist_orig}
-freq_hist <- ggplot(oscorez_correct_dataframe, aes(y=fosc, after_stat(density))) + 
-              geom_histogram(color="black", fill="dodgerblue2") + 
-              geom_hline(yintercept=1, color="darkorange1",
-                linetype="dashed") + 
-              geom_hline(yintercept=5, color="darkorange1",
-                linetype="dashed") + 
-              ylab("Frequency (Hz)") + 
-              xlab("Fraction of participants") +
-              ggtitle("Data from original experiments") + 
-              facet_wrap(~trial_type) + 
-              theme_minimal()
-freq_hist
+ggplot(oscorez_correct_dataframe_orig, aes(y=fosc, after_stat(density))) + 
+    geom_histogram(color="black", fill="dodgerblue2") + 
+    geom_hline(yintercept=1, color="darkorange1",
+      linetype="dashed") + 
+    geom_hline(yintercept=5, color="darkorange1",
+      linetype="dashed") + 
+    ylab("Frequency (Hz)") + 
+    xlab("Fraction of participants") +
+    ggtitle("Data from original experiments") + 
+    facet_wrap(~trial_type) + 
+    theme_minimal()
 ```
 
 ```{r plot_freq_hist_repl}
-# freq_hist <- ggplot(oscorez_correct_dataframe_repl, aes(y=fosc, after_stat(density))) + 
-#               geom_histogram(color="black", fill="dodgerblue2") + 
-#               geom_hline(yintercept=1, color="darkorange1",
-#                 linetype="dashed") + 
-#               geom_hline(yintercept=5, color="darkorange1",
-#                 linetype="dashed") + 
-#               ylab("Frequency (Hz)") + 
-#               xlab("Fraction of participants") +
-#               ggtitle("Data from replication experiments") + 
-#               facet_wrap(~trial_type) + 
-#               theme_minimal()
-# freq_hist
+ggplot(oscorez_correct_dataframe_repl, aes(y=fosc, after_stat(density))) +
+    geom_histogram(color="black", fill="mediumpurple") +
+    geom_hline(yintercept=1, color="darkorange1",
+      linetype="dashed") +
+    geom_hline(yintercept=5, color="darkorange1",
+      linetype="dashed") +
+    ylab("Frequency (Hz)") +
+    xlab("Fraction of participants") +
+    ggtitle("Data from replication experiments") +
+    facet_wrap(~trial_type) +
+    theme_minimal()
+```
+
+##### Does the peak frequency differ between tasks?
+
+Data from original experiments 
+
+```{r lm_fosc_orig}
+oscore_data <- merge(oscorez_correct_dataframe_orig, time_series_data, all.x=T)
+
+oscore_data <- oscore_data %>%
+  mutate(memory_dependence = recode(trial_type, "encoding"=1, "retrieval"=1, "visual"=0)) %>%
+  filter(!is.na(oscorez_correct))
+
+mod_lm_fosc_orig <- lm(fosc ~ memory_dependence + time_series_length, data=oscore_data)
+print(summary(mod_lm_fosc_orig))
+```
+
+Data from replication study
+
+```{r lm_fosc_repl}
+oscore_data <- merge(oscorez_correct_dataframe_repl, time_series_data_repl, all.x=T)
+
+oscore_data <- oscore_data %>%
+  mutate(memory_dependence = recode(trial_type, "encoding"=1, "retrieval"=1, "visual"=0)) %>%
+  filter(!is.na(oscorez_correct))
+
+mod_lm_fosc_repl <- lm(fosc ~ memory_dependence + time_series_length, data=oscore_data)
+print(summary(mod_lm_fosc_repl))
+```
+
+These analyses suggest that the peak frequency was significantly lower in the memory-dependent compared to memory-independent tasks in the replication sample. This is consistent with the finding reported in the original paper; this effect was not statistically significant, however, in the two experiments for which I reproduced data. 
+
+#### How do the O-scores and peak frequencies compare across samples?
+
+```{r oscore_comparison_across_samples}
+combined_data <- rbind(oscorez_correct_dataframe_orig %>%
+                         mutate(sample="original"), 
+                       oscorez_correct_dataframe_repl %>%
+                         mutate(sample="replication"))
+
+sample_mod_oscore <- lm(oscorez_correct ~ sample * trial_type, data=combined_data)
+print(summary(sample_mod_oscore))
+
+sample_mod_fosc <- lm(fosc ~ sample * trial_type, data=combined_data)
+print(summary(sample_mod_fosc))
+```
+
+The O-scores and peak frequencies do not appear to differ significantly between the original in person sample and the online replication sample.
+
+```{r test, include=FALSE}
+orig_lm_stats <- report_statistics(mod_lm_orig)[2]
+repl_lm_stats <- report_statistics(mod_lm_repl)[2]
+
+vis_v_nonvis_ttest_stats <- report_statistics(vis_v_nonvis_ttest)
+enc_v_vis_ttest_stats <- report_statistics(enc_v_vis_ttest)
+ret_v_vis_ttest_stats <- report_statistics(ret_v_vis_ttest)
 ```
 
 ## Discussion
 
 ### Summary of Replication Attempt
 
-Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.  
+In this project, I attempted to replicate the primary behavioral finding in ter Wal et al. (2021), in which the authors showed that behavioral responses are more oscillatory in memory-dependent compared to memory-independent tasks. My primary confirmatory analysis was a linear model that assessed the effects of memory dependence and the length of the response time series on Oscillation scores (O-scores). I first reproduced the O-scores from two of the original experiments (out of 13). Here, O-scores were higher in memory-dependent tasks compared to the memory-independent task: (`r orig_lm_stats`). In the replication study conducted online, the effect of memory dependence was statistically non-significant, but trending in the same direction: (`r repl_lm_stats`).
 
 ### Commentary
 
-Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt.  None of these need to be long.
+Additional preregistered analyses included t-tests comparing the O-scores in each type of task. These t-tests also showed that there was not a statistically significant difference between the O-scores in the memory-dependent (encoding + retrieval) and memory-independent (visual) tasks: (`r vis_v_nonvis_ttest_stats`). Looking further at whether there were differences between the individual memory-dependent tasks and the memory-independent task, t-tests revealed that O-scores between the encoding and visual tasks did not differ: (`r enc_v_vis_ttest_stats`). There was, however, there was a statistically significant difference between the O-scores in the retrieval and visual tasks: (`r ret_v_vis_ttest_stats`). There are reasons to believe that the responses in the retrieval task were more reliable than those in the encoding task, suggesting that with an experimental design more optimized for online data collection, the primary finding might replicate in online samples.
+
+Below, I elaborate on some challenges I faced in running this replication study online and list some differences between this replication and the original study. These discrepancies could potentially explain why the primary confirmatory analysis did not replicate in this online sample. I also provide suggestions for improving the current version of the online study.   
+
+First, piloting revealed that it was potentially unclear that responses were required in the encoding task. I subsequently modified the instructions quiz in the memory-dependent study to emphasize to participants that they should press the space bar as soon as they formed a mental image between the verb cue and object they were shown. It appears that the majority of participants in the final sample paid attention to, and followed this part of the instructions; only 3 participants' encoding data were excluded for having too few trials. Since the number of instructions quiz attempts is logged in the data files, it is possible to assess whether the number of failed attempts (a measure of instructions comprehension) negatively predicts performance in each task. This finding could inform whether a pre-set threshold on this number could potentially be used in the future as an exclusion criterion. The feedback from piloting and the failure of some participants to provide responses in some blocks of the encoding tasks raise the concern that the reaction times in the encoding task may not be particularly reliable with respect to the timing of memory formation. A visual inspection of the graphs above suggests that the encoding O-scores may indeed be noisier in the replication sample than in the original sample.
+
+Second, feedback on the retrieval task by a participant who dropped out of the study suggests that the structure of the retrieval trials may also have been confusing. This participant was responding during the instructions display rather than during the presentation of the retrieval cue, and was confused about why their performance was 0%. In all tasks, visually indicating that a response was received, or having a "too slow" display when participants fail to respond, could be helpful. Of note, online participants may be particularly sensitive to feedback on their performance. Since there was only feedback in the distractor and retrieval tasks, but not in the encoding tasks, participants may have been more vigilant during retrieval than during encoding. Reaction times could therefore be more reliable in the retrieval task. In the future, feedback on the percentage of trials participants responded successfully in could be added after each encoding phase to make the tasks more similar and perhaps equate participants' engagement across tasks. 
+
+Third, I am not confident that I coded accuracy in the encoding task in the same way as the original authors. As preregistered, I coded encoding trials as accurate if the participant responded correctly in at least one of the corresponding retrieval trials (as described above, participants were tested on their memory for each association twice, once on a semantic property of the object and a second time on a perceptual property of the object, in random order). It is possible that the authors used a different coding scheme (e.g., trials were only accurate if participants were accurate on both of the subsequent memory retrieval trials). My failure to replicate the difference in O-scores between the encoding and visual tasks could potentially be attributed to this potential discrepancy in the coding scheme.  
+
+Fourth, it should be noted that the mean age of participants in the current experiments was roughly ten years older than the mean age of participants in the original behavioral studies. Of note, the mean age in the current samples is similar to that of the participants who took part in the intracranial EEG studies in the original paper (who performed similar tasks). It is unclear if age differences are expected in the effects of interest, but I suspect not.
+
+Fifth, as with any online sample, it is possible that participants were multitasking as they were engaging with the tasks. The browser interaction data collected in this study could be used to assess how attentive each participant was. 
+
+Sixth, the memory-dependent study was at least 3x as long as the memory-independent study. It is unclear if fatigue in the memory-dependent study could have introduced more variability in response times, subsequently impacting the oscillation metrics. 
+
+Finally, there are a couple more differences between the original study and the online replication version that I would like to note: (1) The distractor task between the encoding and retrieval blocks was shorted in the current study, and participants could also decide when they wanted to start the distractor or the retrieval tasks. This variability in the duration of the delay between encoding and retrieval could have impacted memory performance. (2) In the memory-independent task, each object was only seen once, as opposed to twice in the original experiment. It is unlikely that this influenced the results.
+
+In summary, more steps could have been taken to better optimize this replication study for an online format. Although the confirmatory analysis did not replicate, the statistically significant difference in Oscillation scores between the retrieval and visual tasks provides additional evidence that the timing of successful recall is oscillatory. This result demonstrates that it is possible to probe via online experimentation whether behavior in memory-dependent and memory-independent tasks is rhythmic. 

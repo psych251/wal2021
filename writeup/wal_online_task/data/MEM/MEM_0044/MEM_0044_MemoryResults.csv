@@ -1,0 +1,789 @@
+success,trial_type,trial_index,time_elapsed,internal_node_id,timeout,failed_images,failed_audio,failed_video,rt,stimulus,response,cue,associate,cue_duration,associate_duration,initial_jitter,cue_asso_jitter,key,animacy,style,instruction,instruction_text,prompt,instruction_duration,accurate,question_order,numbers,trial_accuracies,mean_accuracy,exp,subjectId,date
+True,fullscreen,0,5121,0.0-0.0,,,,,,,,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+True,preload,1,10297,0.0-1.0,False,[],[],[],,,,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,2,21991,0.0-2.0,,,,,11692.0,"
+    <p>In this part of the study, you will first see an action verb. This will be followed by a plus sign, and then an object.<br>
+    Your job is to create a vivid mental image involving the action verb and the object.<br>
+    Once you have a clear association in mind, press the space bar to continue to the next trial.<br>
+    <br>
+    Please keep in mind that you will be asked later about the object's perceptual properties in addition to its meaning.
+    This may include questions regarding the color or shape of the objects.
+    <br>
+    <img src=""/static/instructions_pics/encoding_pic.png"" height=""200px"">
+    <br>
+    Now, you will first do some practice trials. Press the space bar when you are ready to continue.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,3,32704,0.0-3.0,,,,,,,,modify,/static/for_instructions/object_pics/drawing_bird/heron.jpg,2000.0,7000.0,853.2459664119438,820.4165669490374,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,4,38309,0.0-4.0,,,,,2182.0,,,sculpt,/static/for_instructions/object_pics/picture_electronic/flashlight.jpg,2000.0,7000.0,849.1424699493604,559.4486018521037, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,5,45502,0.0-5.0,,,,,3286.0,,,construct,/static/for_instructions/object_pics/drawing_clothe/hockey helmet.jpg,2000.0,7000.0,979.3318719243149,915.242090704941, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,6,52694,0.0-6.0,,,,,3045.0,,,integrate,/static/for_instructions/object_pics/picture_veggie/avocado.jpg,2000.0,7000.0,863.1234523155669,1270.7853260996135, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,7,100790,0.0-7.0,,,,,48096.0,"
+    <p>Great job!
+    <br>
+    Now you will see an action verb that you were shown earlier. Your job is to bring back to mind the object
+    that you imagined being involved with this word and to report information about the object's semantic or visual features.
+    <br>
+    A question screen presented before the action verb will indicate which feature you are to report on:
+    <br>
+    ""animate vs. inanimate"" or ""photo vs. drawing"".
+    <br>
+    Press the left arrow button for animate/photo or the right arrow button for inanimate/drawing.
+    <br>
+    If you forgot the object associated with the verb, press the down arrow.
+    Please respond as quickly as possible, and use your dominant hand to make your responses.
+    <br>
+    <img src=""/static/instructions_pics/retrieval_pic.png"" height=""350px"">
+    <br>When you read the first set of instructions, you may have created a vivid mental image involving the word ""find"" and a drawing of a dog.
+    In these examples trials shown above, the correct response for the top row is ""animate"", whereas the correct response for the bottom row is ""drawing"".
+    <br>When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,8,111023,0.0-8.0,,,,,6414.0,,,modify,/static/for_instructions/object_pics/drawing_bird/heron.jpg,10000.0,,,,arrowleft,null,null,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,9,117886,0.0-9.0,,,,,3084.0,,,sculpt,/static/for_instructions/object_pics/picture_electronic/flashlight.jpg,10000.0,,,,arrowright,null,null,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,10,127998,0.0-10.0,,,,,6253.0,,,construct,/static/for_instructions/object_pics/drawing_clothe/hockey helmet.jpg,10000.0,,,,arrowleft,null,null,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,11,134871,0.0-11.0,,,,,2782.0,,,integrate,/static/for_instructions/object_pics/picture_veggie/avocado.jpg,10000.0,,,,arrowleft,null,null,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,survey-multi-choice,12,164123,0.0-12.0-0.0,,,,,29249.0,,"{'Encoding': 'True', 'EncodingKeys': 'True', 'Retrieval': 'True', 'RetrievalKeys': 'True'}",,,,,,,,,,,,,,,"[0, 1, 2, 3]",,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,13,169814,0.0-13.0,,,,,5687.0,"
+    <p>Great job! Now you'll continue onto doing the main tasks.
+    You will have the opportunity to take brief breaks at various points.
+    The instructions will be displayed again before the start of each task, in case you need a refresher.
+    Good luck!<br>Press the space bar to continue.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+True,fullscreen,14,172528,0.0-14.0,,,,,,,,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,15,178550,0.0-15.0,,,,,6020.0,"
+    <p>As you practiced earlier, you will first see an action verb in this part of the study. This will be followed by a plus sign, and then an object.<br>
+    Your job is to create a vivid mental image involving the action verb and the object.<br>
+    Once you have a clear association in mind, press the space bar to continue to the next trial.<br>
+    <br>
+    Please keep in mind that you will be asked later about the object's perceptual properties in addition to its meaning.
+    <br>
+    <img src=""/static/instructions_pics/encoding_pic.png"" height=""350px"">
+    <br>
+    Press the space bar when you are ready to start the task.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,16,189920,0.0-16.0,,,,,,,,bump,/static/object_pics/drawing_electronic/gamepad.jpg,2000.0,7000.0,846.8553527051611,1498.4890454030146,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,17,197118,0.0-17.0,,,,,3493.0,,,pump,/static/object_pics/drawing_electronic/laptop.jpg,2000.0,7000.0,803.5106560672959,886.0430498567316, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,18,202733,0.0-18.0,,,,,1957.0,,,fit,/static/object_pics/drawing_clothe/hat.jpg,2000.0,7000.0,698.3451981354838,947.6406735153364, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,19,210325,0.0-19.0,,,,,3150.0,,,compare,/static/object_pics/drawing_sea/dolphin.jpg,2000.0,7000.0,1017.8872071159457,1414.7778880475016, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,20,216557,0.0-20.0,,,,,2382.0,,,arrange,/static/object_pics/picture_electronic/printer.jpg,2000.0,7000.0,937.0195871926002,899.3126023405935, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,21,224022,0.0-21.0,,,,,2725.0,,,hop,/static/object_pics/drawing_insect/ant.jpg,2000.0,7000.0,1375.2605811619878,1351.4224737279756, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,22,229861,0.0-22.0,,,,,2109.0,,,kick,/static/object_pics/picture_mammal/camel.jpg,2000.0,7000.0,762.1801472157681,953.389517486293, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,23,236879,0.0-23.0,,,,,3005.0,,,locate,/static/object_pics/drawing_veggie/artichoke.jpg,2000.0,7000.0,1201.555433025204,793.6568915120868, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,24,245894,0.0-24.0,,,,,9015.0,"
+    <p>Now, you will a series of numbers. <br>
+    If the number is even, press the left arrow key. <br>
+    If the number is odd, press the right arrow key.<br>
+    <br>
+    When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,number-parity-trial,25,265897,0.0-25.0,,,,,,,"['arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft']",,,,,,,,,,,,,,,,"[61, 75, 57, 92, 30, 2, 29, 93, 62, 46, 21, 65, 90, 82, 73, 57, 4, 73, 88, 82, 12, 92, 33, 25, 17, 54, 32, 94]","[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]",1.0,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,26,268560,0.0-26.0,,,,,2662.0,"<p>In that last set of trials, you were correct 100% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,27,272630,0.0-27.0,,,,,4069.0,"
+    <br>
+    As you practiced earlier, you will now see an action verb that you were shown earlier. Your job is to bring back to mind the object
+    that you imagined being involved with this word and to report information about the object's semantic or visual features.
+    <br>
+    A question screen presented before the action verb will indicate which feature you are to report on:
+    <br>
+    ""animate vs. inanimate"" or ""photo vs. drawing"".
+    <br>
+    Press the left arrow button for animate/photo or the right arrow button for inanimate/drawing.
+    <br>
+    If you forgot the object associated with the verb, press the down arrow.
+    Please respond as quickly as possible, and use your dominant hand to make your responses.
+    <br>
+    <img src=""/static/instructions_pics/retrieval_pic.png"" height=""350px"">
+    <br>When you read the first set of instructions, you may have created a vivid mental image involving the word ""find"" and a drawing of a dog.
+    In these examples trials shown above, the correct response for the top row is ""animate"", whereas the correct response for the bottom row is ""drawing"".
+    <br>When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,28,278870,0.0-28.0,,,,,2357.0,,,bump,/static/object_pics/drawing_electronic/gamepad.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,29,285183,0.0-29.0,,,,,2693.0,,,fit,/static/object_pics/drawing_clothe/hat.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,30,291486,0.0-30.0,,,,,2637.0,,,arrange,/static/object_pics/picture_electronic/printer.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,31,298990,0.0-31.0,,,,,3197.0,,,pump,/static/object_pics/drawing_electronic/laptop.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,32,305478,0.0-32.0,,,,,2046.0,,,compare,/static/object_pics/drawing_sea/dolphin.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,33,311830,0.0-33.0,,,,,2061.0,,,locate,/static/object_pics/drawing_veggie/artichoke.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,34,318006,0.0-34.0,,,,,2188.0,,,hop,/static/object_pics/drawing_insect/ant.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,35,323254,0.0-35.0,,,,,1046.0,,,kick,/static/object_pics/picture_mammal/camel.jpg,10000.0,,,,arrowleft,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,36,329919,0.0-36.0,,,,,2966.0,,,locate,/static/object_pics/drawing_veggie/artichoke.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,37,335991,0.0-37.0,,,,,1662.0,,,hop,/static/object_pics/drawing_insect/ant.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,38,341958,0.0-38.0,,,,,1965.0,,,arrange,/static/object_pics/picture_electronic/printer.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,39,347286,0.0-39.0,,,,,1413.0,,,pump,/static/object_pics/drawing_electronic/laptop.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,40,352438,0.0-40.0,,,,,1286.0,,,bump,/static/object_pics/drawing_electronic/gamepad.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,41,358053,0.0-41.0,,,,,2077.0,,,compare,/static/object_pics/drawing_sea/dolphin.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,42,363397,0.0-42.0,,,,,1358.0,,,fit,/static/object_pics/drawing_clothe/hat.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,43,370436,0.0-43.0,,,,,3293.0,,,kick,/static/object_pics/picture_mammal/camel.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,44,373813,0.0-44.0,,,,,3375.0,"<p>In that last set of trials, you were correct 81% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,45,377205,0.0-45.0,,,,,3391.0,"
+    <p>As you practiced earlier, you will first see an action verb in this part of the study. This will be followed by a plus sign, and then an object.<br>
+    Your job is to create a vivid mental image involving the action verb and the object.<br>
+    Once you have a clear association in mind, press the space bar to continue to the next trial.<br>
+    <br>
+    Please keep in mind that you will be asked later about the object's perceptual properties in addition to its meaning.
+    <br>
+    <img src=""/static/instructions_pics/encoding_pic.png"" height=""350px"">
+    <br>
+    Press the space bar when you are ready to start the task.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,46,383381,0.0-46.0,,,,,1935.0,,,copy,/static/object_pics/picture_veggie/pumpkin.jpg,2000.0,7000.0,1280.9534705323233,947.232312844909, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,47,389685,0.0-47.0,,,,,1861.0,,,harm,/static/object_pics/drawing_bird/pigeon.jpg,2000.0,7000.0,1091.0591049446089,1339.8649926300657, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,48,397621,0.0-48.0,,,,,3085.0,,,add,/static/object_pics/picture_mammal/bull.jpg,2000.0,7000.0,1450.7045388158795,1380.811544653543, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,49,405614,0.0-49.0,,,,,3942.0,,,drill,/static/object_pics/picture_bird/canary.jpg,2000.0,7000.0,1065.272272870323,968.2843713821273, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,50,414477,0.0-50.0,,,,,4438.0,,,draw,/static/object_pics/picture_fruit/cherry.jpg,2000.0,7000.0,1389.8917458051492,1020.3487952736625, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,51,423276,0.0-51.0,,,,,4742.0,,,fall,/static/object_pics/drawing_electronic/phone.jpg,2000.0,7000.0,672.8244175982203,1376.461778454915, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,52,430203,0.0-52.0,,,,,3261.0,,,drop,/static/object_pics/picture_fruit/pomegranate.jpg,2000.0,7000.0,851.4662485543108,797.4262188695218, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,53,437652,0.0-53.0,,,,,2941.0,,,decorate,/static/object_pics/picture_electronic/computer mouse.jpg,2000.0,7000.0,1069.8311944685286,1430.7925941182607, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,54,439884,0.0-54.0,,,,,2232.0,"
+    <p>Now, you will a series of numbers. <br>
+    If the number is even, press the left arrow key. <br>
+    If the number is odd, press the right arrow key.<br>
+    <br>
+    When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,number-parity-trial,55,459887,0.0-55.0,,,,,,,"['arrowright', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowright', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft']",,,,,,,,,,,,,,,,"[37, 70, 18, 90, 83, 17, 83, 76, 72, 45, 13, 9, 49, 35, 46, 19, 48, 77, 67, 5, 87, 27, 15, 17, 80, 29, 29, 37, 80, 66, 59]","[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]",1.0,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,56,461523,0.0-56.0,,,,,1636.0,"<p>In that last set of trials, you were correct 100% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,57,463220,0.0-57.0,,,,,1696.0,"
+    <br>
+    As you practiced earlier, you will now see an action verb that you were shown earlier. Your job is to bring back to mind the object
+    that you imagined being involved with this word and to report information about the object's semantic or visual features.
+    <br>
+    A question screen presented before the action verb will indicate which feature you are to report on:
+    <br>
+    ""animate vs. inanimate"" or ""photo vs. drawing"".
+    <br>
+    Press the left arrow button for animate/photo or the right arrow button for inanimate/drawing.
+    <br>
+    If you forgot the object associated with the verb, press the down arrow.
+    Please respond as quickly as possible, and use your dominant hand to make your responses.
+    <br>
+    <img src=""/static/instructions_pics/retrieval_pic.png"" height=""350px"">
+    <br>When you read the first set of instructions, you may have created a vivid mental image involving the word ""find"" and a drawing of a dog.
+    In these examples trials shown above, the correct response for the top row is ""animate"", whereas the correct response for the bottom row is ""drawing"".
+    <br>When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,58,469252,0.0-58.0,,,,,2006.0,,,decorate,/static/object_pics/picture_electronic/computer mouse.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,59,475899,0.0-59.0,,,,,2366.0,,,draw,/static/object_pics/picture_fruit/cherry.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,60,482851,0.0-60.0,,,,,2654.0,,,copy,/static/object_pics/picture_veggie/pumpkin.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,61,488914,0.0-61.0,,,,,2046.0,,,harm,/static/object_pics/drawing_bird/pigeon.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,62,495779,0.0-62.0,,,,,2798.0,,,fall,/static/object_pics/drawing_electronic/phone.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,63,501482,0.0-63.0,,,,,1797.0,,,drop,/static/object_pics/picture_fruit/pomegranate.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,64,507019,0.0-64.0,,,,,1509.0,,,add,/static/object_pics/picture_mammal/bull.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,65,512514,0.0-65.0,,,,,1645.0,,,drill,/static/object_pics/picture_bird/canary.jpg,10000.0,,,,arrowleft,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,66,518707,0.0-66.0,,,,,1741.0,,,draw,/static/object_pics/picture_fruit/cherry.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,67,524466,0.0-67.0,,,,,2142.0,,,copy,/static/object_pics/picture_veggie/pumpkin.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,68,530939,0.0-68.0,,,,,2133.0,,,fall,/static/object_pics/drawing_electronic/phone.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,69,537027,0.0-69.0,,,,,1598.0,,,decorate,/static/object_pics/picture_electronic/computer mouse.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,70,543042,0.0-70.0,,,,,1717.0,,,harm,/static/object_pics/drawing_bird/pigeon.jpg,10000.0,,,,arrowleft,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,71,550745,0.0-71.0,,,,,3910.0,,,drill,/static/object_pics/picture_bird/canary.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,72,556426,0.0-72.0,,,,,1614.0,,,add,/static/object_pics/picture_mammal/bull.jpg,10000.0,,,,arrowleft,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,73,562202,0.0-73.0,,,,,1886.0,,,drop,/static/object_pics/picture_fruit/pomegranate.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,74,575914,0.0-74.0,,,,,13711.0,"<p>In that last set of trials, you were correct 63% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,75,578738,0.0-75.0,,,,,2823.0,"
+    <p>As you practiced earlier, you will first see an action verb in this part of the study. This will be followed by a plus sign, and then an object.<br>
+    Your job is to create a vivid mental image involving the action verb and the object.<br>
+    Once you have a clear association in mind, press the space bar to continue to the next trial.<br>
+    <br>
+    Please keep in mind that you will be asked later about the object's perceptual properties in addition to its meaning.
+    <br>
+    <img src=""/static/instructions_pics/encoding_pic.png"" height=""350px"">
+    <br>
+    Press the space bar when you are ready to start the task.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,76,590274,0.0-76.0,,,,,6781.0,,,allocate,/static/object_pics/picture_mammal/bison.jpg,2000.0,7000.0,1474.647651475853,1261.085075880836, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,77,601683,0.0-77.0,,,,,,,,jump,/static/object_pics/drawing_insect/fly.jpg,2000.0,7000.0,1472.0904545648386,913.1124409854199,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,78,609240,0.0-78.0,,,,,3252.0,,,explode,/static/object_pics/drawing_insect/beetle.jpg,2000.0,7000.0,982.0973772760083,1319.866271358135, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,79,615768,0.0-79.0,,,,,2237.0,,,bring,/static/object_pics/drawing_sea/killer whale.jpg,2000.0,7000.0,1056.7448307101258,1220.585096213608, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,80,622657,0.0-80.0,,,,,2102.0,,,spread,/static/object_pics/drawing_bird/penguin.jpg,2000.0,7000.0,1451.3008321937332,1323.1123207504588, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,81,628217,0.0-81.0,,,,,2012.0,,,grind,/static/object_pics/drawing_fruit/papaya.jpg,2000.0,7000.0,891.0199725778269,642.1404568492748, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,82,635425,0.0-82.0,,,,,3430.0,,,fold,/static/object_pics/drawing_insect/bumble bee.jpg,2000.0,7000.0,789.0886117150269,972.3101959307471, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,83,640993,0.0-83.0,,,,,2125.0,,,detect,/static/object_pics/drawing_clothe/football sneaker.jpg,2000.0,7000.0,582.7162450952492,847.1893319600022, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,84,643153,0.0-84.0,,,,,2159.0,"
+    <p>Now, you will a series of numbers. <br>
+    If the number is even, press the left arrow key. <br>
+    If the number is odd, press the right arrow key.<br>
+    <br>
+    When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,number-parity-trial,85,663153,0.0-85.0,,,,,,,"['arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowleft', 'arrowright']",,,,,,,,,,,,,,,,"[12, 44, 94, 36, 75, 58, 60, 78, 18, 22, 79, 86, 96, 95, 19, 88, 57, 45, 20, 70, 16, 68, 94, 70, 19, 63, 9, 22, 99, 66, 67, 78]","[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]",1.0,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,86,664368,0.0-86.0,,,,,1214.0,"<p>In that last set of trials, you were correct 100% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,87,680904,0.0-87.0,,,,,16536.0,"
+    <br>
+    As you practiced earlier, you will now see an action verb that you were shown earlier. Your job is to bring back to mind the object
+    that you imagined being involved with this word and to report information about the object's semantic or visual features.
+    <br>
+    A question screen presented before the action verb will indicate which feature you are to report on:
+    <br>
+    ""animate vs. inanimate"" or ""photo vs. drawing"".
+    <br>
+    Press the left arrow button for animate/photo or the right arrow button for inanimate/drawing.
+    <br>
+    If you forgot the object associated with the verb, press the down arrow.
+    Please respond as quickly as possible, and use your dominant hand to make your responses.
+    <br>
+    <img src=""/static/instructions_pics/retrieval_pic.png"" height=""350px"">
+    <br>When you read the first set of instructions, you may have created a vivid mental image involving the word ""find"" and a drawing of a dog.
+    In these examples trials shown above, the correct response for the top row is ""animate"", whereas the correct response for the bottom row is ""drawing"".
+    <br>When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,88,686424,0.0-88.0,,,,,1326.0,,,fold,/static/object_pics/drawing_insect/bumble bee.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,89,691704,0.0-89.0,,,,,1117.0,,,spread,/static/object_pics/drawing_bird/penguin.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,90,697064,0.0-90.0,,,,,1150.0,,,grind,/static/object_pics/drawing_fruit/papaya.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,91,703968,0.0-91.0,,,,,2750.0,,,allocate,/static/object_pics/picture_mammal/bison.jpg,10000.0,,,,arrowleft,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,92,709824,0.0-92.0,,,,,1566.0,,,detect,/static/object_pics/drawing_clothe/football sneaker.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,93,714248,0.0-93.0,,,,,687.0,,,bring,/static/object_pics/drawing_sea/killer whale.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,94,719328,0.0-94.0,,,,,1053.0,,,explode,/static/object_pics/drawing_insect/beetle.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,95,724544,0.0-95.0,,,,,847.0,,,jump,/static/object_pics/drawing_insect/fly.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,96,730879,0.0-96.0,,,,,1877.0,,,allocate,/static/object_pics/picture_mammal/bison.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,97,735992,0.0-97.0,,,,,1542.0,,,spread,/static/object_pics/drawing_bird/penguin.jpg,10000.0,,,,arrowright,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,98,740864,0.0-98.0,,,,,733.0,,,jump,/static/object_pics/drawing_insect/fly.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,99,745696,0.0-99.0,,,,,798.0,,,explode,/static/object_pics/drawing_insect/beetle.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,100,752880,0.0-100.0,,,,,2670.0,,,detect,/static/object_pics/drawing_clothe/football sneaker.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,101,758048,0.0-101.0,,,,,798.0,,,fold,/static/object_pics/drawing_insect/bumble bee.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,102,762976,0.0-102.0,,,,,1198.0,,,grind,/static/object_pics/drawing_fruit/papaya.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,103,769056,0.0-103.0,,,,,2238.0,,,bring,/static/object_pics/drawing_sea/killer whale.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,104,773344,0.0-104.0,,,,,4287.0,"<p>In that last set of trials, you were correct 75% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,105,776664,0.0-105.0,,,,,3319.0,"
+    <p>As you practiced earlier, you will first see an action verb in this part of the study. This will be followed by a plus sign, and then an object.<br>
+    Your job is to create a vivid mental image involving the action verb and the object.<br>
+    Once you have a clear association in mind, press the space bar to continue to the next trial.<br>
+    <br>
+    Please keep in mind that you will be asked later about the object's perceptual properties in addition to its meaning.
+    <br>
+    <img src=""/static/instructions_pics/encoding_pic.png"" height=""350px"">
+    <br>
+    Press the space bar when you are ready to start the task.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,106,782471,0.0-106.0,,,,,1774.0,,,move,/static/object_pics/drawing_veggie/carrots.jpg,2000.0,7000.0,1360.1063122229725,662.2257980902892, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,107,789103,0.0-107.0,,,,,3014.0,,,browse,/static/object_pics/picture_sea/seal.jpg,2000.0,7000.0,1066.6716567817657,535.5395905490248, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,108,796751,0.0-108.0,,,,,3366.0,,,build,/static/object_pics/drawing_sea/octopus.jpg,2000.0,7000.0,898.8368502216156,1370.340191667526, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,109,803391,0.0-109.0,,,,,3181.0,,,deposit,/static/object_pics/drawing_sea/seahorse.jpg,2000.0,7000.0,854.2525630412072,597.2672237987076, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,110,810951,0.0-110.0,,,,,2933.0,,,warm,/static/object_pics/picture_clothe/shirt.jpg,2000.0,7000.0,1467.3039568439258,1140.054500016627, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,111,819415,0.0-111.0,,,,,4575.0,,,jam,/static/object_pics/picture_electronic/coffee maker.jpg,2000.0,7000.0,898.0850212163567,972.519009732597, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,112,827198,0.0-112.0,,,,,3765.0,,,strike,/static/object_pics/picture_insect/mantis.jpg,2000.0,7000.0,1126.3442920898183,872.7303183481285, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,113,834759,0.0-113.0,,,,,3662.0,,,forge,/static/object_pics/drawing_veggie/beetroot.jpg,2000.0,7000.0,1229.9492684811885,649.2273525891856, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,114,835839,0.0-114.0,,,,,1080.0,"
+    <p>Now, you will a series of numbers. <br>
+    If the number is even, press the left arrow key. <br>
+    If the number is odd, press the right arrow key.<br>
+    <br>
+    When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,number-parity-trial,115,855841,0.0-115.0,,,,,,,"['arrowright', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowright']",,,,,,,,,,,,,,,,"[57, 16, 5, 96, 72, 82, 71, 84, 98, 98, 66, 19, 63, 11, 2, 34, 88, 2, 11, 89, 49, 59, 70, 23, 89, 23, 89, 70, 67, 51, 89, 39, 59]","[True, True, False, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]",0.96875,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,116,857815,0.0-116.0,,,,,1973.0,"<p>In that last set of trials, you were correct 97% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,117,858927,0.0-117.0,,,,,1111.0,"
+    <br>
+    As you practiced earlier, you will now see an action verb that you were shown earlier. Your job is to bring back to mind the object
+    that you imagined being involved with this word and to report information about the object's semantic or visual features.
+    <br>
+    A question screen presented before the action verb will indicate which feature you are to report on:
+    <br>
+    ""animate vs. inanimate"" or ""photo vs. drawing"".
+    <br>
+    Press the left arrow button for animate/photo or the right arrow button for inanimate/drawing.
+    <br>
+    If you forgot the object associated with the verb, press the down arrow.
+    Please respond as quickly as possible, and use your dominant hand to make your responses.
+    <br>
+    <img src=""/static/instructions_pics/retrieval_pic.png"" height=""350px"">
+    <br>When you read the first set of instructions, you may have created a vivid mental image involving the word ""find"" and a drawing of a dog.
+    In these examples trials shown above, the correct response for the top row is ""animate"", whereas the correct response for the bottom row is ""drawing"".
+    <br>When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,118,864743,0.0-118.0,,,,,2166.0,,,forge,/static/object_pics/drawing_veggie/beetroot.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,119,870751,0.0-119.0,,,,,2262.0,,,browse,/static/object_pics/picture_sea/seal.jpg,10000.0,,,,arrowright,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,120,876831,0.0-120.0,,,,,1670.0,,,build,/static/object_pics/drawing_sea/octopus.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,121,884143,0.0-121.0,,,,,3118.0,,,strike,/static/object_pics/picture_insect/mantis.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,122,891143,0.0-122.0,,,,,2998.0,,,move,/static/object_pics/drawing_veggie/carrots.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,123,897536,0.0-123.0,,,,,2751.0,,,deposit,/static/object_pics/drawing_sea/seahorse.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,124,904023,0.0-124.0,,,,,2069.0,,,warm,/static/object_pics/picture_clothe/shirt.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,125,909870,0.0-125.0,,,,,1902.0,,,jam,/static/object_pics/picture_electronic/coffee maker.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,126,916446,0.0-126.0,,,,,2374.0,,,deposit,/static/object_pics/drawing_sea/seahorse.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,127,922078,0.0-127.0,,,,,1527.0,,,move,/static/object_pics/drawing_veggie/carrots.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,128,927350,0.0-128.0,,,,,1214.0,,,warm,/static/object_pics/picture_clothe/shirt.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,129,933582,0.0-129.0,,,,,2030.0,,,strike,/static/object_pics/picture_insect/mantis.jpg,10000.0,,,,arrowleft,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,130,940950,0.0-130.0,,,,,3582.0,,,forge,/static/object_pics/drawing_veggie/beetroot.jpg,10000.0,,,,arrowleft,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,131,947790,0.0-131.0,,,,,2470.0,,,browse,/static/object_pics/picture_sea/seal.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,132,953454,0.0-132.0,,,,,1285.0,,,jam,/static/object_pics/picture_electronic/coffee maker.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,133,959622,0.0-133.0,,,,,2542.0,,,build,/static/object_pics/drawing_sea/octopus.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,134,961462,0.0-134.0,,,,,1839.0,"<p>In that last set of trials, you were correct 63% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,135,964830,0.0-135.0,,,,,3367.0,"
+    <p>As you practiced earlier, you will first see an action verb in this part of the study. This will be followed by a plus sign, and then an object.<br>
+    Your job is to create a vivid mental image involving the action verb and the object.<br>
+    Once you have a clear association in mind, press the space bar to continue to the next trial.<br>
+    <br>
+    Please keep in mind that you will be asked later about the object's perceptual properties in addition to its meaning.
+    <br>
+    <img src=""/static/instructions_pics/encoding_pic.png"" height=""350px"">
+    <br>
+    Press the space bar when you are ready to start the task.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,136,970486,0.0-136.0,,,,,1901.0,,,swing,/static/object_pics/drawing_sea/crab.jpg,2000.0,7000.0,1046.10601493979,700.8101516956272, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,137,979350,0.0-137.0,,,,,4814.0,,,push,/static/object_pics/drawing_veggie/garlic.jpg,2000.0,7000.0,1353.4408076058444,693.2790095044971, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,138,987295,0.0-138.0,,,,,3190.0,,,blur,/static/object_pics/picture_clothe/tie.jpg,2000.0,7000.0,1462.1614354289304,1274.022818100449, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,139,995670,0.0-139.0,,,,,3630.0,,,deliver,/static/object_pics/drawing_electronic/calculator.jpg,2000.0,7000.0,1351.3016596418047,1385.1518618502892, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,140,1004271,0.0-140.0,,,,,4486.0,,,tie,/static/object_pics/picture_insect/grasshopper.jpg,2000.0,7000.0,750.6309130093125,1358.7633936689135, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,141,1012102,0.0-141.0,,,,,3222.0,,,melt,/static/object_pics/drawing_veggie/aubergine.jpg,2000.0,7000.0,1095.3435914535687,1497.845976055817, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,142,1018846,0.0-142.0,,,,,2862.0,,,hide,/static/object_pics/drawing_fruit/apricot.jpg,2000.0,7000.0,551.3362187171545,1319.9614452861165, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,143,1025942,0.0-143.0,,,,,3581.0,,,fade,/static/object_pics/picture_clothe/belt.jpg,2000.0,7000.0,589.1860472478023,911.931119059155, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,144,1028998,0.0-144.0,,,,,3056.0,"
+    <p>Now, you will a series of numbers. <br>
+    If the number is even, press the left arrow key. <br>
+    If the number is odd, press the right arrow key.<br>
+    <br>
+    When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,number-parity-trial,145,1048999,0.0-145.0,,,,,,,"['arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowleft', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowleft', 'arrowright', 'arrowright']",,,,,,,,,,,,,,,,"[61, 31, 18, 63, 28, 29, 74, 32, 49, 2, 79, 29, 82, 40, 91, 87, 20, 43, 76, 6, 43, 46, 83, 71, 14, 78, 71, 22, 64, 37, 96, 71, 61, 76]","[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]",1.0,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,146,1050502,0.0-146.0,,,,,1502.0,"<p>In that last set of trials, you were correct 100% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,147,1051790,0.0-147.0,,,,,1287.0,"
+    <br>
+    As you practiced earlier, you will now see an action verb that you were shown earlier. Your job is to bring back to mind the object
+    that you imagined being involved with this word and to report information about the object's semantic or visual features.
+    <br>
+    A question screen presented before the action verb will indicate which feature you are to report on:
+    <br>
+    ""animate vs. inanimate"" or ""photo vs. drawing"".
+    <br>
+    Press the left arrow button for animate/photo or the right arrow button for inanimate/drawing.
+    <br>
+    If you forgot the object associated with the verb, press the down arrow.
+    Please respond as quickly as possible, and use your dominant hand to make your responses.
+    <br>
+    <img src=""/static/instructions_pics/retrieval_pic.png"" height=""350px"">
+    <br>When you read the first set of instructions, you may have created a vivid mental image involving the word ""find"" and a drawing of a dog.
+    In these examples trials shown above, the correct response for the top row is ""animate"", whereas the correct response for the bottom row is ""drawing"".
+    <br>When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,148,1056982,0.0-148.0,,,,,1077.0,,,swing,/static/object_pics/drawing_sea/crab.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,149,1063735,0.0-149.0,,,,,2390.0,,,melt,/static/object_pics/drawing_veggie/aubergine.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,150,1070406,0.0-150.0,,,,,2614.0,,,blur,/static/object_pics/picture_clothe/tie.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,151,1075862,0.0-151.0,,,,,1437.0,,,deliver,/static/object_pics/drawing_electronic/calculator.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,152,1081734,0.0-152.0,,,,,1439.0,,,fade,/static/object_pics/picture_clothe/belt.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,153,1087086,0.0-153.0,,,,,1318.0,,,hide,/static/object_pics/drawing_fruit/apricot.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,154,1094270,0.0-154.0,,,,,3589.0,,,push,/static/object_pics/drawing_veggie/garlic.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,155,1099895,0.0-155.0,,,,,1855.0,,,tie,/static/object_pics/picture_insect/grasshopper.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,156,1106375,0.0-156.0,,,,,2157.0,,,hide,/static/object_pics/drawing_fruit/apricot.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,157,1111896,0.0-157.0,,,,,1856.0,,,swing,/static/object_pics/drawing_sea/crab.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,158,1117495,0.0-158.0,,,,,1654.0,,,blur,/static/object_pics/picture_clothe/tie.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,159,1123727,0.0-159.0,,,,,2471.0,,,melt,/static/object_pics/drawing_veggie/aubergine.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,160,1129174,0.0-160.0,,,,,1262.0,,,push,/static/object_pics/drawing_veggie/garlic.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,161,1135079,0.0-161.0,,,,,1918.0,,,fade,/static/object_pics/picture_clothe/belt.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,162,1141038,0.0-162.0,,,,,1814.0,,,tie,/static/object_pics/picture_insect/grasshopper.jpg,10000.0,,,,arrowleft,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,163,1147071,0.0-163.0,,,,,2118.0,,,deliver,/static/object_pics/drawing_electronic/calculator.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,164,1154734,0.0-164.0,,,,,7663.0,"<p>In that last set of trials, you were correct 81% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,165,1159854,0.0-165.0,,,,,5119.0,"
+    <p>As you practiced earlier, you will first see an action verb in this part of the study. This will be followed by a plus sign, and then an object.<br>
+    Your job is to create a vivid mental image involving the action verb and the object.<br>
+    Once you have a clear association in mind, press the space bar to continue to the next trial.<br>
+    <br>
+    Please keep in mind that you will be asked later about the object's perceptual properties in addition to its meaning.
+    <br>
+    <img src=""/static/instructions_pics/encoding_pic.png"" height=""350px"">
+    <br>
+    Press the space bar when you are ready to start the task.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,166,1168542,0.0-166.0,,,,,4894.0,,,whirl,/static/object_pics/picture_veggie/lettuce.jpg,2000.0,7000.0,1019.2239656120605,757.3135700922114, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,167,1174975,0.0-167.0,,,,,2663.0,,,tear,/static/object_pics/drawing_clothe/hoodie.jpg,2000.0,7000.0,996.838060215312,761.1857038910282, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,168,1180349,0.0-168.0,,,,,1830.0,,,punch,/static/object_pics/picture_bird/eagle.jpg,2000.0,7000.0,509.23541173785526,1021.2844339886635, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,169,1188670,0.0-169.0,,,,,3887.0,,,glide,/static/object_pics/drawing_electronic/satellite dish.jpg,2000.0,7000.0,1091.685660342253,1334.5515465761152, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,170,1196093,0.0-170.0,,,,,2790.0,,,identify,/static/object_pics/drawing_electronic/remote control.jpg,2000.0,7000.0,1233.703967667175,1387.0779934342354, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,171,1201517,0.0-171.0,,,,,2029.0,,,clean,/static/object_pics/drawing_sea/starfish.jpg,2000.0,7000.0,699.2352510618955,678.4822929911641, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,172,1209005,0.0-172.0,,,,,2981.0,,,flash,/static/object_pics/picture_bird/pelican.jpg,2000.0,7000.0,1251.818045404873,1233.075658988186, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,173,1215919,0.0-173.0,,,,,2695.0,,,swim,/static/object_pics/picture_bird/turkey.jpg,2000.0,7000.0,810.742998643226,1391.0064772925984, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,174,1217367,0.0-174.0,,,,,1448.0,"
+    <p>Now, you will a series of numbers. <br>
+    If the number is even, press the left arrow key. <br>
+    If the number is odd, press the right arrow key.<br>
+    <br>
+    When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,number-parity-trial,175,1237375,0.0-175.0,,,,,,,"['arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowright']",,,,,,,,,,,,,,,,"[23, 69, 54, 2, 35, 66, 30, 19, 61, 22, 63, 28, 89, 27, 23, 77, 5, 53, 16, 82, 14, 21, 73, 10, 47, 9, 14, 29, 30, 22, 37, 19, 81, 21, 10]","[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]",1.0,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,176,1240742,0.0-176.0,,,,,3367.0,"<p>In that last set of trials, you were correct 100% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,177,1242774,0.0-177.0,,,,,2031.0,"
+    <br>
+    As you practiced earlier, you will now see an action verb that you were shown earlier. Your job is to bring back to mind the object
+    that you imagined being involved with this word and to report information about the object's semantic or visual features.
+    <br>
+    A question screen presented before the action verb will indicate which feature you are to report on:
+    <br>
+    ""animate vs. inanimate"" or ""photo vs. drawing"".
+    <br>
+    Press the left arrow button for animate/photo or the right arrow button for inanimate/drawing.
+    <br>
+    If you forgot the object associated with the verb, press the down arrow.
+    Please respond as quickly as possible, and use your dominant hand to make your responses.
+    <br>
+    <img src=""/static/instructions_pics/retrieval_pic.png"" height=""350px"">
+    <br>When you read the first set of instructions, you may have created a vivid mental image involving the word ""find"" and a drawing of a dog.
+    In these examples trials shown above, the correct response for the top row is ""animate"", whereas the correct response for the bottom row is ""drawing"".
+    <br>When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,178,1248247,0.0-178.0,,,,,1222.0,,,whirl,/static/object_pics/picture_veggie/lettuce.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,179,1254422,0.0-179.0,,,,,2405.0,,,clean,/static/object_pics/drawing_sea/starfish.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,180,1261038,0.0-180.0,,,,,2759.0,,,swim,/static/object_pics/picture_bird/turkey.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,181,1268375,0.0-181.0,,,,,2855.0,,,tear,/static/object_pics/drawing_clothe/hoodie.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,182,1275198,0.0-182.0,,,,,3199.0,,,glide,/static/object_pics/drawing_electronic/satellite dish.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,183,1280005,0.0-183.0,,,,,1141.0,,,flash,/static/object_pics/picture_bird/pelican.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,184,1286630,0.0-184.0,,,,,2646.0,,,identify,/static/object_pics/drawing_electronic/remote control.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,185,1291878,0.0-185.0,,,,,1054.0,,,punch,/static/object_pics/picture_bird/eagle.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,186,1297606,0.0-186.0,,,,,1607.0,,,tear,/static/object_pics/drawing_clothe/hoodie.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,187,1303829,0.0-187.0,,,,,1790.0,,,whirl,/static/object_pics/picture_veggie/lettuce.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,188,1310485,0.0-188.0,,,,,2206.0,,,identify,/static/object_pics/drawing_electronic/remote control.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,189,1316310,0.0-189.0,,,,,1718.0,,,clean,/static/object_pics/drawing_sea/starfish.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,190,1322750,0.0-190.0,,,,,1999.0,,,swim,/static/object_pics/picture_bird/turkey.jpg,10000.0,,,,arrowleft,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,191,1328493,0.0-191.0,,,,,1646.0,,,flash,/static/object_pics/picture_bird/pelican.jpg,10000.0,,,,arrowleft,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,192,1333358,0.0-192.0,,,,,1239.0,,,punch,/static/object_pics/picture_bird/eagle.jpg,10000.0,,,,arrowleft,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,193,1338717,0.0-193.0,,,,,1214.0,,,glide,/static/object_pics/drawing_electronic/satellite dish.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,194,1341759,0.0-194.0,,,,,3040.0,"<p>In that last set of trials, you were correct 88% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,195,1349647,0.0-195.0,,,,,7887.0,"
+    <p>As you practiced earlier, you will first see an action verb in this part of the study. This will be followed by a plus sign, and then an object.<br>
+    Your job is to create a vivid mental image involving the action verb and the object.<br>
+    Once you have a clear association in mind, press the space bar to continue to the next trial.<br>
+    <br>
+    Please keep in mind that you will be asked later about the object's perceptual properties in addition to its meaning.
+    <br>
+    <img src=""/static/instructions_pics/encoding_pic.png"" height=""350px"">
+    <br>
+    Press the space bar when you are ready to start the task.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,196,1355383,0.0-196.0,,,,,2173.0,,,stroke,/static/object_pics/drawing_insect/centipede.jpg,2000.0,7000.0,899.646979384803,645.0582595155552, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,197,1362407,0.0-197.0,,,,,2887.0,,,cover,/static/object_pics/picture_clothe/jeans.jpg,2000.0,7000.0,1025.1806700249963,1098.6081633864706, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,198,1370887,0.0-198.0,,,,,4646.0,,,twitch,/static/object_pics/drawing_electronic/toaster.jpg,2000.0,7000.0,685.8989227826136,1134.9543426867212, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,199,1379671,0.0-199.0,,,,,5103.0,,,join,/static/object_pics/picture_bird/hummingbird.jpg,2000.0,7000.0,734.4063153014384,941.5044707865536, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,200,1386903,0.0-200.0,,,,,2710.0,,,adjusted,/static/object_pics/drawing_fruit/pear.jpg,2000.0,7000.0,1377.913794354196,1136.083030808578, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,201,1394111,0.0-201.0,,,,,2799.0,,,crush,/static/object_pics/picture_mammal/antelope.jpg,2000.0,7000.0,1126.2811283731357,1276.613088480639, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,202,1402569,0.0-202.0,,,,,3558.0,,,chop,/static/object_pics/drawing_electronic/hairdryer.jpg,2000.0,7000.0,1383.7565801768803,1496.8321155132817, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,203,1410145,0.0-203.0,,,,,3774.0,,,knock,/static/object_pics/drawing_clothe/dress.jpg,2000.0,7000.0,973.2671250344167,821.3879858928105, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,204,1412665,0.0-204.0,,,,,2519.0,"
+    <p>Now, you will a series of numbers. <br>
+    If the number is even, press the left arrow key. <br>
+    If the number is odd, press the right arrow key.<br>
+    <br>
+    When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,number-parity-trial,205,1432666,0.0-205.0,,,,,,,"['arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowleft', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowleft', 'arrowright', 'arrowleft']",,,,,,,,,,,,,,,,"[13, 19, 89, 2, 10, 6, 28, 52, 25, 64, 17, 73, 69, 9, 42, 79, 67, 25, 59, 98, 7, 96, 59, 94, 39, 47, 23, 11, 98, 72, 67, 32, 98, 40, 85]","[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, False, True]",0.9705882352941176,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,206,1434161,0.0-206.0,,,,,1494.0,"<p>In that last set of trials, you were correct 97% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,207,1435281,0.0-207.0,,,,,1119.0,"
+    <br>
+    As you practiced earlier, you will now see an action verb that you were shown earlier. Your job is to bring back to mind the object
+    that you imagined being involved with this word and to report information about the object's semantic or visual features.
+    <br>
+    A question screen presented before the action verb will indicate which feature you are to report on:
+    <br>
+    ""animate vs. inanimate"" or ""photo vs. drawing"".
+    <br>
+    Press the left arrow button for animate/photo or the right arrow button for inanimate/drawing.
+    <br>
+    If you forgot the object associated with the verb, press the down arrow.
+    Please respond as quickly as possible, and use your dominant hand to make your responses.
+    <br>
+    <img src=""/static/instructions_pics/retrieval_pic.png"" height=""350px"">
+    <br>When you read the first set of instructions, you may have created a vivid mental image involving the word ""find"" and a drawing of a dog.
+    In these examples trials shown above, the correct response for the top row is ""animate"", whereas the correct response for the bottom row is ""drawing"".
+    <br>When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,208,1441545,0.0-208.0,,,,,2335.0,,,crush,/static/object_pics/picture_mammal/antelope.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,209,1447552,0.0-209.0,,,,,2206.0,,,chop,/static/object_pics/drawing_electronic/hairdryer.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,210,1454387,0.0-210.0,,,,,2824.0,,,join,/static/object_pics/picture_bird/hummingbird.jpg,10000.0,,,,arrowleft,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,211,1460153,0.0-211.0,,,,,2199.0,,,cover,/static/object_pics/picture_clothe/jeans.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,212,1467091,0.0-212.0,,,,,2646.0,,,adjusted,/static/object_pics/drawing_fruit/pear.jpg,10000.0,,,,arrowleft,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,213,1473474,0.0-213.0,,,,,2581.0,,,stroke,/static/object_pics/drawing_insect/centipede.jpg,10000.0,,,,arrowright,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,214,1480820,0.0-214.0,,,,,3487.0,,,twitch,/static/object_pics/drawing_electronic/toaster.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,215,1486442,0.0-215.0,,,,,1463.0,,,knock,/static/object_pics/drawing_clothe/dress.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,216,1492683,0.0-216.0,,,,,2310.0,,,cover,/static/object_pics/picture_clothe/jeans.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,217,1499228,0.0-217.0,,,,,2831.0,,,twitch,/static/object_pics/drawing_electronic/toaster.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,218,1505331,0.0-218.0,,,,,1654.0,,,stroke,/static/object_pics/drawing_insect/centipede.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,219,1511835,0.0-219.0,,,,,2726.0,,,join,/static/object_pics/picture_bird/hummingbird.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,220,1517155,0.0-220.0,,,,,1446.0,,,chop,/static/object_pics/drawing_electronic/hairdryer.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,221,1522715,0.0-221.0,,,,,1398.0,,,crush,/static/object_pics/picture_mammal/antelope.jpg,10000.0,,,,arrowleft,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,222,1528397,0.0-222.0,,,,,1727.0,,,knock,/static/object_pics/drawing_clothe/dress.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,223,1534069,0.0-223.0,,,,,1358.0,,,adjusted,/static/object_pics/drawing_fruit/pear.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,224,1536524,0.0-224.0,,,,,2455.0,"<p>In that last set of trials, you were correct 88% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,225,1540157,0.0-225.0,,,,,3632.0,"
+    <p>As you practiced earlier, you will first see an action verb in this part of the study. This will be followed by a plus sign, and then an object.<br>
+    Your job is to create a vivid mental image involving the action verb and the object.<br>
+    Once you have a clear association in mind, press the space bar to continue to the next trial.<br>
+    <br>
+    Please keep in mind that you will be asked later about the object's perceptual properties in addition to its meaning.
+    <br>
+    <img src=""/static/instructions_pics/encoding_pic.png"" height=""350px"">
+    <br>
+    Press the space bar when you are ready to start the task.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,226,1545741,0.0-226.0,,,,,2246.0,,,mount,/static/object_pics/drawing_insect/cockroach.jpg,2000.0,7000.0,576.0323613722958,749.9607660188417, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,227,1552213,0.0-227.0,,,,,1959.0,,,spray,/static/object_pics/drawing_mammal/bear.jpg,2000.0,7000.0,1015.4374462874041,1490.9597940878443, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,228,1559732,0.0-228.0,,,,,3047.0,,,lay,/static/object_pics/picture_mammal/giraffe.jpg,2000.0,7000.0,1439.9315783582254,1018.3699771354367, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,229,1567549,0.0-229.0,,,,,2878.0,,,dig,/static/object_pics/picture_fruit/banana.jpg,2000.0,7000.0,1469.8161540606743,1463.6462378684978, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,230,1576756,0.0-230.0,,,,,4950.0,,,spin,/static/object_pics/drawing_bird/toucan.jpg,2000.0,7000.0,1234.4840406212268,1004.1824335432676, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,231,1583797,0.0-231.0,,,,,3126.0,,,merge,/static/object_pics/picture_fruit/lemon.jpg,2000.0,7000.0,1348.5996593534649,555.888096978896, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,232,1590543,0.0-232.0,,,,,3455.0,,,clap,/static/object_pics/picture_mammal/kangaroo.jpg,2000.0,7000.0,635.4187679714527,637.2327878012038, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,233,1598310,0.0-233.0,,,,,3223.0,,,cross,/static/object_pics/picture_mammal/rhinoceros.jpg,2000.0,7000.0,1244.69539485135,1294.0777944405336, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,234,1600086,0.0-234.0,,,,,1776.0,"
+    <p>Now, you will a series of numbers. <br>
+    If the number is even, press the left arrow key. <br>
+    If the number is odd, press the right arrow key.<br>
+    <br>
+    When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,number-parity-trial,235,1620087,0.0-235.0,,,,,,,"['arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowleft', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright']",,,,,,,,,,,,,,,,"[29, 21, 55, 52, 86, 75, 71, 90, 43, 39, 72, 21, 97, 87, 47, 41, 6, 62, 61, 58, 92, 38, 38, 44, 32, 34, 87, 70, 47, 22, 64, 5, 48]","[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]",1.0,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,236,1621494,0.0-236.0,,,,,1406.0,"<p>In that last set of trials, you were correct 100% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,237,1623326,0.0-237.0,,,,,1831.0,"
+    <br>
+    As you practiced earlier, you will now see an action verb that you were shown earlier. Your job is to bring back to mind the object
+    that you imagined being involved with this word and to report information about the object's semantic or visual features.
+    <br>
+    A question screen presented before the action verb will indicate which feature you are to report on:
+    <br>
+    ""animate vs. inanimate"" or ""photo vs. drawing"".
+    <br>
+    Press the left arrow button for animate/photo or the right arrow button for inanimate/drawing.
+    <br>
+    If you forgot the object associated with the verb, press the down arrow.
+    Please respond as quickly as possible, and use your dominant hand to make your responses.
+    <br>
+    <img src=""/static/instructions_pics/retrieval_pic.png"" height=""350px"">
+    <br>When you read the first set of instructions, you may have created a vivid mental image involving the word ""find"" and a drawing of a dog.
+    In these examples trials shown above, the correct response for the top row is ""animate"", whereas the correct response for the bottom row is ""drawing"".
+    <br>When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,238,1628766,0.0-238.0,,,,,1174.0,,,dig,/static/object_pics/picture_fruit/banana.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,239,1634998,0.0-239.0,,,,,2078.0,,,spin,/static/object_pics/drawing_bird/toucan.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,240,1639742,0.0-240.0,,,,,1206.0,,,lay,/static/object_pics/picture_mammal/giraffe.jpg,10000.0,,,,arrowleft,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,241,1647463,0.0-241.0,,,,,4182.0,,,clap,/static/object_pics/picture_mammal/kangaroo.jpg,10000.0,,,,arrowleft,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,242,1655558,0.0-242.0,,,,,4037.0,,,spray,/static/object_pics/drawing_mammal/bear.jpg,10000.0,,,,arrowright,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,243,1662487,0.0-243.0,,,,,2590.0,,,cross,/static/object_pics/picture_mammal/rhinoceros.jpg,10000.0,,,,arrowleft,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,244,1668214,0.0-244.0,,,,,1838.0,,,merge,/static/object_pics/picture_fruit/lemon.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,245,1674103,0.0-245.0,,,,,1864.0,,,mount,/static/object_pics/drawing_insect/cockroach.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,246,1681103,0.0-246.0,,,,,2638.0,,,spray,/static/object_pics/drawing_mammal/bear.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,247,1685975,0.0-247.0,,,,,1367.0,,,lay,/static/object_pics/picture_mammal/giraffe.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,248,1690934,0.0-248.0,,,,,1350.0,,,merge,/static/object_pics/picture_fruit/lemon.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,249,1696031,0.0-249.0,,,,,1182.0,,,cross,/static/object_pics/picture_mammal/rhinoceros.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,250,1701943,0.0-250.0,,,,,1502.0,,,dig,/static/object_pics/picture_fruit/banana.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,251,1707263,0.0-251.0,,,,,1055.0,,,spin,/static/object_pics/drawing_bird/toucan.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,252,1712910,0.0-252.0,,,,,1470.0,,,mount,/static/object_pics/drawing_insect/cockroach.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,253,1718191,0.0-253.0,,,,,1437.0,,,clap,/static/object_pics/picture_mammal/kangaroo.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,254,1720598,0.0-254.0,,,,,2407.0,"<p>In that last set of trials, you were correct 75% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,255,1726727,0.0-255.0,,,,,6128.0,"
+    <p>As you practiced earlier, you will first see an action verb in this part of the study. This will be followed by a plus sign, and then an object.<br>
+    Your job is to create a vivid mental image involving the action verb and the object.<br>
+    Once you have a clear association in mind, press the space bar to continue to the next trial.<br>
+    <br>
+    Please keep in mind that you will be asked later about the object's perceptual properties in addition to its meaning.
+    <br>
+    <img src=""/static/instructions_pics/encoding_pic.png"" height=""350px"">
+    <br>
+    Press the space bar when you are ready to start the task.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,256,1733319,0.0-256.0,,,,,2654.0,,,guide,/static/object_pics/drawing_insect/scorpion.jpg,2000.0,7000.0,1074.9892516999453,844.0820710607954, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,257,1740519,0.0-257.0,,,,,2590.0,,,stamp,/static/object_pics/drawing_mammal/gorilla.jpg,2000.0,7000.0,1295.1099875709556,1297.69723102115, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,258,1748343,0.0-258.0,,,,,3174.0,,,hit,/static/object_pics/picture_veggie/onions.jpg,2000.0,7000.0,1195.8912264605617,1432.6146322708114, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,259,1756694,0.0-259.0,,,,,4742.0,,,trap,/static/object_pics/drawing_sea/shrimp.jpg,2000.0,7000.0,989.1833223537708,614.8397395784402, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,260,1765864,0.0-260.0,,,,,4631.0,,,rub,/static/object_pics/picture_sea/jellyfish.jpg,2000.0,7000.0,1435.7031061503021,1088.2932415516216, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,261,1774688,0.0-261.0,,,,,5375.0,,,agitate,/static/object_pics/picture_fruit/melon.jpg,2000.0,7000.0,771.6944499946337,660.2420779278251, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,262,1783384,0.0-262.0,,,,,3822.0,,,bury,/static/object_pics/drawing_electronic/microphone.jpg,2000.0,7000.0,1442.3766870603813,1410.507582676335, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,263,1789439,0.0-263.0,,,,,2934.0,,,wash,/static/object_pics/picture_clothe/scarf.jpg,2000.0,7000.0,595.9275963944424,508.91100795380794, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,264,1790824,0.0-264.0,,,,,1384.0,"
+    <p>Now, you will a series of numbers. <br>
+    If the number is even, press the left arrow key. <br>
+    If the number is odd, press the right arrow key.<br>
+    <br>
+    When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,number-parity-trial,265,1810833,0.0-265.0,,,,,,,"['arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft']",,,,,,,,,,,,,,,,"[75, 21, 14, 24, 77, 28, 86, 48, 20, 58, 41, 31, 20, 59, 51, 17, 98, 11, 91, 17, 24, 73, 62, 67, 2, 84, 37, 20, 42, 49, 64, 73, 49, 48, 51]","[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, False, True, True, True, True, True, True, True, True, True, True]",0.9705882352941176,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,266,1812384,0.0-266.0,,,,,1549.0,"<p>In that last set of trials, you were correct 97% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,267,1813688,0.0-267.0,,,,,1303.0,"
+    <br>
+    As you practiced earlier, you will now see an action verb that you were shown earlier. Your job is to bring back to mind the object
+    that you imagined being involved with this word and to report information about the object's semantic or visual features.
+    <br>
+    A question screen presented before the action verb will indicate which feature you are to report on:
+    <br>
+    ""animate vs. inanimate"" or ""photo vs. drawing"".
+    <br>
+    Press the left arrow button for animate/photo or the right arrow button for inanimate/drawing.
+    <br>
+    If you forgot the object associated with the verb, press the down arrow.
+    Please respond as quickly as possible, and use your dominant hand to make your responses.
+    <br>
+    <img src=""/static/instructions_pics/retrieval_pic.png"" height=""350px"">
+    <br>When you read the first set of instructions, you may have created a vivid mental image involving the word ""find"" and a drawing of a dog.
+    In these examples trials shown above, the correct response for the top row is ""animate"", whereas the correct response for the bottom row is ""drawing"".
+    <br>When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,268,1818967,0.0-268.0,,,,,1462.0,,,guide,/static/object_pics/drawing_insect/scorpion.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,269,1826304,0.0-269.0,,,,,3750.0,,,hit,/static/object_pics/picture_veggie/onions.jpg,10000.0,,,,arrowleft,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,270,1831944,0.0-270.0,,,,,1622.0,,,stamp,/static/object_pics/drawing_mammal/gorilla.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,271,1839240,0.0-271.0,,,,,3503.0,,,bury,/static/object_pics/drawing_electronic/microphone.jpg,10000.0,,,,arrowleft,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,272,1846128,0.0-272.0,,,,,2958.0,,,agitate,/static/object_pics/picture_fruit/melon.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,273,1853848,0.0-273.0,,,,,3231.0,,,rub,/static/object_pics/picture_sea/jellyfish.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,274,1862104,0.0-274.0,,,,,4390.0,,,wash,/static/object_pics/picture_clothe/scarf.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,275,1869872,0.0-275.0,,,,,4151.0,,,trap,/static/object_pics/drawing_sea/shrimp.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,276,1875784,0.0-276.0,,,,,1998.0,,,wash,/static/object_pics/picture_clothe/scarf.jpg,10000.0,,,,arrowright,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,277,1882625,0.0-277.0,,,,,3152.0,,,guide,/static/object_pics/drawing_insect/scorpion.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,278,1887480,0.0-278.0,,,,,1302.0,,,agitate,/static/object_pics/picture_fruit/melon.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,279,1894808,0.0-279.0,,,,,3166.0,,,hit,/static/object_pics/picture_veggie/onions.jpg,10000.0,,,,arrowright,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,280,1901064,0.0-280.0,,,,,2142.0,,,trap,/static/object_pics/drawing_sea/shrimp.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,281,1906896,0.0-281.0,,,,,1758.0,,,stamp,/static/object_pics/drawing_mammal/gorilla.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,282,1915984,0.0-282.0,,,,,4671.0,,,bury,/static/object_pics/drawing_electronic/microphone.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,283,1924912,0.0-283.0,,,,,4727.0,,,rub,/static/object_pics/picture_sea/jellyfish.jpg,10000.0,,,,arrowleft,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,284,1927208,0.0-284.0,,,,,2295.0,"<p>In that last set of trials, you were correct 50% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,285,1928600,0.0-285.0,,,,,1391.0,"
+    <p>As you practiced earlier, you will first see an action verb in this part of the study. This will be followed by a plus sign, and then an object.<br>
+    Your job is to create a vivid mental image involving the action verb and the object.<br>
+    Once you have a clear association in mind, press the space bar to continue to the next trial.<br>
+    <br>
+    Please keep in mind that you will be asked later about the object's perceptual properties in addition to its meaning.
+    <br>
+    <img src=""/static/instructions_pics/encoding_pic.png"" height=""350px"">
+    <br>
+    Press the space bar when you are ready to start the task.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,286,1937296,0.0-286.0,,,,,5215.0,,,hammer,/static/object_pics/drawing_veggie/mushrooms.jpg,2000.0,7000.0,834.0150136143427,630.8384862428104, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,287,1946520,0.0-287.0,,,,,5174.0,,,multiply,/static/object_pics/picture_electronic/keyboard.jpg,2000.0,7000.0,768.6026321020847,1267.4244203523867, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,288,1955105,0.0-288.0,,,,,4431.0,,,include,/static/object_pics/drawing_sea/pufferfish.jpg,2000.0,7000.0,719.9479010742509,1418.0693734625297, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,289,1963360,0.0-289.0,,,,,4446.0,,,launch,/static/object_pics/picture_clothe/glasses.jpg,2000.0,7000.0,518.2696394133573,1280.46287987641, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,290,1971681,0.0-290.0,,,,,4247.0,,,wipe,/static/object_pics/picture_fruit/kiwi.jpg,2000.0,7000.0,654.7964684467024,1407.553318993093, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,291,1981353,0.0-291.0,,,,,5559.0,,,peek,/static/object_pics/picture_fruit/coconut.jpg,2000.0,7000.0,771.0333515856364,1323.1151697707548, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,292,1989681,0.0-292.0,,,,,3767.0,,,throw,/static/object_pics/picture_mammal/horse.jpg,2000.0,7000.0,1458.241389414702,1082.532846762082, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,293,1998496,0.0-293.0,,,,,5054.0,,,smooth,/static/object_pics/picture_clothe/bowtie.jpg,2000.0,7000.0,732.2292752155661,1023.5990473765826, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,294,1999906,0.0-294.0,,,,,1409.0,"
+    <p>Now, you will a series of numbers. <br>
+    If the number is even, press the left arrow key. <br>
+    If the number is odd, press the right arrow key.<br>
+    <br>
+    When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,number-parity-trial,295,2019914,0.0-295.0,,,,,,,"['arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright']",,,,,,,,,,,,,,,,"[31, 61, 5, 28, 24, 43, 37, 31, 58, 73, 75, 48, 73, 88, 33, 99, 49, 72, 50, 50, 4, 57, 65, 53, 50, 37, 5, 92, 35, 32, 28, 11, 37, 92]","[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]",1.0,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,296,2021241,0.0-296.0,,,,,1327.0,"<p>In that last set of trials, you were correct 100% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,297,2023857,0.0-297.0,,,,,2614.0,"
+    <br>
+    As you practiced earlier, you will now see an action verb that you were shown earlier. Your job is to bring back to mind the object
+    that you imagined being involved with this word and to report information about the object's semantic or visual features.
+    <br>
+    A question screen presented before the action verb will indicate which feature you are to report on:
+    <br>
+    ""animate vs. inanimate"" or ""photo vs. drawing"".
+    <br>
+    Press the left arrow button for animate/photo or the right arrow button for inanimate/drawing.
+    <br>
+    If you forgot the object associated with the verb, press the down arrow.
+    Please respond as quickly as possible, and use your dominant hand to make your responses.
+    <br>
+    <img src=""/static/instructions_pics/retrieval_pic.png"" height=""350px"">
+    <br>When you read the first set of instructions, you may have created a vivid mental image involving the word ""find"" and a drawing of a dog.
+    In these examples trials shown above, the correct response for the top row is ""animate"", whereas the correct response for the bottom row is ""drawing"".
+    <br>When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,298,2032337,0.0-298.0,,,,,4015.0,,,multiply,/static/object_pics/picture_electronic/keyboard.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,299,2038481,0.0-299.0,,,,,1718.0,,,peek,/static/object_pics/picture_fruit/coconut.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,300,2045913,0.0-300.0,,,,,3432.0,,,smooth,/static/object_pics/picture_clothe/bowtie.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,301,2052057,0.0-301.0,,,,,1766.0,,,wipe,/static/object_pics/picture_fruit/kiwi.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,302,2057417,0.0-302.0,,,,,1311.0,,,throw,/static/object_pics/picture_mammal/horse.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,303,2063281,0.0-303.0,,,,,1830.0,,,include,/static/object_pics/drawing_sea/pufferfish.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,304,2068457,0.0-304.0,,,,,1654.0,,,hammer,/static/object_pics/drawing_veggie/mushrooms.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,305,2074289,0.0-305.0,,,,,1542.0,,,launch,/static/object_pics/picture_clothe/glasses.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,306,2080034,0.0-306.0,,,,,1583.0,,,multiply,/static/object_pics/picture_electronic/keyboard.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,307,2085434,0.0-307.0,,,,,1310.0,,,wipe,/static/object_pics/picture_fruit/kiwi.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,308,2090594,0.0-308.0,,,,,1231.0,,,launch,/static/object_pics/picture_clothe/glasses.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,309,2095649,0.0-309.0,,,,,1086.0,,,hammer,/static/object_pics/drawing_veggie/mushrooms.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,310,2100857,0.0-310.0,,,,,1119.0,,,peek,/static/object_pics/picture_fruit/coconut.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,311,2107393,0.0-311.0,,,,,2695.0,,,smooth,/static/object_pics/picture_clothe/bowtie.jpg,10000.0,,,,arrowright,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,312,2114266,0.0-312.0,,,,,2911.0,,,include,/static/object_pics/drawing_sea/pufferfish.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,313,2119801,0.0-313.0,,,,,1311.0,,,throw,/static/object_pics/picture_mammal/horse.jpg,10000.0,,,,arrowleft,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,314,2121481,0.0-314.0,,,,,1680.0,"<p>In that last set of trials, you were correct 56% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,315,2123849,0.0-315.0,,,,,2367.0,"
+    <p>As you practiced earlier, you will first see an action verb in this part of the study. This will be followed by a plus sign, and then an object.<br>
+    Your job is to create a vivid mental image involving the action verb and the object.<br>
+    Once you have a clear association in mind, press the space bar to continue to the next trial.<br>
+    <br>
+    Please keep in mind that you will be asked later about the object's perceptual properties in addition to its meaning.
+    <br>
+    <img src=""/static/instructions_pics/encoding_pic.png"" height=""350px"">
+    <br>
+    Press the space bar when you are ready to start the task.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,316,2131826,0.0-316.0,,,,,3232.0,,,lift,/static/object_pics/picture_veggie/carrot.jpg,2000.0,7000.0,1233.925637427404,1490.7122780635855, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,317,2139161,0.0-317.0,,,,,3086.0,,,wrap,/static/object_pics/picture_fruit/apple.jpg,2000.0,7000.0,1242.4558365827058,991.8544582993256, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,318,2147274,0.0-318.0,,,,,4223.0,,,utilize,/static/object_pics/drawing_fruit/pineapple.jpg,2000.0,7000.0,1313.9860721325667,562.8727365173334, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,319,2154722,0.0-319.0,,,,,3399.0,,,give,/static/object_pics/drawing_sea/piranha.jpg,2000.0,7000.0,1491.2520934519412,541.8722514924219, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,320,2160930,0.0-320.0,,,,,2878.0,,,cut,/static/object_pics/drawing_electronic/radio.jpg,2000.0,7000.0,508.3769510349034,808.3077997172898, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,321,2168977,0.0-321.0,,,,,4334.0,,,stick,/static/object_pics/drawing_mammal/elephant.jpg,2000.0,7000.0,792.4648551695775,908.1953076179609, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,322,2176322,0.0-322.0,,,,,3096.0,,,bounce,/static/object_pics/picture_clothe/sport t-shirt.jpg,2000.0,7000.0,794.6583525320909,1434.143995964121, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,323,2184770,0.0-323.0,,,,,4175.0,,,hold,/static/object_pics/picture_insect/mosquito.jpg,2000.0,7000.0,1487.5950033781596,769.9376749472026, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,324,2186554,0.0-324.0,,,,,1784.0,"
+    <p>Now, you will a series of numbers. <br>
+    If the number is even, press the left arrow key. <br>
+    If the number is odd, press the right arrow key.<br>
+    <br>
+    When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,number-parity-trial,325,2206555,0.0-325.0,,,,,,,"['arrowright', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowright']",,,,,,,,,,,,,,,,"[13, 93, 75, 15, 38, 63, 27, 79, 98, 86, 72, 94, 91, 37, 42, 36, 88, 20, 16, 41, 74, 32, 10, 14, 55, 51, 41, 44, 2, 86, 24, 46, 71, 57, 73, 49]","[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]",1.0,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,326,2207811,0.0-326.0,,,,,1255.0,"<p>In that last set of trials, you were correct 100% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,327,2209458,0.0-327.0,,,,,1646.0,"
+    <br>
+    As you practiced earlier, you will now see an action verb that you were shown earlier. Your job is to bring back to mind the object
+    that you imagined being involved with this word and to report information about the object's semantic or visual features.
+    <br>
+    A question screen presented before the action verb will indicate which feature you are to report on:
+    <br>
+    ""animate vs. inanimate"" or ""photo vs. drawing"".
+    <br>
+    Press the left arrow button for animate/photo or the right arrow button for inanimate/drawing.
+    <br>
+    If you forgot the object associated with the verb, press the down arrow.
+    Please respond as quickly as possible, and use your dominant hand to make your responses.
+    <br>
+    <img src=""/static/instructions_pics/retrieval_pic.png"" height=""350px"">
+    <br>When you read the first set of instructions, you may have created a vivid mental image involving the word ""find"" and a drawing of a dog.
+    In these examples trials shown above, the correct response for the top row is ""animate"", whereas the correct response for the bottom row is ""drawing"".
+    <br>When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,328,2215066,0.0-328.0,,,,,1255.0,,,bounce,/static/object_pics/picture_clothe/sport t-shirt.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,329,2220906,0.0-329.0,,,,,2175.0,,,lift,/static/object_pics/picture_veggie/carrot.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,330,2226754,0.0-330.0,,,,,1607.0,,,stick,/static/object_pics/drawing_mammal/elephant.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,331,2232698,0.0-331.0,,,,,1887.0,,,wrap,/static/object_pics/picture_fruit/apple.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,332,2240802,0.0-332.0,,,,,3885.0,,,cut,/static/object_pics/drawing_electronic/radio.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,333,2249570,0.0-333.0,,,,,5223.0,,,hold,/static/object_pics/picture_insect/mosquito.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,334,2257026,0.0-334.0,,,,,3399.0,,,utilize,/static/object_pics/drawing_fruit/pineapple.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,335,2264267,0.0-335.0,,,,,2727.0,,,give,/static/object_pics/drawing_sea/piranha.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,336,2270330,0.0-336.0,,,,,1814.0,,,stick,/static/object_pics/drawing_mammal/elephant.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,337,2277459,0.0-337.0,,,,,2735.0,,,utilize,/static/object_pics/drawing_fruit/pineapple.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,338,2282890,0.0-338.0,,,,,1432.0,,,give,/static/object_pics/drawing_sea/piranha.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,339,2287595,0.0-339.0,,,,,1175.0,,,bounce,/static/object_pics/picture_clothe/sport t-shirt.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,340,2293026,0.0-340.0,,,,,1559.0,,,wrap,/static/object_pics/picture_fruit/apple.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,341,2298042,0.0-341.0,,,,,1502.0,,,hold,/static/object_pics/picture_insect/mosquito.jpg,10000.0,,,,arrowleft,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,342,2303914,0.0-342.0,,,,,1534.0,,,lift,/static/object_pics/picture_veggie/carrot.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,343,2309955,0.0-343.0,,,,,2344.0,,,cut,/static/object_pics/drawing_electronic/radio.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,344,2312242,0.0-344.0,,,,,2287.0,"<p>In that last set of trials, you were correct 69% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,345,2316554,0.0-345.0,,,,,4312.0,"
+    <p>As you practiced earlier, you will first see an action verb in this part of the study. This will be followed by a plus sign, and then an object.<br>
+    Your job is to create a vivid mental image involving the action verb and the object.<br>
+    Once you have a clear association in mind, press the space bar to continue to the next trial.<br>
+    <br>
+    Please keep in mind that you will be asked later about the object's perceptual properties in addition to its meaning.
+    <br>
+    <img src=""/static/instructions_pics/encoding_pic.png"" height=""350px"">
+    <br>
+    Press the space bar when you are ready to start the task.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,346,2323722,0.0-346.0,,,,,3383.0,,,chain,/static/object_pics/drawing_electronic/camera.jpg,2000.0,7000.0,931.4841730510182,837.7596245356535, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,347,2331826,0.0-347.0,,,,,4662.0,,,inject,/static/object_pics/picture_veggie/tomato.jpg,2000.0,7000.0,594.3917185809888,830.3727036364808, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,348,2338666,0.0-348.0,,,,,3335.0,,,grab,/static/object_pics/picture_insect/spider.jpg,2000.0,7000.0,670.3917268454015,828.7409744914748, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,349,2344762,0.0-349.0,,,,,2318.0,,,press,/static/object_pics/picture_mammal/squirrel.jpg,2000.0,7000.0,575.2218277031569,1189.7704563981138, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,350,2353346,0.0-350.0,,,,,4311.0,,,reduce,/static/object_pics/drawing_bird/owl.jpg,2000.0,7000.0,1370.49287420399,884.7314176121024, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,351,2363474,0.0-351.0,,,,,5607.0,,,catapult,/static/object_pics/picture_clothe/slipper.jpg,2000.0,7000.0,1306.8318898613875,1197.3730467545247, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,352,2371250,0.0-352.0,,,,,3287.0,,,paint,/static/object_pics/picture_insect/dragonfly.jpg,2000.0,7000.0,1487.66309063059,998.6478322956762, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,encoding-trial,353,2379707,0.0-353.0,,,,,3896.0,,,polish,/static/object_pics/picture_veggie/cucumber.jpg,2000.0,7000.0,1161.1662107505833,1378.810430928759, ,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,354,2381498,0.0-354.0,,,,,1791.0,"
+    <p>Now, you will a series of numbers. <br>
+    If the number is even, press the left arrow key. <br>
+    If the number is odd, press the right arrow key.<br>
+    <br>
+    When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,number-parity-trial,355,2401499,0.0-355.0,,,,,,,"['arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowleft', 'arrowleft', 'arrowleft', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowright', 'arrowleft', 'arrowleft', 'arrowright', 'arrowleft', 'arrowright']",,,,,,,,,,,,,,,,"[86, 69, 3, 62, 55, 93, 53, 10, 77, 77, 60, 83, 17, 2, 60, 41, 37, 30, 46, 85, 72, 52, 60, 21, 58, 8, 19, 25, 52, 90, 17, 90, 41, 14]","[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]",1.0,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,356,2402738,0.0-356.0,,,,,1239.0,"<p>In that last set of trials, you were correct 100% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,357,2403627,0.0-357.0,,,,,888.0,"
+    <br>
+    As you practiced earlier, you will now see an action verb that you were shown earlier. Your job is to bring back to mind the object
+    that you imagined being involved with this word and to report information about the object's semantic or visual features.
+    <br>
+    A question screen presented before the action verb will indicate which feature you are to report on:
+    <br>
+    ""animate vs. inanimate"" or ""photo vs. drawing"".
+    <br>
+    Press the left arrow button for animate/photo or the right arrow button for inanimate/drawing.
+    <br>
+    If you forgot the object associated with the verb, press the down arrow.
+    Please respond as quickly as possible, and use your dominant hand to make your responses.
+    <br>
+    <img src=""/static/instructions_pics/retrieval_pic.png"" height=""350px"">
+    <br>When you read the first set of instructions, you may have created a vivid mental image involving the word ""find"" and a drawing of a dog.
+    In these examples trials shown above, the correct response for the top row is ""animate"", whereas the correct response for the bottom row is ""drawing"".
+    <br>When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,358,2409651,0.0-358.0,,,,,2023.0,,,inject,/static/object_pics/picture_veggie/tomato.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,359,2416979,0.0-359.0,,,,,3438.0,,,press,/static/object_pics/picture_mammal/squirrel.jpg,10000.0,,,,arrowleft,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,360,2422258,0.0-360.0,,,,,1294.0,,,catapult,/static/object_pics/picture_clothe/slipper.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,361,2431203,0.0-361.0,,,,,4711.0,,,reduce,/static/object_pics/drawing_bird/owl.jpg,10000.0,,,,arrowright,animate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,362,2436562,0.0-362.0,,,,,1166.0,,,paint,/static/object_pics/picture_insect/dragonfly.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,363,2442195,0.0-363.0,,,,,1599.0,,,chain,/static/object_pics/drawing_electronic/camera.jpg,10000.0,,,,arrowright,inanimate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,364,2448819,0.0-364.0,,,,,2687.0,,,grab,/static/object_pics/picture_insect/spider.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,365,2454771,0.0-365.0,,,,,1560.0,,,polish,/static/object_pics/picture_veggie/cucumber.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,366,2460227,0.0-366.0,,,,,1367.0,,,reduce,/static/object_pics/drawing_bird/owl.jpg,10000.0,,,,arrowleft,animate,drawing,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,367,2465419,0.0-367.0,,,,,1135.0,,,press,/static/object_pics/picture_mammal/squirrel.jpg,10000.0,,,,arrowleft,animate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,368,2470339,0.0-368.0,,,,,1360.0,,,chain,/static/object_pics/drawing_electronic/camera.jpg,10000.0,,,,arrowright,inanimate,drawing,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,369,2477540,0.0-369.0,,,,,2943.0,,,grab,/static/object_pics/picture_insect/spider.jpg,10000.0,,,,arrowleft,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,370,2482459,0.0-370.0,,,,,903.0,,,polish,/static/object_pics/picture_veggie/cucumber.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,371,2487883,0.0-371.0,,,,,1584.0,,,paint,/static/object_pics/picture_insect/dragonfly.jpg,10000.0,,,,arrowright,animate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,372,2493603,0.0-372.0,,,,,1558.0,,,inject,/static/object_pics/picture_veggie/tomato.jpg,10000.0,,,,arrowright,inanimate,photo,semantic,<p>animate (left)&emsp;&emsp;&emsp;&emsp;inanimate (right)<br><br>forgotten (down)</p>,,3000.0,False,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,retrieval-trial,373,2499092,0.0-373.0,,,,,1247.0,,,catapult,/static/object_pics/picture_clothe/slipper.jpg,10000.0,,,,arrowleft,inanimate,photo,perceptual,<p>photo (left)&emsp;&emsp;&emsp;&emsp;drawing (right)<br><br>forgotten (down)</p>,,3000.0,True,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,374,2500451,0.0-374.0,,,,,1359.0,"<p>In that last set of trials, you were correct 69% of the time.<br> Press the space bar to continue. </p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12
+,html-keyboard-response,375,2503715,0.0-375.0,,,,,3263.0,"
+    <p>Thank you for your participation!</p>
+    The goal of this study is to replicate previous findings that the timing of responses in memory-dependent tasks
+    is rhythmic in nature (compared to the timing of responses in memory-independent tasks).
+    <br>
+    Your participation will allow us to better understand how memory works.
+    Please do not share this information with other potential participants.
+    <br>
+    Press the space bar to continue.</p>", ,,,,,,,,,,,,,,,,,,,MEM,MEM_0044,2022-12-08 17:47:12

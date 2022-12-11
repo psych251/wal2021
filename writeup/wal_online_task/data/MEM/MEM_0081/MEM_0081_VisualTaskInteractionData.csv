@@ -1,0 +1,7 @@
+event,trial,time,exp,subjectId,date
+fullscreenenter,0,2682,MEM,MEM_0081,2022-12-08 23:30:04
+fullscreenexit,0,3303,MEM,MEM_0081,2022-12-08 23:30:04
+fullscreenenter,9,177119,MEM,MEM_0081,2022-12-08 23:30:04
+fullscreenexit,9,177691,MEM,MEM_0081,2022-12-08 23:30:04
+blur,108,697186,MEM,MEM_0081,2022-12-08 23:30:04
+focus,108,701316,MEM,MEM_0081,2022-12-08 23:30:04

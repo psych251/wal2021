@@ -1,0 +1,5 @@
+event,trial,time,exp,subjectId,date
+fullscreenenter,0,1799,MEM,MEM_0077,2022-12-08 22:26:45
+fullscreenexit,1,5007,MEM,MEM_0077,2022-12-08 22:26:45
+fullscreenenter,9,70090,MEM,MEM_0077,2022-12-08 22:26:45
+fullscreenexit,10,71174,MEM,MEM_0077,2022-12-08 22:26:45

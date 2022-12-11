@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="/static/style.css" rel="stylesheet"><br>
+		<title>Questionnaire</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<style>
+			.row {
+				width: 50%;
+				margin: auto;
+			}
+			.question {
+				width: 50%;
+				margin: auto;
+
+			}
+			.answer {
+				width: 40%;
+				margin: auto;
+			}
+		</style>
+	</head>
+
+	<div style="text-align: center;">
+		<p><i>{{instructions|safe}}</i></p>
+	</div>
+
+	<form method="POST">
+		{% for i in range(0,info|length) %}
+			{% set q_a_pair = info[i] %}
+			{% for q, a in q_a_pair.items() %}
+				<input type="hidden" name={{"q"+(i+1)|string}} value="{{ q }}">
+				<div class="row">
+				<div class="question">{{i+1}}. {{ q }}</div>
+				{% if a|length > 0 %}
+					{% for option in a %}
+					<div class="answer"><input type="radio" name={{"a"+(i+1)|string}} value="{{option}}"> {{ option }}</div>
+					{% endfor %}
+				{% else %}
+					<div class="answer">
+						<input type="number" name={{"a"+(i+1)|string}}>
+					</div>
+				{% endif %}
+				</div>
+				<br>
+			{% endfor %}
+		{% endfor %}
+
+		<div class="row">
+			<div class="question">7. Do you have any feedback on this study?</p></div>
+			<div class="answer"><textarea name="feedback"></textarea></div>
+		</div>
+		<br><br>
+		<div style="text-align: center;"><input type="submit" value="Submit" class="btn btn-default" style="text-align: center;"></div>
+		<br>
+	</form>
+	</div>
+</html>

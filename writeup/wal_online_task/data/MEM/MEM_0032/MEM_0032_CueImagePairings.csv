@@ -1,0 +1,97 @@
+,img,animacy,style,img_name,verb
+0,/static/object_pics/drawing_electronic/radio.jpg,inanimate,drawing,radio.jpg,tie
+1,/static/object_pics/drawing_bird/owl.jpg,animate,drawing,owl.jpg,grind
+2,/static/object_pics/picture_veggie/onions.jpg,inanimate,photo,onions.jpg,bring
+3,/static/object_pics/picture_electronic/microphone.jpg,inanimate,photo,microphone.jpg,hammer
+4,/static/object_pics/picture_bird/ostrich.jpg,animate,photo,ostrich.jpg,lay
+5,/static/object_pics/drawing_insect/fly.jpg,animate,drawing,fly.jpg,plant
+6,/static/object_pics/picture_electronic/keyboard.jpg,inanimate,photo,keyboard.jpg,join
+7,/static/object_pics/picture_sea/seahorse.jpg,animate,photo,seahorse.jpg,utilize
+8,/static/object_pics/picture_fruit/watermelon.jpg,inanimate,photo,watermelon.jpg,fall
+9,/static/object_pics/drawing_insect/ant.jpg,animate,drawing,ant.jpg,expand
+10,/static/object_pics/picture_insect/dragonfly.jpg,animate,photo,dragonfly.jpg,splash
+11,/static/object_pics/drawing_bird/vulture.jpg,animate,drawing,vulture.jpg,deposit
+12,/static/object_pics/picture_veggie/corn.jpg,inanimate,photo,corn.jpg,locate
+13,/static/object_pics/picture_veggie/artichoke.jpg,inanimate,photo,artichoke.jpg,bump
+14,/static/object_pics/drawing_electronic/satellite dish.jpg,inanimate,drawing,satellite dish.jpg,paint
+15,/static/object_pics/drawing_fruit/pomegranate.jpg,inanimate,drawing,pomegranate.jpg,build
+16,/static/object_pics/drawing_clothe/tie.jpg,inanimate,drawing,tie.jpg,identify
+17,/static/object_pics/drawing_insect/beetle.jpg,animate,drawing,beetle.jpg,press
+18,/static/object_pics/picture_bird/pelican.jpg,animate,photo,pelican.jpg,chop
+19,/static/object_pics/picture_clothe/belt.jpg,inanimate,photo,belt.jpg,twitch
+20,/static/object_pics/drawing_mammal/elephant.jpg,animate,drawing,elephant.jpg,mount
+21,/static/object_pics/drawing_electronic/phone.jpg,inanimate,drawing,phone.jpg,draw
+22,/static/object_pics/drawing_clothe/sock.jpg,inanimate,drawing,sock.jpg,hit
+23,/static/object_pics/drawing_veggie/cauliflower.jpg,inanimate,drawing,cauliflower.jpg,tear
+24,/static/object_pics/picture_mammal/kangaroo.jpg,animate,photo,kangaroo.jpg,divide
+25,/static/object_pics/drawing_mammal/lion.jpg,animate,drawing,lion.jpg,discover
+26,/static/object_pics/picture_bird/hen.jpg,animate,photo,hen.jpg,clap
+27,/static/object_pics/drawing_mammal/giraffe.jpg,animate,drawing,giraffe.jpg,cut
+28,/static/object_pics/picture_mammal/horse.jpg,animate,photo,horse.jpg,cover
+29,/static/object_pics/drawing_electronic/hairdryer.jpg,inanimate,drawing,hairdryer.jpg,attach
+30,/static/object_pics/drawing_insect/mantis.jpg,animate,drawing,mantis.jpg,lift
+31,/static/object_pics/picture_sea/seaturtle.jpg,animate,photo,seaturtle.jpg,assemble
+32,/static/object_pics/picture_clothe/hoodie.jpg,inanimate,photo,hoodie.jpg,trap
+33,/static/object_pics/picture_mammal/antelope.jpg,animate,photo,antelope.jpg,smash
+34,/static/object_pics/picture_clothe/football sneaker.jpg,inanimate,photo,football sneaker.jpg,grab
+35,/static/object_pics/picture_insect/scorpion.jpg,animate,photo,scorpion.jpg,fade
+36,/static/object_pics/picture_insect/butterfly.jpg,animate,photo,butterfly.jpg,move
+37,/static/object_pics/drawing_electronic/toaster.jpg,inanimate,drawing,toaster.jpg,inject
+38,/static/object_pics/drawing_clothe/scarf.jpg,inanimate,drawing,scarf.jpg,spray
+39,/static/object_pics/picture_electronic/laptop.jpg,inanimate,photo,laptop.jpg,deliver
+40,/static/object_pics/picture_clothe/glasses.jpg,inanimate,photo,glasses.jpg,combine
+41,/static/object_pics/drawing_bird/flamingo.jpg,animate,drawing,flamingo.jpg,connect
+42,/static/object_pics/drawing_mammal/bull.jpg,animate,drawing,bull.jpg,add
+43,/static/object_pics/picture_electronic/radio02.jpg,inanimate,photo,radio02.jpg,shift
+44,/static/object_pics/picture_mammal/bear.jpg,animate,photo,bear.jpg,fold
+45,/static/object_pics/drawing_clothe/shirt.jpg,inanimate,drawing,shirt.jpg,brush
+46,/static/object_pics/picture_electronic/remote control.jpg,inanimate,photo,remote control.jpg,guide
+47,/static/object_pics/drawing_insect/grasshopper.jpg,animate,drawing,grasshopper.jpg,dance
+48,/static/object_pics/drawing_fruit/cherry.jpg,inanimate,drawing,cherry.jpg,balance
+49,/static/object_pics/picture_insect/spider.jpg,animate,photo,spider.jpg,allocate
+50,/static/object_pics/drawing_clothe/sport t-shirt.jpg,inanimate,drawing,sport t-shirt.jpg,push
+51,/static/object_pics/drawing_sea/starfish.jpg,animate,drawing,starfish.jpg,split
+52,/static/object_pics/picture_sea/shrimp.jpg,animate,photo,shrimp.jpg,agitate
+53,/static/object_pics/picture_sea/jellyfish.jpg,animate,photo,jellyfish.jpg,stamp
+54,/static/object_pics/picture_veggie/potato.jpg,inanimate,photo,potato.jpg,stroke
+55,/static/object_pics/drawing_clothe/dress.jpg,inanimate,drawing,dress.jpg,compare
+56,/static/object_pics/picture_fruit/apple.jpg,inanimate,photo,apple.jpg,stick
+57,/static/object_pics/drawing_veggie/mushrooms.jpg,inanimate,drawing,mushrooms.jpg,cross
+58,/static/object_pics/drawing_bird/turkey.jpg,animate,drawing,turkey.jpg,adjusted
+59,/static/object_pics/drawing_fruit/kiwi.jpg,inanimate,drawing,kiwi.jpg,walk
+60,/static/object_pics/drawing_clothe/high heels.jpg,inanimate,drawing,high heels.jpg,explode
+61,/static/object_pics/drawing_veggie/pumpkin.jpg,inanimate,drawing,pumpkin.jpg,crush
+62,/static/object_pics/picture_insect/cockroach.jpg,animate,photo,cockroach.jpg,wrap
+63,/static/object_pics/picture_mammal/camel.jpg,animate,photo,camel.jpg,detect
+64,/static/object_pics/picture_bird/canary.jpg,animate,photo,canary.jpg,catapult
+65,/static/object_pics/drawing_mammal/rabbit.jpg,animate,drawing,rabbit.jpg,drill
+66,/static/object_pics/drawing_sea/swordfish.jpg,animate,drawing,swordfish.jpg,bury
+67,/static/object_pics/drawing_fruit/pear.jpg,inanimate,drawing,pear.jpg,jump
+68,/static/object_pics/drawing_sea/killer whale.jpg,animate,drawing,killer whale.jpg,arrange
+69,/static/object_pics/drawing_bird/toucan.jpg,animate,drawing,toucan.jpg,strike
+70,/static/object_pics/drawing_clothe/gloves.jpg,inanimate,drawing,gloves.jpg,flash
+71,/static/object_pics/picture_bird/peacock.jpg,animate,photo,peacock.jpg,kick
+72,/static/object_pics/drawing_electronic/gamepad.jpg,inanimate,drawing,gamepad.jpg,clean
+73,/static/object_pics/drawing_insect/snail.jpg,animate,drawing,snail.jpg,center
+74,/static/object_pics/drawing_sea/eel.jpg,animate,drawing,eel.jpg,blur
+75,/static/object_pics/picture_bird/parrot.jpg,animate,photo,parrot.jpg,swim
+76,/static/object_pics/drawing_veggie/aubergine.jpg,inanimate,drawing,aubergine.jpg,wipe
+77,/static/object_pics/picture_clothe/slipper.jpg,inanimate,photo,slipper.jpg,harm
+78,/static/object_pics/picture_electronic/coffee maker.jpg,inanimate,photo,coffee maker.jpg,throw
+79,/static/object_pics/drawing_mammal/rhinoceros.jpg,animate,drawing,rhinoceros.jpg,hold
+80,/static/object_pics/picture_clothe/hat.jpg,inanimate,photo,hat.jpg,rub
+81,/static/object_pics/drawing_bird/duck.jpg,animate,drawing,duck.jpg,chain
+82,/static/object_pics/drawing_electronic/printer.jpg,inanimate,drawing,printer.jpg,swing
+83,/static/object_pics/drawing_clothe/bowtie.jpg,inanimate,drawing,bowtie.jpg,remove
+84,/static/object_pics/picture_clothe/jeans.jpg,inanimate,photo,jeans.jpg,melt
+85,/static/object_pics/picture_veggie/tomato.jpg,inanimate,photo,tomato.jpg,squeeze
+86,/static/object_pics/drawing_insect/bumble bee.jpg,animate,drawing,bumble bee.jpg,break
+87,/static/object_pics/drawing_electronic/computer mouse.jpg,inanimate,drawing,computer mouse.jpg,spin
+88,/static/object_pics/picture_fruit/papaya.jpg,inanimate,photo,papaya.jpg,spread
+89,/static/object_pics/picture_bird/penguin.jpg,animate,photo,penguin.jpg,knock
+90,/static/object_pics/picture_mammal/squirrel.jpg,animate,photo,squirrel.jpg,drop
+91,/static/object_pics/drawing_veggie/beetroot.jpg,inanimate,drawing,beetroot.jpg,decorate
+92,/static/object_pics/drawing_fruit/grapes.jpg,inanimate,drawing,grapes.jpg,bounce
+93,/static/object_pics/drawing_sea/shark.jpg,animate,drawing,shark.jpg,circle
+94,/static/object_pics/picture_fruit/banana.jpg,inanimate,photo,banana.jpg,give
+95,/static/object_pics/picture_insect/ladybug.jpg,animate,photo,ladybug.jpg,smooth

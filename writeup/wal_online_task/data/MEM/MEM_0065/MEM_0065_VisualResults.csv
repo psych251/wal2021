@@ -1,0 +1,242 @@
+success,trial_type,trial_index,time_elapsed,internal_node_id,timeout,failed_images,failed_audio,failed_video,rt,stimulus,response,key,instruction,instruction_class,instruction_duration,prompt,object,object_duration,animacy,style,jitter,accurate,question_order,exp,subjectId,date
+True,fullscreen,0,34897,0.0-0.0,,,,,,,,,,,,,,,,,,,,MEM,MEM_0065,2022-12-08 22:08:32
+True,preload,1,49123,0.0-1.0,False,[],[],[],,,,,,,,,,,,,,,,MEM,MEM_0065,2022-12-08 22:08:32
+,html-keyboard-response,2,180718,0.0-2.0,,,,,131595.0,"
+      <p>In this task, you will see a series of objects. On some trials, your job is to determine
+      whether the object shown is a color photograph or a line drawing. On other trials, your job
+      is to determine whether the object represented is animate or inanimate.
+
+      <br><br>
+      You will know which response to make depending on the initial display, which will say
+      ""animate / inanimate"" or ""photo / drawing"".
+      <br>
+      <br>
+      You will be able to use the left arrow key to report animate/photo and the right arrow key to report inanimate/drawing.
+      <br>
+      Please respond as quickly as possible, and use your dominant hand to make your responses.
+      <br><br>
+      <img src=""/static/instructions_pics/visual_pic.png"" height=""300px"">
+      <br>
+      In the example in the top row, the correct response is animate (left arrow key). In the example in the bottom row, the correct response is photo (left arrow key).
+      <br>
+      <br>You will first do some practice trials. When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,3,186105,0.0-3.0,,,,,1469.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/for_instructions/object_pics/drawing_bird/heron.jpg,7000.0,animate,drawing,888.3523539809612,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,4,192141,0.0-4.0,,,,,1881.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/for_instructions/object_pics/picture_electronic/flashlight.jpg,7000.0,inanimate,photo,1153.9214076488508,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,5,197804,0.0-5.0,,,,,1725.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/for_instructions/object_pics/drawing_clothe/hockey helmet.jpg,7000.0,inanimate,drawing,936.6603221311814,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,6,202764,0.0-6.0,,,,,1157.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/for_instructions/object_pics/picture_veggie/avocado.jpg,7000.0,inanimate,photo,802.646342074007,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,survey-multi-choice,7,215392,0.0-7.0-0.0,,,,,12625.0,,"{'Style': 'True', 'Animacy': 'True'}",,,,,,,,,,,,"[0, 1]",MEM,MEM_0065,2022-12-08 22:08:32
+,html-keyboard-response,8,222043,0.0-8.0,,,,,6645.0,"
+      <p>Great job! Now you'll continue onto doing the main task.
+      You will have the opportunity to take brief breaks at various points.
+      Good luck!<br>Press the space bar to continue.</p>", ,,,,,,,,,,,,,MEM,MEM_0065,2022-12-08 22:08:32
+True,fullscreen,9,228064,0.0-9.0,,,,,,,,,,,,,,,,,,,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,10,233828,0.0-10.0,,,,,1653.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_clothe/dress.jpg,7000.0,inanimate,photo,1108.4082833774762,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,11,238933,0.0-11.0,,,,,1263.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_veggie/pumpkin.jpg,7000.0,inanimate,drawing,840.4232082914334,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,12,243963,0.0-12.0,,,,,1041.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_electronic/gamepad.jpg,7000.0,inanimate,drawing,986.4929083349782,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,13,248482,0.0-13.0,,,,,853.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_bird/hen.jpg,7000.0,animate,drawing,664.4368881401954,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,14,253657,0.0-14.0,,,,,793.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_mammal/camel.jpg,7000.0,animate,photo,1379.9789677473864,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,15,258180,0.0-15.0,,,,,717.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_insect/centipede.jpg,7000.0,animate,drawing,802.9541051807623,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,16,262346,0.0-16.0,,,,,608.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_mammal/lion.jpg,7000.0,animate,photo,557.6117789286728,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,17,267200,0.0-17.0,,,,,923.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_insect/grasshopper.jpg,7000.0,animate,drawing,929.1675386424065,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,18,271861,0.0-18.0,,,,,702.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_insect/butterfly.jpg,7000.0,animate,drawing,957.8509775791572,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,19,277261,0.0-19.0,,,,,1200.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_mammal/rabbit.jpg,7000.0,animate,photo,1197.2520324681059,False,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,20,283001,0.0-20.0,,,,,2126.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_bird/owl.jpg,7000.0,animate,drawing,611.9209029980601,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,21,288146,0.0-21.0,,,,,758.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_insect/fly.jpg,7000.0,animate,drawing,1386.925897618004,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,22,292520,0.0-22.0,,,,,744.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_clothe/hat.jpg,7000.0,inanimate,photo,627.0222914357984,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,23,298692,0.0-23.0,,,,,1815.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_veggie/artichoke.jpg,7000.0,inanimate,drawing,1354.8839354468585,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,24,303439,0.0-24.0,,,,,1183.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_bird/eagle.jpg,7000.0,animate,drawing,562.6909953408017,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,25,309479,0.0-25.0,,,,,1682.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_fruit/orange.jpg,7000.0,inanimate,photo,1356.734610403304,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,26,315059,0.0-26.0,,,,,1473.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_sea/killer whale.jpg,7000.0,animate,photo,1105.6930067033277,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,27,321045,0.0-27.0,,,,,2452.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_electronic/hairdryer.jpg,7000.0,inanimate,drawing,531.0674416305994,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,28,326677,0.0-28.0,,,,,1320.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_bird/penguin.jpg,7000.0,animate,drawing,1310.0932213714793,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,29,331090,0.0-29.0,,,,,663.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_veggie/cucumber.jpg,7000.0,inanimate,drawing,747.2678784620306,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,30,336562,0.0-30.0,,,,,1638.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_bird/pigeon.jpg,7000.0,animate,drawing,832.5765727106653,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,31,341485,0.0-31.0,,,,,870.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_sea/shark.jpg,7000.0,animate,photo,1051.6313141933174,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,32,346923,0.0-32.0,,,,,969.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_mammal/giraffe.jpg,7000.0,animate,photo,1466.9402401092434,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,33,352041,0.0-33.0,,,,,911.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_clothe/hoodie.jpg,7000.0,inanimate,photo,1203.0812839134683,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,34,356637,0.0-34.0,,,,,703.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_mammal/horse.jpg,7000.0,animate,photo,890.7228935074459,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,35,361103,0.0-35.0,,,,,802.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_insect/worm.jpg,7000.0,animate,drawing,660.8739852395839,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,36,365510,0.0-36.0,,,,,826.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_electronic/printer.jpg,7000.0,inanimate,drawing,579.9361925249929,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,37,370240,0.0-37.0,,,,,981.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_fruit/watermelon.jpg,7000.0,inanimate,photo,745.8899337236691,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,38,375392,0.0-38.0,,,,,1116.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_veggie/asparagus.jpg,7000.0,inanimate,drawing,1034.1535504310827,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,39,380679,0.0-39.0,,,,,789.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_fruit/cherry.jpg,7000.0,inanimate,photo,1494.349207310937,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,40,386334,0.0-40.0,,,,,1427.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_veggie/carrots.jpg,7000.0,inanimate,drawing,1226.4506608362788,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,41,391574,0.0-41.0,,,,,1238.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_insect/ladybug.jpg,7000.0,animate,drawing,999.4749308993569,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,html-keyboard-response,42,407270,0.0-42.0,,,,,15692.0,"
+        <p>In that last set of trials, you were correct 97% of the time.</p>
+        <p>Feel free to take a brief break. In the next set of trials, you will continue with the same task.
+        The instructions are displayed below, in case you need a refresher.
+        Press the space bar when you are ready to continue.</p>
+        <p>In this task, you will see a series of objects. On some trials, your job is to determine
+        whether the object shown is a color photograph or a line drawing. On other trials, your job
+        is to determine whether the object represented is animate or inanimate.
+
+        <br><br>
+        You will know which response to make depending on the initial display, which will say
+        ""animate / inanimate"" or ""photo / drawing"".
+        <br>
+        You will be able to use the left arrow key to report animate/photo and the right arrow key to report inanimate/drawing.
+        <br>
+        Please respond as quickly as possible, and use your dominant hand to make your responses.
+        <br><br>
+        You will be able to use the left arrow key to report animate/photo and the right arrow key to report inanimate/drawing.
+        <br><br>
+        <img src=""/static/instructions_pics/visual_pic.png"" height=""300px"">
+        <br>
+        In the example in the top row, the correct response is animate (left arrow key). In the example in the bottom row, the correct response is photo (left arrow key).
+        <br>
+        <br>When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,43,412388,0.0-43.0,,,,,1016.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_veggie/pepper.jpg,7000.0,inanimate,drawing,1099.4126111167259,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,44,417156,0.0-44.0,,,,,825.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_veggie/garlic.jpg,7000.0,inanimate,drawing,940.9805443115952,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,45,422723,0.0-45.0,,,,,1298.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_fruit/papaya.jpg,7000.0,inanimate,photo,1267.5339839825904,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,46,428154,0.0-46.0,,,,,937.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_fruit/pear.jpg,7000.0,inanimate,photo,1490.0158346795006,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,47,432740,0.0-47.0,,,,,1082.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_bird/duck.jpg,7000.0,animate,drawing,502.339024888631,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,48,437908,0.0-48.0,,,,,1059.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_fruit/pomegranate.jpg,7000.0,inanimate,photo,1106.97106933988,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,49,442320,0.0-49.0,,,,,685.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_mammal/rhinoceros.jpg,7000.0,animate,photo,723.940161285509,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,50,447032,0.0-50.0,,,,,831.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_fruit/apricot.jpg,7000.0,inanimate,photo,879.1917454814867,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,51,452101,0.0-51.0,,,,,816.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_electronic/computer mouse.jpg,7000.0,inanimate,drawing,1243.6892944046863,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,52,456811,0.0-52.0,,,,,824.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_mammal/squirrel.jpg,7000.0,animate,photo,884.44472287622,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,53,462489,0.0-53.0,,,,,1570.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_fruit/coconut.jpg,7000.0,inanimate,photo,1106.8483083983483,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,54,466974,0.0-54.0,,,,,809.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_electronic/radio.jpg,7000.0,inanimate,drawing,674.1719980719533,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,55,471404,0.0-55.0,,,,,787.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_clothe/bowtie.jpg,7000.0,inanimate,photo,641.9041162917591,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,56,476165,0.0-56.0,,,,,875.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_sea/piranha.jpg,7000.0,animate,photo,883.6426845279573,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,57,480753,0.0-57.0,,,,,830.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_mammal/sheep.jpg,7000.0,animate,photo,755.0879323451514,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,58,485966,0.0-58.0,,,,,934.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_sea/pufferfish.jpg,7000.0,animate,photo,1277.177734304896,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,59,490602,0.0-59.0,,,,,870.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_sea/dolphin.jpg,7000.0,animate,photo,764.5878024204782,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,60,495259,0.0-60.0,,,,,775.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_veggie/tomato.jpg,7000.0,inanimate,drawing,879.0267700477284,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,61,500950,0.0-61.0,,,,,1639.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_bird/flamingo.jpg,7000.0,animate,drawing,1049.193852663373,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,62,506329,0.0-62.0,,,,,1721.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_electronic/laptop.jpg,7000.0,inanimate,drawing,657.003889958075,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,63,511899,0.0-63.0,,,,,1516.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_sea/starfish02.jpg,7000.0,animate,photo,1052.5903653642554,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,64,516645,0.0-64.0,,,,,1085.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_insect/dragonfly.jpg,7000.0,animate,drawing,658.560053534063,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,65,523054,0.0-65.0,,,,,2665.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_clothe/sock02.jpg,7000.0,inanimate,photo,741.4087293375587,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,66,528915,0.0-66.0,,,,,2137.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_clothe/belt.jpg,7000.0,inanimate,photo,721.2680889018873,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,67,533979,0.0-67.0,,,,,1077.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_fruit/banana.jpg,7000.0,inanimate,photo,985.9521357332201,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,68,539255,0.0-68.0,,,,,1214.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_electronic/microphone.jpg,7000.0,inanimate,drawing,1058.8959576464213,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,69,544909,0.0-69.0,,,,,1981.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_electronic/handmixer.jpg,7000.0,inanimate,drawing,671.5633103908631,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,70,551201,0.0-70.0,,,,,2197.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_fruit/melon.jpg,7000.0,inanimate,photo,1091.9841155758277,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,71,557337,0.0-71.0,,,,,2572.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_electronic/satellite dish.jpg,7000.0,inanimate,drawing,561.5793527243137,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,72,563803,0.0-72.0,,,,,2057.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_sea/swordfish.jpg,7000.0,animate,photo,1408.4516797477693,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,73,570260,0.0-73.0,,,,,2433.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_veggie/cauliflower.jpg,7000.0,inanimate,drawing,1021.6448435462424,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,74,576721,0.0-74.0,,,,,2892.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_clothe/football sneaker.jpg,7000.0,inanimate,photo,568.8924286830184,False,,MEM,MEM_0065,2022-12-08 22:08:32
+,html-keyboard-response,75,603701,0.0-75.0,,,,,26978.0,"
+        <p>In that last set of trials, you were correct 97% of the time.</p>
+        <p>Feel free to take a brief break. In the next set of trials, you will continue with the same task.
+        The instructions are displayed below, in case you need a refresher.
+        Press the space bar when you are ready to continue.</p>
+        <p>In this task, you will see a series of objects. On some trials, your job is to determine
+        whether the object shown is a color photograph or a line drawing. On other trials, your job
+        is to determine whether the object represented is animate or inanimate.
+
+        <br><br>
+        You will know which response to make depending on the initial display, which will say
+        ""animate / inanimate"" or ""photo / drawing"".
+        <br>
+        You will be able to use the left arrow key to report animate/photo and the right arrow key to report inanimate/drawing.
+        <br>
+        Please respond as quickly as possible, and use your dominant hand to make your responses.
+        <br><br>
+        You will be able to use the left arrow key to report animate/photo and the right arrow key to report inanimate/drawing.
+        <br><br>
+        <img src=""/static/instructions_pics/visual_pic.png"" height=""300px"">
+        <br>
+        In the example in the top row, the correct response is animate (left arrow key). In the example in the bottom row, the correct response is photo (left arrow key).
+        <br>
+        <br>When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,76,608728,0.0-76.0,,,,,1117.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_clothe/gloves.jpg,7000.0,inanimate,photo,908.0028551886774,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,77,613792,0.0-77.0,,,,,1167.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_clothe/slipper.jpg,7000.0,inanimate,photo,893.8979610858578,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,78,618703,0.0-78.0,,,,,1051.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_clothe/jeans.jpg,7000.0,inanimate,photo,858.9062672267889,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,79,623620,0.0-79.0,,,,,776.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_fruit/kiwi.jpg,7000.0,inanimate,photo,1139.6769048446827,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,80,628750,0.0-80.0,,,,,918.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_mammal/kangaroo.jpg,7000.0,animate,photo,1210.612574512513,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,81,633941,0.0-81.0,,,,,991.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_mammal/antelope.jpg,7000.0,animate,photo,1197.2497830763134,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,82,638537,0.0-82.0,,,,,933.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_insect/ant.jpg,7000.0,animate,drawing,660.8562202008501,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,83,644552,0.0-83.0,,,,,1685.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_mammal/gorilla.jpg,7000.0,animate,photo,1327.4558655997712,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,84,651016,0.0-84.0,,,,,2097.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_electronic/coffee maker.jpg,7000.0,inanimate,drawing,1363.986526354253,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,85,659034,0.0-85.0,,,,,4337.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_bird/parrot.jpg,7000.0,animate,drawing,677.8331350488385,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,86,664899,0.0-86.0,,,,,2014.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_insect/cockroach.jpg,7000.0,animate,drawing,849.9534413163636,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,87,669955,0.0-87.0,,,,,808.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_insect/mosquito.jpg,7000.0,animate,drawing,1246.9793181556852,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,88,675093,0.0-88.0,,,,,973.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_fruit/lemon.jpg,7000.0,inanimate,photo,1163.775879656664,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,89,680572,0.0-89.0,,,,,1500.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_bird/peacock.jpg,7000.0,animate,drawing,976.1362074326821,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,90,685615,0.0-90.0,,,,,1323.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_veggie/corn.jpg,7000.0,inanimate,drawing,716.026556743522,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,91,690504,0.0-91.0,,,,,1056.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_bird/pelican.jpg,7000.0,animate,drawing,830.315437567913,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,92,694940,0.0-92.0,,,,,869.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_insect/bumble bee.jpg,7000.0,animate,drawing,563.0710557627375,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,93,699219,0.0-93.0,,,,,754.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_veggie/potato.jpg,7000.0,inanimate,drawing,522.5518537353175,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,94,704488,0.0-94.0,,,,,824.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_mammal/bison.jpg,7000.0,animate,photo,1443.209904277212,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,95,709571,0.0-95.0,,,,,1471.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_clothe/high heels.jpg,7000.0,inanimate,photo,609.2802397343138,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,96,715611,0.0-96.0,,,,,1695.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_veggie/beetroot.jpg,7000.0,inanimate,drawing,1343.1825076467424,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,97,721997,0.0-97.0,,,,,2050.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_mammal/wolf.jpg,7000.0,animate,photo,1334.3707334269461,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,98,727295,0.0-98.0,,,,,1486.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_sea/seal.jpg,7000.0,animate,photo,809.7263339612742,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,99,731975,0.0-99.0,,,,,879.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_clothe/glasses.jpg,7000.0,inanimate,photo,797.7120595940281,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,100,737110,0.0-100.0,,,,,1613.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_veggie/onions.jpg,7000.0,inanimate,drawing,519.4231661084032,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,101,741915,0.0-101.0,,,,,778.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_bird/hummingbird.jpg,7000.0,animate,drawing,1022.032932961828,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,102,747576,0.0-102.0,,,,,1297.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_fruit/apple.jpg,7000.0,inanimate,photo,1361.8054334803792,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,103,753139,0.0-103.0,,,,,1235.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_insect/beetle.jpg,7000.0,animate,drawing,1323.3071415078666,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,104,758783,0.0-104.0,,,,,1354.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_veggie/aubergine.jpg,7000.0,inanimate,drawing,1288.7337137946397,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,105,764786,0.0-105.0,,,,,1749.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_insect/scorpion.jpg,7000.0,animate,drawing,1252.5987110132578,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,106,771310,0.0-106.0,,,,,2116.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_insect/snail.jpg,7000.0,animate,drawing,1406.7440205752869,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,107,777099,0.0-107.0,,,,,1697.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_mammal/bear.jpg,7000.0,animate,photo,1090.5740862458215,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,html-keyboard-response,108,781583,0.0-108.0,,,,,4483.0,"
+        <p>In that last set of trials, you were correct 100% of the time.</p>
+        <p>Feel free to take a brief break. In the next set of trials, you will continue with the same task.
+        The instructions are displayed below, in case you need a refresher.
+        Press the space bar when you are ready to continue.</p>
+        <p>In this task, you will see a series of objects. On some trials, your job is to determine
+        whether the object shown is a color photograph or a line drawing. On other trials, your job
+        is to determine whether the object represented is animate or inanimate.
+
+        <br><br>
+        You will know which response to make depending on the initial display, which will say
+        ""animate / inanimate"" or ""photo / drawing"".
+        <br>
+        You will be able to use the left arrow key to report animate/photo and the right arrow key to report inanimate/drawing.
+        <br>
+        Please respond as quickly as possible, and use your dominant hand to make your responses.
+        <br><br>
+        You will be able to use the left arrow key to report animate/photo and the right arrow key to report inanimate/drawing.
+        <br><br>
+        <img src=""/static/instructions_pics/visual_pic.png"" height=""300px"">
+        <br>
+        In the example in the top row, the correct response is animate (left arrow key). In the example in the bottom row, the correct response is photo (left arrow key).
+        <br>
+        <br>When you are ready to begin, press the space bar.</p>", ,,,,,,,,,,,,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,109,786811,0.0-109.0,,,,,1244.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_veggie/lettuce.jpg,7000.0,inanimate,drawing,982.6562549559399,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,110,792872,0.0-110.0,,,,,1973.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_fruit/strawberry.jpg,7000.0,inanimate,photo,1085.689888518039,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,111,797702,0.0-111.0,,,,,1328.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_electronic/keyboard.jpg,7000.0,inanimate,drawing,500.8405835028338,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,112,804463,0.0-112.0,,,,,3020.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_electronic/camera.jpg,7000.0,inanimate,drawing,738.2687748587679,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,113,808903,0.0-113.0,,,,,838.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_electronic/calculator.jpg,7000.0,inanimate,drawing,600.3041348541158,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,114,814899,0.0-114.0,,,,,2225.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_insect/mantis.jpg,7000.0,animate,drawing,768.0438255143885,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,115,821046,0.0-115.0,,,,,1704.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_fruit/pineapple.jpg,7000.0,inanimate,photo,1441.5764948462383,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,116,826526,0.0-116.0,,,,,1516.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_sea/seaturtle.jpg,7000.0,animate,photo,961.6951032944287,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,117,831677,0.0-117.0,,,,,1259.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_fruit/grapes.jpg,7000.0,inanimate,photo,891.5612235229723,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,118,836885,0.0-118.0,,,,,1672.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_clothe/tie.jpg,7000.0,inanimate,photo,534.8166285002177,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,119,842000,0.0-119.0,,,,,1495.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_clothe/shirt.jpg,7000.0,inanimate,photo,615.566780350353,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,120,848052,0.0-120.0,,,,,1820.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_mammal/elephant.jpg,7000.0,animate,photo,1230.2761699538182,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,121,853357,0.0-121.0,,,,,1358.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_bird/turkey.jpg,7000.0,animate,drawing,944.8883654497681,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,122,857822,0.0-122.0,,,,,922.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_sea/shrimp.jpg,7000.0,animate,photo,540.8550217018343,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,123,864540,0.0-123.0,,,,,2619.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_electronic/toaster.jpg,7000.0,inanimate,drawing,1096.6791166450616,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,124,869778,0.0-124.0,,,,,1411.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_electronic/remote control.jpg,7000.0,inanimate,drawing,823.4842230450868,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,125,875093,0.0-125.0,,,,,1363.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_bird/toucan.jpg,7000.0,animate,drawing,949.9362045224397,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,126,880795,0.0-126.0,,,,,1483.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_sea/octopus.jpg,7000.0,animate,photo,1218.4964065830586,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,127,885400,0.0-127.0,,,,,1032.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_mammal/bull.jpg,7000.0,animate,photo,570.0142159867833,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,128,890637,0.0-128.0,,,,,881.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_sea/seahorse.jpg,7000.0,animate,photo,1353.705478478557,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,129,895370,0.0-129.0,,,,,848.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_insect/spider.jpg,7000.0,animate,drawing,882.2546104758916,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,130,899893,0.0-130.0,,,,,800.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_sea/crab.jpg,7000.0,animate,photo,720.1205721753096,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,131,905345,0.0-131.0,,,,,1840.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_sea/eel.jpg,7000.0,animate,photo,610.9156448199932,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,132,912014,0.0-132.0,,,,,2965.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_clothe/sport t-shirt.jpg,7000.0,inanimate,photo,702.1606317769337,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,133,917251,0.0-133.0,,,,,1505.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_sea/jellyfish.jpg,7000.0,animate,photo,730.5505096176041,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,134,923099,0.0-134.0,,,,,1887.0,,,arrowleft,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/picture_sea/mantaray.jpg,7000.0,animate,photo,959.2946710075375,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,135,929194,0.0-135.0,,,,,2142.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/picture_clothe/scarf.jpg,7000.0,inanimate,photo,950.0721640680299,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,136,935533,0.0-136.0,,,,,1960.0,,,arrowright,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_veggie/mushrooms.jpg,7000.0,inanimate,drawing,1376.0314812384645,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,137,940761,0.0-137.0,,,,,1254.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_electronic/phone.jpg,7000.0,inanimate,drawing,973.2206029690974,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,138,946200,0.0-138.0,,,,,1415.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_bird/canary.jpg,7000.0,animate,drawing,1021.0968850752038,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,139,951524,0.0-139.0,,,,,1373.0,,,arrowright,photo (left arrow)&emsp;&emsp;&emsp;&emsp;drawing (right arrow),perceptual,3000.0,,/static/object_pics/drawing_bird/ostrich.jpg,7000.0,animate,drawing,948.2940635416599,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,visual-trial,140,957435,0.0-140.0,,,,,1549.0,,,arrowleft,animate (left arrow)&emsp;&emsp;&emsp;&emsp;inanimate (right arrow),semantic,3000.0,,/static/object_pics/drawing_bird/vulture.jpg,7000.0,animate,drawing,1359.3811429686025,True,,MEM,MEM_0065,2022-12-08 22:08:32
+,html-keyboard-response,141,975611,0.0-141.0,,,,,18176.0,"
+      <p>Thank you for your participation!</p>
+      The goal of this study is to replicate previous findings that the timing of responses in memory-dependent tasks
+      is rhythmic in nature (compared to the timing of responses in memory-independent tasks).
+      You performed the memory-independent tasks in this study.
+      <br>
+      Your participation will allow us to better understand how memory works.
+      Please do not share this information with other potential participants.
+      <br>
+      Press the space bar to continue.</p>", ,,,,,,,,,,,,,MEM,MEM_0065,2022-12-08 22:08:32
